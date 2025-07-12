@@ -1,9 +1,0 @@
-game:
-    name: Rejuvenation
-    url: https://mega.nz/file/0OJRQKqA#Q2PZ26ILGzSV3ZVjVYe7DC3Lzwv-977zBloWamhqZ4c
-    version: 13.5.7.Resurgence.0.01
-    version_url: https://github.com/Alemi7523/Gen-9-Mod-Updater/raw/main/_version.txt
-    patch_url: https://github.com/Alemi7523/Gen-9-Mod-Updater/raw/main/patch.zip
-    format: zip
-    password: null
-mods: []

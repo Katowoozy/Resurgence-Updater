@@ -1,9 +1,0 @@
-Gen 9 Mod also fixed some bugs in the following maps:
-Map 315 - Rose Theatre. Event on Melia's room (.karma files) not triggering unless pressing action button, changed to on collision to work like other similar events.
-Map 434 - Mr.Luck's tent. Doxie exchange conditional is checking bigger than 9 rather than bigger than 14 for Black Prisms when 15 Black Prisms are required. You lose the 15 despite the check being bigger than 9, so it may cause issues when the number is between 10 and 14. The fix makes it check the number properly.
-Map 119- Carotos Mountain. Hidden item wrongly tagged and only let pick it when on top of it. Fixed to work as other hidden items.
-Map 058 - East Gearen City. Fixed hidden item in the rock near the entrance since it wasn't tagged as such, provoking the itemfinder being unable to find it. Now it is tagged properly.
-Map 048 - East Gearen City. On Venam's bed there is an item, which was wrongly tagged a as a hidden item despite having a normal item sprite. Now it isn't tagged wrongly.
-Map 273 - Route 9. HiddenItem wrongly named.
-Map 393 - Tower of Theolia. Normal item was tagged as hidden item.
-Map 387 - The Underground. Dialogue conditional was set at reputation equal to 300 instead of Greater or equal like it should.
