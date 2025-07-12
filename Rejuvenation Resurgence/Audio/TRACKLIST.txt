@@ -1,0 +1,320 @@
+=================================================================
+= 			   REJUVENATION 13.5 MUSIC TRACK LIST 				=
+=================================================================
+=						      NOTE:								=
+=  Some files have incorrect metadata, so do not use the file	=
+= explorer as a point of reference. Only this file has all the	=
+=  correct song titles and list of people responsible for the	=
+= tracks/remixes, or the game where it originates from if it's	=
+=                      not a remixed song.						=
+=																=
+=  PLEASE do not use the tracks that are listed as custom made	=
+=  in your own fangame. These are custom made for Rejuvenation	=
+=        and are not available for reuse in other games.		=
+=																=
+=  If you want to use the custom tracks for unrelated purposes,	=
+=	  like BGM in a video, a music modpack in a non-fangame,	=
+=  using it for charting in rhythm games etc. this is usually	=
+=	fine! But if you're	unsure, you can always contact Zumi		=
+=					at honnojisart@gmail.com.					=
+=																=
+=			       Thank you for understanding!					=
+=================================================================
+
+
+= IN-GAME TITLE =							= ORIGINAL TRACK NAME =						= ARTIST/GAME ORIGIN =			= CUSTOM MADE? =
+======================================================================================================================================
+
+Bad Mood - Club REM							Team Rocket Hideout (Deep House Remix)		RoboRob								NO
+Bad Mood - Club REM (Part 2)				Team Rocket Hideout (Deep House Remix)		RoboRob								NO
+Bad Mood - GuiltyOrNah						Lisia's theme (Remix)						Mewmore								NO
+Bad Mood - Hunt								Battle! Giratina (Remix)					Mewmore								NO
+Bad Mood - Hunt (Part 2)					Battle! Giratina (Remix)					Mewmore								NO
+Bad Mood - The System Binds Us				Axiom Waltz (Piano Ver.)					Zumi (Honnojis)						YES
+Bad Mood - The System Binds Us (Part 2)		Axiom Waltz									Zumi (Honnojis)						YES 
+Battle - Ana's Lament						Ana's Lament								GlitchxCity							YES
+Battle - Angie								Leader Angie Battle Theme					GlitchxCity							YES
+Battle - Boss								Vs! Boss (Xenogene)							Zumi (Honnojis)						YES
+Battle - Club								Penny Battle Theme (Remix)					GlitchxCity							NO
+Battle - Conclusive							Guardian Deities Battle (Remix)				GlitchxCity							NO
+Battle - Conclusive							Chairman Rose Battle (Remix)				GlitchxCity							NO
+Battle - Dimensional Rift					Dimensional Rift Battle						GlitchxCity							YES
+Battle - End of Night						Lavender Town (2nd Remix)					Mewmore								NO
+Battle - Final Duel							Fight with Yveltal and Others!				Super Mystery Dungeon				NO
+Battle - Final Endeavor						Multi-Mash Remix (Soft-Release)				GlitchxCity							NO
+Battle - Flora								VS! Splicer Admin							Zumi (Honnojis)						YES
+Battle - Giratina							Battle! Volo & Giratina - Revival			Legends Arceus						NO
+Battle - Gyms								Rejuvenation Gym Leader Battle				GlitchxCity							YES
+Battle - Insanity							The Night's Shade (Halloween Remix)			GlitchxCity							NO
+Battle - Intense							Lusamine Battle (Remix)						GlitchxCity							NO
+Battle - Legendary							Ultra Necrozma (Remix)						GlitchxCity							NO
+Battle - Lonely Moon						Crescent Battle								GlitchxCity							NO
+Battle - Lucile								VS! Gym Leader (Xenogene)					Zumi (Honnojis)						YES
+Battle - Machine							VS! Team Splicer Grunt (Xenogene)			Zumi (Honnojis)						YES
+Battle - Master of Nightmares				VS! The Master of Nightmares				Zumi (Honnojis)						YES
+Battle - Master of Nightmares (Chiptune)	VS! The Master of Nightmares (Chiptune)		Zumi (Honnojis)						YES
+Battle - Mini Boss							Sinnoh Gym Leader Battle (Remix)			GlitchxCity							NO
+Battle - Monstrosity						VS! Monstrosity 2023 (Xenogene)				Zumi (Honnojis)						YES
+Battle - Mysterious Figures					Mysterious Figures Battle					GlitchxCity							YES
+Battle - Nightmares							Guzma Battle (Remix)						GlitchxCity							NO
+Battle - Nightmare 1						Battle! Alola Elite Four 					Masters								NO
+Battle - Paradox							Paradox Pokémon Battle (Remix)				CatchDalgo							NO
+Battle - Protector of Aevium				Angie Battle Theme (Stripped-down)			GlitchxCity							YES
+Battle - Pseudo Contribution				Johto Gym Leader Battle (V2 Remix)			GlitchxCity							NO
+Battle - Pseudo Gym							Johto Gym Leader Battle (Remix)				GlitchxCity							NO
+Battle - Rival								Bede Battle (Remix)							GlitchxCity							NO
+Battle - Rival 2							Hoenn Rival Battle (Remix)					GlitchxCity							NO
+Battle - Rorrim B.							Hop Battle (Remix)							GlitchxCity							NO
+Battle - Soul								Battle of the Soul							GlitchxCity ft. CatchDalgo			YES
+Battle - Space and Time						Origin Form Palia & Dialga Battle (Remix)	GlitchxCity 						NO
+Battle - Team Xen 							Team Xen Battle								GlitchxCity							YES
+Battle - Team Xen 1							Team Xen Battle (Tech ver.)					GlitchxCity							YES
+Battle - Tournament							Battle! Gym Leader (Johto Ver)				HeartGold/SoulSilver				NO
+Battle - Trainers							Scarlet & Violet Field Trailer (Remix)		GlitchxCity							NO
+Battle - Trainers 2							Arven Battle (Remix)						GlitchxCity							NO
+Battle - Trainers 3							UNITE Mer Stadium (Remix)					GlitchxCity							NO
+Battle - Xen Executives						Xen Executive Battle						GlitchxCity							YES
+Battle - XG Rival							VS! Rival 2023 (Xenogene)					Zumi (Honnojis)						YES
+citamginE - gnileeF							Relic Song (Remix) - Reversed				GlitchxCity							NO
+Cool and Serene								Ultra Desert								Ultra Sun/Moon						NO
+Cryptic Feelings							Team Plasma's Secret Maneuvers (Remaster)	Kunning Fox							NO
+evolv										Evolution Theme (Remix)						Zumi (Honnojis)						YES
+Feeling - Amazing							Mahalo Trail 								Sun/Moon							NO
+Feeling - Attacked							Five Furious Strikes!						Omega Ruby/Alpha Sapphire			NO
+Feeling - Attacked 2 						Penny Battle								Scarlet/Violet						NO
+Feeling - Conflict							Drought and Flood!							Kamex								NO
+Feeling - Dark and Sinister					Deep Dark Crater (Remaster)					TGH									NO
+Feeling - Despair							Winds of Despair							Gates to Infinity					NO
+Feeling - Enigmatic							Relic Song (Remix)							GlitchxCity							NO
+Feeling - Enlightened						N's Castle (Remix)							GlitchxCity							NO
+Feeling - Far Gone							Po Town (Remix)								VanilluxePavilion					NO
+Feeling - Frosty							Ten Carat Hill (Remix)						GlitchxCity							NO
+Feeling - Futile							The Power of Darkness (Remaster)			TGH									NO
+Feeling - Genetic							Team Splicer Base (Xenogene)				Zumi (Honnojis)						YES
+Feeling - Hopeful							Route 47 (Remix)							GlitchxCity							NO
+Feeling - Hopeful 2							Someday...									Sun/Moon							NO
+Feeling - Hotheaded							Johto Burned Tower (Remix)					GlitchxCity							NO
+Feeling - Immediate Danger					We can fly!									Super Mystery Dungeon				NO
+Feeling - Inconsistent 						Inconsistency								Zumi (Honnojis)						YES
+Feeling - Lifeless							Desperation - Hyper Heavy Arrangement		Gates to Infinity					NO
+Feeling - Lonely 							Keta's House (Short ver.)					Zumi (Honnojis)						YES
+Feeling - Lost								School's Rumors at Night					Super Mystery Dungeon				NO
+Feeling - Magical							Laverre City (Remix)						GlitchxCity							NO
+Feeling - Magma								Fire Island Volcano							Super Mystery Dungeon				NO
+Feeling - Miracle							Distortion World (Remix)					Mewmore								NO
+Feeling - Miracle 1							Distortion World (Remix)					Mewmore								NO
+Feeling - Mysterious						Icy Sanctum: Second Arrangement				Gates to Infinity					NO
+Feeling - Mysterious 2						Seaward Cave								Sun/Moon							NO
+Feeling - New Beginning						Strains of a New Beginning					Omega Ruby/Alpha Sapphire			NO
+Feeling - Nostalgic							New Bark Town (Remix)						GlitchxCity							NO
+Feeling - Ominous							The Bittercold								Gates to Infinity					NO
+Feeling - Ominous 2							The Slitherers								Omega Ruby/Alpha Sapphire			NO
+Feeling - Onslaught							Chasm Cave (Remaster)						TGH									NO
+Feeling - Ragged							Mt. Coronet (Dubstep Remix)					GlitchxCity							NO
+Feeling - Rebellious						Glacier Palace: Western Spire				Gates to Infinity					NO
+Feeling - Rebellious 2						Steely Lillie!								Sun/Moon							NO
+Feeling - Reflective						Turffield (Lofi Remix)						GlitchxCity							NO
+Feeling - Sadness							Wrapped in a Light							Gates to Infinity					NO
+Feeling - Sketchy							Battle Pike (Remaster)						Zame								NO
+Feeling - Suspicious						The Secret Side of Aether Paradise			Sun/Moon							NO
+Feeling - Tension							Tension										Zumi (Honnojis)						YES
+Feeling - Tricky							Glimwood Tangle (Remix)						GlitchxCity							NO
+Feeling - Tropical							Ballad of the Wind Fish (Remix)				GlitchxCity							NO
+Feeling - Unsettled							Irida's Theme								Legends Arceus						NO
+Feeling - Unwavering Hope 					Don't Give Up								Super Mystery Dungeon				NO
+Feeling - Utter Despair 					In the Future (Remaster)					TGH									NO
+Feeling - Utter Despair 2					Planet's Paralysis (Remaster)				TGH									NO
+Feeling - Wacky								Ilex Forest (Remix)							Mewmore								NO
+Feeling - Winter is Coming					Forlorn Winters								Zumi (Honnojis)						YES
+Feeling - Yeehaw							Hulbury										Sword/Shield						NO
+Fighting for Victory						Black Tower									Black 2								NO
+Fighting for Victory 1						Times Like These (Remix)					TGH									NO
+Fighting for What's Right					Silph Co. (Remix)							GlitchxCity							NO
+GDC - City of Dreams						Grand Dream City							GlitchxCity							YES
+GDC - City of Dreams N 						Grand Dream City Nighttime					ShinPino							YES
+Gearen News!								Wally's Theme (Remix)						GlitchxCity							NO
+GSC - Gym Leader							Johto Gym Leader Battle						Gold/Silver/Crystal					NO
+GSC - New Bark Town							New Bark Town								Gold/Silver/Crystal					NO
+GSC - Queen Alice							Giovanni's theme (Beta)						Red/Blue/Yellow						NO
+GSC - Trouble   							Diglett cave (Beta)							Red/Blue/Yellow						NO
+Gym Battle Victory (GS)						Gym Battle Victory							Gold/Silver/Crystal					NO
+Gym Battle Victory							Legendary Beast Battle (Remix)				GlitchxCity							NO
+Her Awakening 1								Black and White Route 10 (V2 Remix)			GlitchxCity							NO
+Her Awakening 2								Black and White Route 10 (V2 Remix)			GlitchxCity							NO
+It Changes									It Changes									ShinPino							NO
+Keep marching on!							Route 47/48 (8-Bit)							HeartGold/SoulSilver				NO
+Melia's Theme								Kagome/Lacunosa Town						Black/White							NO
+Mood - Breakthrough							The Secret of the Lost Memory				Super Mystery Dungeon				NO
+Mood - Calming								Vermilion City (Lofi Remix)					GlitchxCity							NO
+Mood - Carnival								Battle Bingo - Board						Colosseum/XD						NO
+Mood - Chaos								Mood - Chaos (Xenogene)						Zumi (Honnojis)						YES
+Mood - Coffee 								Lake Valor (Remix)							Mewmore								NO
+Mood - Comeback								Reverse Mountain							Super Mystery Dungeon				NO
+Mood - Comeback	1							Reverse Mountain							Super Mystery Dungeon				NO
+Mood - Conniving							Abyssal Badlands							Super Mystery Dungeon				NO
+Mood - Craggy								Calm Craggy Area							Super Mystery Dungeon				NO
+Mood - Dangerous Cave						Arceus' Voice								Legends Arceus						NO
+Mood - Dark City							Night Waltz									GlitchxCity							NO
+Mood - Departure							Within the Sadness							Super Mystery Dungeon				NO
+Mood - Desert Chamber						Relic Castle (V2 Remix)						GlitchxCity							NO
+Mood - Determination!						Cave Friend Area (Remaster)					TGH									NO
+Mood - Disaster								Red Sky										Legends Arceus						NO
+Mood - Disaster 1							Red Sky (Battle theme)						Legends Arceus						NO
+Mood - Distressed							Ultra Megalopolis							Ultra Sun/Moon						NO
+Mood - Encounter							Dark Temple (Remix)							Zumi (Honnojis)						NO
+Mood - Gamble								Royal Flush									Zumi (Honnojis)						YES
+Mood - Happy								Icirrus City (Lofi Remix)					GlitchxCity							NO
+Mood - Hope for Everyone					The Heart of Winter							TGH									NO
+Mood - Hypnotic Battle						Gym Leader Battle (Switching)				Sword/Shield						NO
+Mood - Infiltration							Underground (Xenogene)						Zumi (Honnojis)						NO
+Mood - Intense								Destiny Bond								GlitchxCity							NO
+Mood - Legendary							Boss Area									Legends Arceus						NO
+Mood - Mystery								Subzero Regi Trio Battle (Remix)			Hyquo								NO
+Mood - Mystic								Undertale Waterfall (Remix)					GlitchxCity							NO
+Mood - Mystical								Ancient Retreat (Remix)						GlitchxCity							NO
+Mood - Peaceful								The Heartwood								Legends Arceus						NO
+Mood - Really...							Max Raid Battle (Lofi Remix)				GlitchxCity							NO
+Mood - Revelation							Temporal Spire (Remaster)					TGH									NO
+Mood - Rise Up								Cyrus Boss Battle (Remix)					GlitchxCity							NO
+Mood - Ritual								Sky Pillar									Omega Ruby/Alpha Sapphire			NO
+Mood - Rivalry								Rival Challenge								Gold/Silver/Crystal					NO
+Mood - Royal								Oceanic Museum								Omega Ruby/Alpha Sapphire			NO
+Mood - Ruins								Prehistoric Ruins							Super Mystery Dungeon				NO
+Mood - Ruins 1								Telluric Path								Gates to Infinity					NO
+Mood - Sanctuary							Oceanic Friend Area	(Remaster)				TGH									NO
+Mood - Sandy								Gentle Slope Cave							Super Mystery Dungeon				NO
+Mood - Seashore Panic 						S.S. Anne (Remix)							GlitchxCity							NO
+Mood - Set Out								Time to Set Out								Super Mystery Dungeon				NO
+Mood - Shopaholic							Skyarrow Bridge (Remix)						Mewmore								NO
+Mood - Sinister								Mysteries Within (Arrangement 2)			Super Mystery Dungeon				NO
+Mood - Stardom								Summer in Undella (Remix)					Mewmore								NO
+Mood - Teamwork								Make it!									Super Mystery Dungeon				NO
+Mood - Teamwork	1							Make it!									Super Mystery Dungeon				NO
+Mood - Teamwork	2							Make it!									Super Mystery Dungeon				NO
+Mood - Technical 1							Galar Mines									Sword/Shield						NO
+Mood - That's Right							Musical: Charming Munna						Black/White	2						NO
+Mood - The Bog								Crimson Mirelands 2 (Version 2)				Legends Arceus						NO
+Mood - Tower								Burned Tower (Remix)						VanilluxePavilion					NO
+Mood - Triumphant 							XY League Theme (Remix)						GlitchxCity							NO
+Mood - Tropical 							Tropical									ShinPino							YES
+Mood - Truth								Enveloped in Light...						Super Mystery Dungeon				NO
+Mood - Village								Jubilife Village Vibes						GlitchxCity							NO
+Mood - Village_1							Come On In To Post Town						Gates to Infinity					NO
+Music - 3rd Heaven							ARCHETYPE (Third Heaven)					Zumi (Honnojis)						YES
+Music - 3rd HQ 								ARCHETYPE (Third Layer HQ)					Zumi (Honnojis)						YES
+Music - Akuwa Town							Cascarrafa (Lofi Remix)						GlitchxCity							NO
+Music - Alamissa Urben						Tree of Life - Trunk (Remaster)				Glaf Glorf							NO
+Music - Angie's Manor						Angie's Manor								Zumi (Honnojis)						YES
+Music - AtebitWorld							Rocket Hideout								Gold/Silver/Crystal					NO
+Music - AtebitWorld 1						Lavender Town								Gold/Silver/Crystal					NO
+Music - BestieBeatdown						The Bittercold (First Battle)				Gates to Infinity					NO
+Music - BestieBeatdown 1					The Bittercold (First Battle)				Gates to Infinity					NO
+Music - Bike								Goldenrod City (Remix)						GlitchxCity							NO
+Music - Bladestar Base						Regi Trio Battle (Synthwave Remix)			VanilluxePavilion					NO
+Music - Celandine City						Celandine City 2023 (Xenogene)				Zumi (Honnojis)						YES
+Music - choo choo! CHOO CHOO				Anville Town (Remix)						Black/White							NO
+Music - Crescent Appears					Harpsichord Concerto no.5 (Dubstep Remix)	Anthos								NO
+Music - Darchlight Escape					Pokémon Mansion (V2 Remix)					VanilluxePavilion					NO
+Music - Darchlight Woods					Forest of Shadows							Gates to Infinity 					NO
+Music - Desert Town							Sand Continent: Sahra Town					Super Mystery Dungeon				NO
+Music - Desert								Stow-on-Side								Sword/Shield						NO
+Music - Despair Desert						Badlands (Desert)							Zumi (Honnojis)						YES
+Music - Dive(m)								Lake Theme (Lofi Remix)						GlitchxCity							NO
+Music - Enemy Base							Pokémon Tower (V2 Remix)					GlitchxCity							NO
+Music - Festival							Years Ago									GlitchxCity							NO
+Music - Forest of Time						Welcome to the World of Pokémon! (Remaster)	TGH									NO
+Music - Garden								Ancient Retreat								Legends Arceus						NO
+Music - Garufa Inc. 						Tyrian Maxe (Inner Chamber)					Gates to Infinity					NO
+Music - Gates								Route 228 (Lofi Remix)						GlitchxCity							NO
+Music - Goldenleaf							Goldenleaf Town								Zumi (Honnojis)						YES
+Music - Guitar								Storming Rose Tower!						Sword/Shield						NO
+Music - Hang Out							DPPT League Theme (Lofi Remix)				GlitchxCity							NO
+Music - Hang Out 1							XY Boutique Theme (Remix)					GlitchxCity							NO
+Music - I'm Aelita							Partner's Theme								Super Mystery Dungeon				NO
+Music - Investigative						Operative 									TGH									NO
+Music - Jungle 								Withered Savanna							Gates to Infinity					NO
+Music - Jungle 1							Pokémon Paradise 1							Gates to Infinity					NO
+Music - Jungle 2							Pokémon Paradise 2							Gates to Infinity					NO
+Music - Jynnobi								Vibin on Outset Island						GlitchxCity ft. Chewie				NO
+Music - Kakori Village						Pokémon Paradise 3							Gates to Infinity					NO
+Music - Marine Tube							Pokétopia Skylines (Remix)					Battle Revolution					NO
+Music - My Memories with Precious Friends	Peace (Original song)						GlitchxCity							NO
+Music - Neo Gearen City						Song of Storms (Lofi Remix)					GlitchxCity							NO
+Music - News HQ								Home										GlitchxCity							NO
+Music - Nightmare Realm						Nightmare Realm ~ Huey						Zumi (Honnojis)						YES
+Music - Nightmare Realm 2					Nightmare Realm ~ Amber & Aelita			Zumi (Honnojis)						YES
+Music - Nightmare Realm 3					Nightmare Realm ~ Saki						Zumi (Honnojis)						YES
+Music - Nostalgia Reborn					White - Coral								Amethyst Lidell						NO
+Music - Phone Call 							A Trainer Appears (Rocket Duo Ver.)			Yellow								NO
+Music - PKMN Centers						Over Easy									GlitchxCity							NO
+Music - PKMN Centers N 						Chai Team									GlitchxCity							NO
+Music - Pokeflute							Pokégear Radio: Poké Flute					HeartGold/SoulSilver				NO
+Music - RAMPAGE								Marnie Battle (Remix)						VanilluxePavilion					NO
+Music - Reservoir							Lush Forest (Remix)							GlitchxCity							NO
+Music - Resevoir N							Eterna Forest (Lofi Remix)					GlitchxCity							NO
+Music - Rigid Annihilation					Encounter! Champion Cynthia	(Remix)			Mewmore								NO
+Music - Route 2								White Forest (Remix)						GlitchxCity							NO
+Music - Route 3								Route 201 (Remix)							GlitchxCity ft. Helynt				NO
+Music - Route 6								Midnight									Mewmore								NO
+Music - Route 7								Obsidian Fieldlands (Version 2)				Legends Arceus						NO
+Music - Route 9								Malie City (Remix)							GlitchxCity							NO
+Music - Saki's Hijinx						Saki's Hijinks (Factory)					Zumi (Honnojis)						YES
+Music - Savior								Aether Foundation Infiltration				Sun/Moon							NO
+Music -	Song of The Faithful				Song of The Faithful						Zumi (Honnojis)						YES
+Music - Space-Time Distortion				Space-Time Distortion						Legends Arceus						NO
+Music - Story of The Ancients				Breath of the Wild (Remix)					GlitchxCity							NO
+Music - Story of The Ancients 1				Breath of the Wild (Remix)					GlitchxCity							NO
+Music - Struggle							Even If You're Weak, Struggle!				Super Mystery Dungeon				NO
+Music - Surf 								Sword/Shield Trailer Theme (Remix)			GlitchxCity							NO
+Music - Taelia								Partner's Theme (Music Box)					Super Mystery Dungeon				NO
+Music - Target Acquired						Area Zero (Remix)							Zame								NO
+Music - Teila Resort						Fuschia City (Remix)						Mewmore								NO
+Music - Temple 								Circhester City (Lofi Remix)				GlitchxCity							NO
+Music - Terajuma Jungle						Road to Primeval Forest						Super Mystery Dungeon				NO
+Music - The Lounge							Groove Grove								Kevin MacLeod						NO
+Music - The Lounge_1						Mt. Coronet (Jazz Arrangement)				insaneintherain						NO
+Music - The Play's Right					Team Galactic HQ (Jazz Arrangement)			insaneintherain	ft. Patric Bartley	NO
+Music - The Underground						Layer Cake (Remix)							Mewmore								NO
+Music - Third Layer							Despair: Heavy Arrangement					Gates to Infinity					NO
+Music - Tournament							Anarchy Rainbow (Remix)						GlitchxCity							NO
+Music - Unown								Voices of the Unown							Gold/Silver/Crystal					NO
+Music - Valor Mountain						Mt. Pyre Summit (Remix)						GlitchxCity							NO
+Music - Voidlands							Area Zero (Chiptune)						bran								NO
+Music - Wispy Path							Foreboding Forest							Super Mystery Dungeon				NO
+Music - Wispy Tower							Driftveil Drawbridge						Black/White							NO
+Music - Xen Antics							Aether Foundation (Remix)					GlitchxCity							NO
+Music - Xen Base							Xen Base									Zumi (Honnojis)						YES
+Music - Xen HQ								Distortion World (Remix)					GlitchxCity							NO
+Music - Xenogene 							Nightmare (Version 1)						Zumi (Honnojis)						YES
+Music - Zone Zero							Voidlands									Super Mystery Dungeon				NO
+Rejuvenation - ....							Painful Truth...?							Zumi (Honnojis)						YES
+Rejuvenation - Title Screen					Painful Truth (V1)							Zumi (Honnojis)						YES
+Rejuvenation - Title Screen 2				Painful Truth (V2)							Zumi (Honnojis)						YES
+Roxie - Doggars!							Doggars!									Black/White 2						NO
+RSE - Battle Deoxys							Battle! Deoxys								Ruby/Sapphire/Emerald				NO
+RSE - Battle Regis							Battle! Regi Trio							Ruby/Sapphire/Emerald				NO
+RSE - Battle								Battle! Trainer								Ruby/Sapphire/Emerald				NO
+RSE - BattlePike							Battle Pike									Ruby/Sapphire/Emerald				NO
+RSE - Enemy Battle							Battle! Team Aqua/Magma						Ruby/Sapphire/Emerald				NO
+RSE - Fallarbor Town						Fallarbor Town								Ruby/Sapphire/Emerald				NO
+RSE - H-Help!								H-Help Me!									Ruby/Sapphire/Emerald				NO
+RSE - Lilycove City							Lilycove City								Ruby/Sapphire/Emerald				NO
+RSE - Museum								Ocean Science Museum						Ruby/Sapphire/Emerald				NO
+RSE - Petalburg Woods						Petalburg Woods								Ruby/Sapphire/Emerald				NO
+RSE - Poke Centers							Pokémon Center								Ruby/Sapphire/Emerald				NO
+RSE - Poke Mart								Pokémart									Ruby/Sapphire/Emerald				NO
+RSE - Route 101								Route 101									Ruby/Sapphire/Emerald				NO
+RSE - Route 120								Route 120									Ruby/Sapphire/Emerald				NO
+RSE - Rustboro City							Rustboro City								Ruby/Sapphire/Emerald				NO
+RSE - Surf									Surfing										Ruby/Sapphire/Emerald				NO
+RSE - Verdanturf Town						Verdanturf Town								Ruby/Sapphire/Emerald				NO
+Stop! Thief!								Stop! Thief!								Red Rescue Team						NO
+Team Player									Star Seeker									GlitchxCity							NO
+Time to Party!								Johto Game Corner (Remix)					GlitchxCity							NO
+Venam's Theme								Virbank City								Black/White 2						NO
+Wild Battle - Badlands						X/Y Kanto Wild Battle (Remix)				GlitchxCity							NO
+Wild Battle - Gen 2							Wild Battle									Gold/Silver/Crystal					NO
+Wild Battle - Regular 						Hyperspace									GlitchxCity							NO
+Wild Battle - RSE							Battle! Wild Pokémon						Ruby/Sapphire/Emerald				NO
+Wild Battle - Terajuma 						Orbs										GlitchxCity							NO
+Wild Battle - Terrial 						Scarlet/Violet Wild Battle Theme (Remix)	GlitchxCity							NO

@@ -1,0 +1,67 @@
+# Rejuv-Gen-9-Mod
+## Join our Discord: : https://discord.gg/ZvhNYCV8zz
+## Credits:
+- Everyone credited in Rejuvenation ("ReadMe(CREDITS!).txt" in your game's main folder)
+- Special thanks to the dev teams of Reborn, Desolation, AllGen Reborn Team (Fervis, PorusMist, Karvanha, Mangalos810), and everyone in the Community Cooperation Initiative of Reborn 19.5.
+### Gen 9 Mod Scripting:
+- Alemi
+- Mat (Jarred)
+- AsN
+- 2ndCatch
+- Sapphiada
+- Tayro
+- DQL (used DQL's script hashes as base for montext, itemtext, movetext, and abilitext)
+### Gen 9 Mod Graphics:
+#### Gen 9 Pack Sprites:
+- The-King-Of-Roads-X (Gen 9 Pack Credits)
+- Mak (Gen 9 Pack Credits)
+- leParagon (Gen 9 Pack Credits)
+- Caruban (Gen 9 Pack Credits)
+- Azria (Gen 9 Pack Credits)
+- Mashirosakura (Gen 9 Pack Credits)
+- Katten (Gen 9 Pack Credits)
+- jinxed (Gen 9 Pack Credits)
+- OldSoulja (Gen 9 Pack Credits)
+- Alemi (All required from Gen 9 Pack formatted to Rejuv, some edited to fix issues.)
+- Sapphiada (Fixed a bunch of misaligned shiny sprites and occasional distorted sprite and missing pixels)
+#### Pokemon Gen 9 Icons:
+- ezerart (Gen 9 Pack Credits)
+- Alemi (Edited all to make coloring consitent with battlers Added shiny icons to all. Created Ogerpon Maskless icons.)
+#### Pokemon Gen 9 Custom Eggs (Battler + Icon)
+- Alemi (Three forms of Paldean Tauros, Wooper, Sprigatito, Fuecoco, Quaxly, Lechonk, Tarountula, Nymble, Pawmi, Tandemaus, Smolliv, Toedscool, Tinkatink + All Shiny + Edited the remaining)
+- Ace + Smeargletail (Remaining Custom Eggs)
+#### Pokemon Gen 9 Overworld:
+- Azria (Gen 9 Pack Credits)
+- DarkusShadow (Gen 9 Pack Credits)
+#### Pokemon Gen 9 Items:
+- Caruban (Gen 9 Pack Credits)
+- lichenprincess (Gen 9 Pack Credits)
+### Gen 9 Mod Audio:
+#### Pokemon Gen 9 Cries:
+- Edited from Lightblade Absol's Gen 9 Cries compilation video (Gen 9 Pack Credits)
+### Gen 9 Mod Animations:
+- wingdings (Animation)
+- Alemi (Animation, Sprite Sheets, Audio)
+- 2ndCatch (Animation)
+- BellBlitzKing (Gen 9 Animation Pack)
+- KRLW890 (Gen 9 Animation Pack)
+- Nut0066 (Gen 9 Animation Pack)
+- Toxillian (Gen 9 Animation Pack + original Ivy Cludgel animation)
+- QuahogTheCreator (Gen 9 Animation Pack)
+- Lcorp (Gen 9 Animation Pack)
+- Shashu-Greninja (Gen 9 Animation Pack)
+### Stellar Type Graphics
+- Alemi
+### Closed Beta Testers:
+- Adam
+- Chat_Grineaux
+- DQL
+- Dred
+- fish_gaming
+- Gelius
+- JHop
+- Mac
+- NathanielDrei
+- Pixel
+- Snipey
+- TGuilerrr

@@ -1,0 +1,64 @@
+## FAQ
+### What will be included in the mod? 
+The initial release of the mod will ONLY feature a template for Gen 9 to be modded in. This will include Gen 9 mechanics and Pokémon in the scripts themselves, but will not feature actual Gen 9 content to be added into the game. On practical effects for a final user, there won’t be many on the base mod since the added mons and items won’t be able to be obtained though normal gameplay, evolutions like Annihilape can still happen since the moves required to evolve are certainly added and learnable by level.
+### Why don’t you add actual gameplay content?
+Our idea is that we do not want to dictate how Gen 9 is to be included in Aevium, that's for modders and the game’s devs to decide who will use our template for their own work.  The base mod is a common ground to work from to prevent the same work being done several times.
+### So, no real content for players?
+Once the base Gen 9 Mod is finished, we, the people developing this mod, certainly have plans to make a version with gen 9 mons implemented in the actual gameplay since wanting to do this was the main trigger for this project, but that will come only after base is fully finished. 
+### Can I give you suggestions for the implementation of Gen 9 in the Aevium Region?
+Feel free to mention ideas and suggestions and we will keep them in mind, but we aren’t focusing on that yet.
+### When will this be implemented in Rejuv by the devs?
+While we expect the Rejuv devs to use our base mod to aid on the implementation of Gen 9 in Rejuv, there is no guarantee they will. We are doing this out of our own volition since we were never asked to. Also, any content that is created base on base, is completely independent and mod content only, don’t expect to see it on future versions of Rejuv. Gen 9 will come to Rejuv someday outside mods, but only Rejuv devs can decide when.
+### How far in development are you?
+We are currently on closed beta phase.
+### Is there an estimated release date for general public? 
+Currently, there is no estimated release date for the initial template of the mod. Once we stop finding bugs, it will be released.
+### Are you planning on adding terastallization? 
+No. At least for the base mod since the Rejuv Devs themselves have stated that they will not be including the mechanic into Rejuv. As this is also planned to aid them, we want to respect those wishes and also not include it in the base mod. This may be implemented as a mod for the mod or on versions created on the top of base mod, but no promises. 
+### If there's no terastallization, what about Ogerpon and Terapagos? 
+Their forms have been reworked into Mega Forms. 
+### What about Stellar Type?
+Exists, but only for Tera Starstorm.
+### Is the Dev team accepting playtesters for the mod? 
+We will when we reach that stage. For now, the tests are limited only to the dev team of the Gen 9 Mod.
+### How will Battle Bond be handled?  
+Regardless of the change in gen 9, Battle Bond isn’t included in the base Gen 9 Mod. There are mods adding Battle Bond to Rejuv, and we are certain there would be to add them to the Gen 9 Mod too, but given that the Rejuv devs always kept Battle Bond out of Rejuv till today, we will respect their opinion for the base mod.
+### And the other abilities and moves that have changed in gen 9 like Protean?
+We won’t be touching any of those.  Rejuv has its own balance, and we aren’t going to try to apply those balance changes to it.
+### What about the content from PLA that's not currently in Rejuv? 
+We do not plan on adding any mechanics from prior generations within the mod since anything up till PLA is added in Rejuv 13.5 if it should be.
+### How will Rejuv's fields work with new Gen 9 mechanics and abilities? 
+We have chosen to not make any field adjustments for the base Gen 9 mod. Fields re something very important in Rejuv, and we don’t feel like deciding this for the Rejuv Devs nor the rest of modders. Non-base versions may do whatever they want on this aspect. Feel free to suggest things if you have ideas for after the base mod.
+### What the hail is happening to snow and hail?
+It was decided that we wanted both snow and hail to exist - simultaneously or separate-, so we made it so that you can switch it through the new Other Options menu in your pc(either snow, hail, or both). After changing, you will be prompted to save, and the game will close. When you open it again, it will compile and close immediately, next time you open, everything would have been applied. This is unavoidable, as it affects the names of compiled data. A file will be created in your mods folder (and the folder itself if it doesn’t exist), this is also needed to remain for this to work there unless you have chosen Hail, which is the default. Note that Hail and Snowscape are the same move now (which also means same TM) , with just the name and description changing depending on the chosen option.  Details below:
+#### Hail: 
+The hail weather will remain as it is on base Rejuv. Anything that would cause snow (Shilling Reception) will cause hail instead and be mentioned as such on text.  The move will be Hail. If you don’t do anything regarding this choice, this is the default.
+#### Snow:
+The hail weather will turn into snow weather. There won’t be any received damage for non-ice types and ice types will get their defense boosted. Makes any abilities, items, or moves that cause hail to cause snow instead. Text will also refer snow instead of hail. The move will be Snowscape. Note that the animations are the same as for hail. If you update the mod, you will need to repeat the setting process since by default the game will come compiled as Hail.
+#### Both:
+This is the best of both worlds, includes benefits of both Snowscape and Hail. There will be damage for non-ice types and ice types will have boosted defense. The weather invoked while using this option is “hail and snow” and will be referenced as such in text. For the move name, we have decided for Hailscape. Note that the animations are the same as for hail. If you update the mod, you will need to repeat the setting process since by default the game will come compiled as Hail.
+### What about the weird new evolution methods?
+We tried to respect them, but they aren’t identical:
+#### Gimmighoul:
+- Evolves by leveling up while having at least 999 Gimmighoul coins in our bag. The coins will be consumed upon evolution.
+#### Pawmo, Rellor, and Bramblin:
+- Evolve by walking a thousand steps while in your party and then leveling up. We don’t have a walking feature in Rejuv, but this is the closest possible.
+#### Primeape to Annihilape:
+- Will evolve when Rage Fist has been used 20 times and Primeape level up.
+#### Bisharp to Kingambit evolution will count when your Bisharp defeat a total of three of the following (you have to level up after meeting the conditions):
+- Bisharp holding Leader's Crest
+- Kingambit holding Leader's Crest
+- Any Bisharp while your Bisharp holds Leader's Crest
+- Any Kingambit while your Bisharp holds Leader's Crest
+#### Finizen to Palafin:
+- This is the one that changed the most as there is no Union Circle here. In this case the minimum level to evolve is still 38, but the additional condition is now having at least 19 of karma (it is perfectly possible to have them by the time your level cap goes to 40). After all, Palafin is a hero.
+### Maushold to Tandemaus
+- Normal level evolution at level 25. It isn't silent either, it will be shown at the moment it happens even if it is mid-battle like other evolutions.
+### Will savefiles be compatible?
+Rejuv 13.5 savefiles are compatible with the base Gen 9 Mod, but those save file may give issues when used back on 13.5 due to the additions made. To prevent issues, the Gen 9 mod will make saves on a different folder. You can copy your 13.5 savefiles there. Savefiles can be fixed to work again on 13.5 as long as you don’t keep anything new added, and you clean the dexnumbers (there is a mod for this).
+### How about future Rejuv versions like V14?
+Jan confirmed that Gen 9 will come with V14, but there is no way to know if the savefile will be compatible or not until it is released. We see no reason it won't be though.
+### How will we get the mod?
+You will get an updater file. With it, you will be able to run Rejuv’s updater to update your game to the Gen 9 Mod. We recommend making a copy of the game and always keeping a version without the mod.
+### What if I have a question about something not included on this list? 
+Reach out to us in the questions-or-concerns channel and we'll do our best to answer any questions you have to the best of our ability.
