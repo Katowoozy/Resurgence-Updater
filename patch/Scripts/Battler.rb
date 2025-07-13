@@ -4676,35 +4676,34 @@ class PokeBattle_Battler
       else
         message = _INTL("{1}'s {2} restored health!", pbThis, itemname)
       end
-    @battle.pbDisplay(message) if message
     # Resurgence - Delta Crustle (Berry) Crest sharing berry effects with Partner if in Doubles
     elsif status_berry
       self.status = nil if berry != :PERSIMBERRY
       @effects[:Confusion] = 0 if berry == :PERSIMBERRY || berry == :LUMBERRY
-      @battle.pbDisplay("{1}'s {2} cured its {3} problem!", pbThis, itemname, status)
+      message = _INTL("{1}'s {2} cured its {3} problem!", pbThis, itemname, status)
       if crustle_crest && partner_status_berry
         partner_berry_eaten = true
         self.pbPartner.status = nil if berry != :PERSIMBERRY
         pbPartner.effects[:Confusion] = 0 if berry == :PERSIMBERRY || berry == :LUMBERRY
-        @battle.pbDisplay("{1}'s {2} cured {3}'s {4} problem!", pbThis, itemname, pbPartner.pbThis, pbPartner.status)
+        message = _INTL("{1}'s {2} cured {3}'s {4} problem!", pbThis, itemname, pbPartner.pbThis, pbPartner.status)
       end
     # Resurgence - Delta Crustle (Berry) Crest sharing berry effects with Partner if in Doubles
     elsif stat_berry
       stat_amt *= 2 if self.ability == :RIPEN || (self.crested == :CRUSTLE && !@battle.doublebattle)
       pbIncreaseStat(chosen_stat, stat_amt, statmessage: false, statsource: self)
       if self.ability == :CONTRARY
-        @battle.pbDisplay("The {1} lowered {2}'s {3}!", itemname, pbThis(true), pbGetStatName(chosen_stat))
+        message = _INTL("The {1} lowered {2}'s {3}!", itemname, pbThis(true), pbGetStatName(chosen_stat))
       else
-        @battle.pbDisplay("Using its {1}, the {3} of {2} rose!", itemname, pbThis(true), pbGetStatName(chosen_stat))
+        message = _INTL("Using its {1}, the {3} of {2} rose!", itemname, pbThis(true), pbGetStatName(chosen_stat))
       end
       if crustle_crest && !self.pbPartner.pbTooHigh?(chosen_stat)
         partner_berry_eaten = true
         stat_amt *= 2 if self.pbPartner.ability == :RIPEN
         pbPartner.pbIncreaseStat(chosen_stat, stat_amt, statmessage: false, statsource: self.pbPartner)
         if self.pbPartner.ability == :CONTRARY
-          @battle.pbDisplay("{1}'s {2} lowered {3}'s {4}!", pbThis(true), itemname, pbPartner.pbThis(true), pbGetStatName(chosen_stat))
+          message = _INTL("{1}'s {2} lowered {3}'s {4}!", pbThis(true), itemname, pbPartner.pbThis(true), pbGetStatName(chosen_stat))
         else
-          @battle.pbDisplay("Using {1}'s {2}, the {4} of {3} rose!", pbThis(true), itemname, pbPartner.pbThis(true), pbGetStatName(chosen_stat))
+          message = _INTL("Using {1}'s {2}, the {4} of {3} rose!", pbThis(true), itemname, pbPartner.pbThis(true), pbGetStatName(chosen_stat))
         end
       end
     # Resurgence - Delta Crustle (Berry) Crest causing Partner to be confused if they dislike the berry flavor
@@ -4719,6 +4718,7 @@ class PokeBattle_Battler
       confusion = $cache.natures[self.nature].dislike == flavor_text
       partnerconfusion = $cache.natures[self.pbPartner.nature].dislike == flavor_text
     end
+    @battle.pbDisplay(message) if message
     if confusion && pbCanConfuseSelf?(true,false)
       @battle.pbDisplay(_INTL("For {1}, the {2} was too {3}!", pbThis(true), itemname, flavor_text, true))
       if @effects[:Confusion]==0 && self.ability != :OWNTEMPO
