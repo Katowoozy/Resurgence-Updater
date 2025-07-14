@@ -3,6 +3,7 @@
 #######################################################
 - Huge thanks and credits to the Insurgence Team and all Artists associated with Insurgence.
 - Everyone credited in Rejuvenation ("ReadMe(CREDITS!).txt" in your game's main folder).
+- Credits to the Rejuvenation Gen 9 Mod Team for allowing the use of their base mod for development.
 - Also credits to the Reborn Team for allowing us to use some of their assets.
 
 ####################Lead Developers####################
