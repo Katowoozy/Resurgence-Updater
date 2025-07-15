@@ -1,0 +1,215 @@
+#######################################################
+########################Credits########################
+#######################################################
+- Huge thanks and credits to the Insurgence Team and all Artists associated with Insurgence.
+- Everyone credited in Rejuvenation ("ReadMe(CREDITS!).txt" in your game's main folder).
+- Credits to the Rejuvenation Gen 9 Mod Team for allowing the use of their base mod for development.
+- Also credits to the Reborn Team for allowing us to use some of their assets.
+
+####################Lead Developers####################
+- AsN
+- Sapphiada
+
+#######################################################
+###################Spriting Credits####################
+#######################################################
+
+#####################Guest Artists#####################
+- 6'Rat
+- Chun
+- Jeb
+- boro
+- Omar
+- EpicToxie
+
+##############Original Insurgence Artists##############
+EchoTheThird
+- Delta Bulbasaur Line
+- Delta Charmander Line
+- Delta Squirtle Line
+- Delta Geodude Line
+- Delta Grimer Line
+- Delta Scyther Line
+- Delta Ditto
+- Delta Pichu Line
+- Delta Aipom Line
+- Delta Sunkern Line
+- Delta Wooper Line
+- Delta Misdreavus Line
+- Delta Ralts Line
+- Delta Wailmer Line
+- Delta Snorunt Line
+- Delta Shinx Line
+- Delta Budew Line
+- Delta Emolga
+- Delta Pawniard Line
+- Delta Heatmor
+- Mega Eevee
+- Shadow Mewtwo
+- Mega Politoed
+- Mega Sunflora
+- Mega Girafarig
+- Armored Flygon
+- Mega Chatot
+- Armored Leavanny
+- Mega Gothitelle
+- Mega Jirachi
+- Primal Giratina
+- Mega Bisharp
+
+zero_breaker
+- Delta Koffing Line
+- Delta Beldum (Spider) Line
+- Delta Purrloin Line
+- Delta Phantump Line
+- Delta Bergmite Line
+- Mega Donphan
+- Mega Crawdaunt
+- Mega Spiritomb
+- Mega Froslass
+- Primal Regigigas
+- Mega Zoroark
+- Mega Cryogonal
+- Mega Stunfisk
+- Mega Jirachi
+- Primal Giratina
+- Mega Bisharp
+
+Aboodie
+- Delta Hoothoot Line
+- Delta Snivy Line
+- Delta Litwick Line
+
+DankRabbit
+- Delta Venipede Line
+- Delta Dwebble (Cake) Line
+- Delta Scraggy Line
+
+RuneBlad3
+- Delta Pidgey Line
+- Delta Golett Line
+- Mega Steelix (Fire)
+- Armored Tyranitar
+- Mega Reuniclus
+
+Draexzhan
+- Delta Aron Line
+
+AtlasAbound (LunarDusk)
+- Delta Growlithe Line
+- Delta Dunsparce Line
+- Delta Beldum (Ruin) Line
+- Crystal Metagross
+- Delta Combee Line
+- Delta Noibat Line
+- Castform (Sandstorm and Shadow Sky Forms)
+- Primal Arceus
+- Mega Hydreigon
+
+Cowctus
+- Delta Beldum (Ruin) Line
+- Crystal Metagross
+
+1ofthe4rocketbros
+- Delta Cyndaquil Line
+- Delta Feebas Line
+- Delta Larvesta Line
+- Mega Milotic
+- Mega Haxorus
+- Armored Delta Volcarona
+
+MorallyIncorrect
+- Delta Dwebble (Berry) Line
+
+TerraTerraCotta
+- Delta Hoopa
+
+Lucci85
+- Delta Regirock
+- Delta Regice
+- Delta Registeel
+
+shadowsofme
+- Delta Petilil (Fairy) Line
+
+nico
+- Delta Girafarig
+- Delta Buneary Line
+- Mega Miltank
+- Mega Flygon
+
+Thuddgun
+- Mega Meganium
+- Mega Typhlosion
+- Mega Feraligatr
+- Mega Marowak
+- Mega Cacturne
+
+selstar
+- Mega Shiftry
+- Mega Zebstrika
+
+##############Artists behind Custom Non-Insurgence Forms##############
+fish_gaming
+- Mega Aevian Ampharos
+- Mega Aevian Glalie
+- Mega Aevian Lapras
+- Mega Aevian Toxtricity
+
+Allacaris
+- Partner Eevee and Mega Partner Eevee
+
+Demopan
+- Mega Delta Aggron
+
+Omar
+- Delta Dudunsparce
+
+novareboot
+- Delta Farigiraf
+- Delta Kingambit
+- Delta Iron Moth
+- Delta Slither Wing
+- Delta Iron Valiant
+
+Eggcav
+- Delta Flutter Mane
+
+AsN
+- Mega Shadow Mewtwo Y
+
+IndianAnimator
+- Mega Delta Charizard X
+
+DarkusShadow
+- Overworld Sprites (GMax Charizard, Flutter Mane, Slither Wing, Iron Moth, Iron Valiant, and the Gen 9 Starters)
+
+Anarlaurendil
+- Hisuian Typhlosion Overworld Sprite
+
+piphybuilder88
+- Alolan Marowak Overworld Sprite
+
+#######################################################
+#################Additional Credits####################
+#######################################################
+Additional Spriting Assistance
+- SlimyRobo
+- Ace
+
+Mapping and Eventing Advice
+- wingdings
+- Dred
+
+Porting over PULSE-3 Mechanics for Delta Avalugg's Crest
+- wingdings
+- Moto
+- Haru
+
+Help with tracking down the original Delta Artists (because there's so many lol)
+- springSideways
+
+Allowing the Mining Overhaul Mod to be ported into Rejuvenation
+- AiedailEclipsed
+
+And also a huge thank you to YOU for playing this mod! We hope you enjoyed it, and you can always reach out to AsN or Sapph regarding anything with the mod. If I missed crediting you in this list, please reach out to either of us as well and we will be sure to credit you properly!
