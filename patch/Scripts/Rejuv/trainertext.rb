@@ -80,12 +80,12 @@ TEAMARRAY = [{
 :defeat => "Sparkle on Wednesday.",
 :items => [],
 :mons => [{
-	:species => :DUDUNSPARCE,
+	:species => :METAGROSS,
 	:level => 25,
 	:moves => [:FURYSWIPES,:WATERSHURIKEN,nil,nil],
 	:ability => :SKILLLINK,
 	:nature => :JOLLY,
-	:form => 3,
+	:form => 4,
 },
 ]},
 {
@@ -7685,7 +7685,7 @@ TEAMARRAY = [{
 	:ev => [252, 252, 4, 0, 0, 0]},
 {
 	:species => :METAGROSS, #Resurgence
-	:form => 4,
+	:form => 2,
 	:level => 54,
 	:item => :LIECHIBERRY,
 	:moves => [:EARTHQUAKE,:SMACKDOWN,:SEEDBOMB,:MATRIXSHOT],
