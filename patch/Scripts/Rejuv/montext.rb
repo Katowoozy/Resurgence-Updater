@@ -671,9 +671,8 @@ MONHASH = {
 		:BaseEXP => 285,
 		:Weight => 1105,
 		:toobig => true,
-		:BattlerPlayerY => 19,
-		:BattlerEnemyY => 5,
-		:BattlerAltitude => 2,
+		:BattlerPlayerY => 8,
+		:BattlerEnemyY => -14,
 	},
 
 	"Delta Mega Y Form" => { # Resurgence Mega
