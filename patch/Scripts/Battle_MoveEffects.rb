@@ -12655,8 +12655,27 @@ class PokeBattle_Move_916 < PokeBattle_Move
     return super(attacker,type)
   end
 
-  def pbCalcDamage(attacker,opponent, hitnum: 0)
-    return super(attacker,opponent,0, hitnum: hitnum)
+  def pbCalcDamage(attacker, opponent, hitnum: 0)
+    # Calculate damage while temporarily disabling the effects of barriers
+    reflect = opponent.pbOwnSide.effects[:Reflect]
+    lightscreen = opponent.pbOwnSide.effects[:LightScreen]
+    aurora_veil = opponent.pbOwnSide.effects[:AuroraVeil]
+    arenite_wall = opponent.pbOwnSide.effects[:AreniteWall]
+
+    opponent.pbOwnSide.effects[:Reflect] = 0
+    opponent.pbOwnSide.effects[:LightScreen] = 0
+    opponent.pbOwnSide.effects[:AuroraVeil] = 0
+    opponent.pbOwnSide.effects[:AreniteWall] = 0
+
+    damage = super(attacker, opponent, hitnum: hitnum)
+
+    # Restore the original effects (so they can be removed properly in pbEffect)
+    opponent.pbOwnSide.effects[:Reflect] = reflect
+    opponent.pbOwnSide.effects[:LightScreen] = lightscreen
+    opponent.pbOwnSide.effects[:AuroraVeil] = aurora_veil
+    opponent.pbOwnSide.effects[:AreniteWall] = arenite_wall
+
+    return damage
   end
 
   def pbEffect(attacker,opponent,hitnum=0,alltargets=nil,showanimation=true)
