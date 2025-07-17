@@ -58,6 +58,7 @@ MONHASH = {
 		:Type2 => :PSYCHIC,
 		:BaseStats => [45, 49, 49, 65, 65, 45],
 		:Abilities => [:PSYCHOCALL, :REGENERATOR],
+		:GenderRatio => :FemHalf,
 		:EggMoves => [],
 		:Moveset => [
 			[1,:TACKLE],
@@ -148,6 +149,7 @@ MONHASH = {
 		:Type2 => :PSYCHIC,
 		:BaseStats => [60, 62, 63, 80, 80, 60],
 		:Abilities => [:PSYCHOCALL, :REGENERATOR],
+		:GenderRatio => :FemHalf,
 		:preevo => {
 			:species => :BULBASAUR,
 			:form => 1
@@ -259,6 +261,7 @@ MONHASH = {
 		:Type2 => :PSYCHIC,
 		:BaseStats => [80, 82, 83, 100, 100, 80],
 		:Abilities => [:PSYCHOCALL, :REGENERATOR],
+		:GenderRatio => :FemHalf,
 		:preevo => {
 			:species => :IVYSAUR,
 			:form => 1
@@ -28865,10 +28868,6 @@ MONHASH = {
 		:kind => "Tsuchigumo",
 		:WildItemUncommon => :SILVERPOWDER,
 		:dexentry => "Rather than resorting to capturing prey using webs, it resorts to other trickery. Foes entering its domain may see it as a tiger, a demon, or a giant spider.",
-		:BattlerPlayerY => 28,
-		:BattlerEnemyY => 20,
-		:BattlerAltitude => 0,
-		:toobig => true,
 	},
 
 	"Delta Mega Form Spider" => { # Resurgence Mega
