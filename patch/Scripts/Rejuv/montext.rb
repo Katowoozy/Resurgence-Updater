@@ -671,9 +671,8 @@ MONHASH = {
 		:BaseEXP => 285,
 		:Weight => 1105,
 		:toobig => true,
-		:BattlerPlayerY => 19,
-		:BattlerEnemyY => 5,
-		:BattlerAltitude => 2,
+		:BattlerPlayerY => 8,
+		:BattlerEnemyY => -14,
 	},
 
 	"Delta Mega Y Form" => { # Resurgence Mega
@@ -16991,7 +16990,7 @@ MONHASH = {
 		:Type2 => :FLYING,
 		:BaseStats => [65, 75, 105, 35, 65, 85],
 		:EVs => [0, 0, 1, 0, 0, 0],
-		:Abilities => [:HYPERCUTTER, :SANDVEIL],
+		:Abilities => [:VAMPIRIC, :SANDVEIL],
 		:HiddenAbilities => :IMMUNITY,
 		:GrowthRate => :MediumSlow,
 		:GenderRatio => :FemHalf,
@@ -33628,7 +33627,8 @@ MONHASH = {
 		:Type2 => :DARK,
 		:BaseStats => [50, 92, 108, 92, 108, 35],
 		:EVs => [0, 0, 1, 0, 1, 0],
-		:Abilities => [:PRESSURE, :NOCTEM],
+		:Abilities => [:PRESSURE, :INFILTRATOR],
+		:HiddenAbilities => [:NOCTEM]
 		:GrowthRate => :MediumFast,
 		:GenderRatio => :FemHalf,
 		:BaseEXP => 170,
@@ -35501,7 +35501,7 @@ MONHASH = {
 		:Type2 => :FLYING,
 		:BaseStats => [75, 95, 125, 45, 75, 95],
 		:EVs => [0, 0, 2, 0, 0, 0],
-		:Abilities => [:HYPERCUTTER, :SANDVEIL],
+		:Abilities => [:VAMPIRIC, :SANDVEIL],
 		:HiddenAbilities => :POISONHEAL,
 		:GrowthRate => :MediumSlow,
 		:GenderRatio => :FemHalf,
@@ -39077,7 +39077,7 @@ MONHASH = {
 			[47,:WILDCHARGE],
 			[53,:THRASH],
 			[58,:IONDELUGE]],
-		:compatiblemoves => [:ALLYSWITCH,:BLAZEKICK,:BOUNCE,:CHARGEBEAM,:DAZZLINGGLEAM,:EERIEIMPULSE,:ELECTRICTERRAIN,:FLAMECHARGE,:FLAMETHROWER,:FLAREBLITZ,:FLASH,:GIGAIMPACT,:HIGHHORSEPOWER,:HYPERBEAM,:LASERFOCUS,:LIGHTSCREEN,:LOWKICK,:MAGNETRISE,:MEGAKICK,:OVERHEAT,:PLAYROUGH,:RAINDANCE,:ROCKSMASH,:SHOCKWAVE,:SIGNALBEAM,:SNATCH,:SUPERCELLSLAM,:THUNDER,:THUNDERBOLT,:THUNDERWAVE,:TRAILBLAZE,:VOLTSWITCH,:WILDCHARGE,
+		:compatiblemoves => [:ALLYSWITCH,:BLAZEKICK,:BOUNCE,:CHARGEBEAM,:DAZZLINGGLEAM,:EERIEIMPULSE,:ELECTRICTERRAIN,:FLAMECHARGE,:FLAMETHROWER,:FLAREBLITZ,:FLASH,:GIGAIMPACT,:HIGHHORSEPOWER,:HYPERBEAM,:LASERFOCUS,:LIGHTSCREEN,:LOWKICK,:MAGNETRISE,:MEGAKICK,:MOONBLAST,:OVERHEAT,:PLAYROUGH,:RAINDANCE,:ROCKSMASH,:SHOCKWAVE,:SIGNALBEAM,:SNATCH,:SUPERCELLSLAM,:THUNDER,:THUNDERBOLT,:THUNDERWAVE,:TRAILBLAZE,:VOLTSWITCH,:WILDCHARGE,
 			#Rejuv only moves
 			:MAGMADRIFT],
 		:moveexceptions => [],

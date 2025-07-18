@@ -20608,7 +20608,7 @@ TEAMARRAY = [{
 },
 {
 	:species => :GLALIE, #Resurgence
-	:form => 3,
+	:form => 4,
 	:level => 52,
 	:item => :PASSHOBERRY,
 	:moves => [:FLAREBLITZ,:HELPINGHAND,:CRUNCH,:STONEEDGE],
@@ -21377,7 +21377,7 @@ TEAMARRAY = [{
 },
 {
 	:species => :GLALIE, #Resurgence
-	:form => 3,
+	:form => 4,
 	:level => 53,
 	:item => :PASSHOBERRY,
 	:moves => [:FLAREBLITZ,:STEALTHROCK,:CRUNCH,:ROCKBLAST],
@@ -32911,7 +32911,7 @@ TEAMARRAY = [{
 	:level => 93,
 	:moves => [:LUNARCANNON,:HURRICANE,:NATUREPOWER,:HEATWAVE],
 	:item => :SHIFTRITE,
-	:ability => :SHADOWDANCE, #Resurgence
+	:ability => :WINDRIDER, #Resurgence
 	:nature => :RASH,
 	:gender => "M",
 	:iv => 31,
