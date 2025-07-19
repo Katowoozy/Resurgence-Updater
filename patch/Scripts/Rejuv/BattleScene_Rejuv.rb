@@ -494,7 +494,7 @@ class PokemonDataBox < SpriteWrapper
     imagepos=[]
     if (@battler.pokemon.isShiny? && @battler.effects[:Illusion].nil?) || (!@battler.effects[:Illusion].nil? && @battler.effects[:Illusion].pokemon.isShiny?)
       shinyX=200
-      shinyX=-14 if (@battler.index&1)==0 # If player's Pokémon
+      shinyX=-12 if (@battler.index&1)==0 # If player's Pokémon
       shinyY=24
       shinyY=12 if @doublebattle
       if (@battler.index&1)==1 && !@doublebattle
@@ -510,7 +510,7 @@ class PokemonDataBox < SpriteWrapper
     megaX = -27 if (@battler.index&1) == 0 # If player's Pokémon
     # Delta
     deltaX = 220
-    deltaX = -42 if (@battler.index&1) == 0 # If player's Pokémon
+    deltaX = -34 if (@battler.index&1) == 0 # If player's Pokémon
     deltaY = 22
     deltaY = 10 if @doublebattle
     if (@battler.index&1) == 1 && !@doublebattle
@@ -538,6 +538,11 @@ class PokemonDataBox < SpriteWrapper
       # Delta + Crest
       elsif (@battler.hasCrest?(illusion) || (@battler.crested && !illusion)) && @battler.isDelta?(illusion)
         imagepos.push(["Graphics/Pictures/Battle/battleDelta.png",sbX+megaX,megaY,0,0,-1,-1])
+        deltaY = 24
+        deltaY = 12 if @doublebattle
+        if (@battler.index&1) == 1 && !@doublebattle
+          deltaY += 4
+        end
         if (@battler.pokemon.isShiny? && @battler.effects[:Illusion].nil?) || (!@battler.effects[:Illusion].nil? && @battler.effects[:Illusion].pokemon.isShiny?)
           imagepos.push(["Graphics/Pictures/Battle/battleCrest.png",sbX+deltaX,deltaY,0,0,-1,-1])
         else
