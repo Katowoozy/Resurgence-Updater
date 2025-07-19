@@ -493,8 +493,8 @@ class PokemonDataBox < SpriteWrapper
     # Shiny
     imagepos=[]
     if (@battler.pokemon.isShiny? && @battler.effects[:Illusion].nil?) || (!@battler.effects[:Illusion].nil? && @battler.effects[:Illusion].pokemon.isShiny?)
-      shinyX=202
-      shinyX=-16 if (@battler.index&1)==0 # If player's Pokémon
+      shinyX=200
+      shinyX=-14 if (@battler.index&1)==0 # If player's Pokémon
       shinyY=24
       shinyY=12 if @doublebattle
       if (@battler.index&1)==1 && !@doublebattle
@@ -504,14 +504,18 @@ class PokemonDataBox < SpriteWrapper
     end
     # Mega
     megaY = 52
-    megaY -= 4 if (@battler.index&1)==0 # If player's Pokémon
+    megaY -= 4 if (@battler.index&1) == 0 # If player's Pokémon
     megaY = 32 if @doublebattle
     megaX = 215
-    megaX = -27 if (@battler.index&1)==0 # If player's Pokémon
+    megaX = -27 if (@battler.index&1) == 0 # If player's Pokémon
     # Delta
+    deltaX = 220
+    deltaX = -42 if (@battler.index&1) == 0 # If player's Pokémon
     deltaY = 22
-    deltaY -= 4 if (@battler.index&1)==0 # If player's Pokémon
-    deltaY = 2 if @doublebattle
+    deltaY = 10 if @doublebattle
+    if (@battler.index&1) == 1 && !@doublebattle
+      deltaY += 4
+    end
 
     
     illusion = !@battler.effects[:Illusion].nil?
@@ -526,11 +530,27 @@ class PokemonDataBox < SpriteWrapper
       # Delta + Mega
       elsif @battler.isMega? && @battler.isDelta?(illusion)
         imagepos.push(["Graphics/Pictures/Battle/battleDelta.png",sbX+megaX,megaY,0,0,-1,-1])
-        imagepos.push(["Graphics/Pictures/Battle/battleMegaEvoBox.png",sbX+megaX,deltaY,0,0,-1,-1])
+        if (@battler.pokemon.isShiny? && @battler.effects[:Illusion].nil?) || (!@battler.effects[:Illusion].nil? && @battler.effects[:Illusion].pokemon.isShiny?)
+          imagepos.push(["Graphics/Pictures/Battle/battleMegaEvoBox.png",sbX+deltaX,deltaY,0,0,-1,-1])
+        else
+          imagepos.push(["Graphics/Pictures/Battle/battleMegaEvoBox.png",sbX+megaX,deltaY,0,0,-1,-1])
+        end
       # Delta + Crest
       elsif (@battler.hasCrest?(illusion) || (@battler.crested && !illusion)) && @battler.isDelta?(illusion)
         imagepos.push(["Graphics/Pictures/Battle/battleDelta.png",sbX+megaX,megaY,0,0,-1,-1])
-        imagepos.push(["Graphics/Pictures/Battle/battleCrest.png",sbX+megaX,deltaY,0,0,-1,-1])
+        if (@battler.pokemon.isShiny? && @battler.effects[:Illusion].nil?) || (!@battler.effects[:Illusion].nil? && @battler.effects[:Illusion].pokemon.isShiny?)
+          imagepos.push(["Graphics/Pictures/Battle/battleCrest.png",sbX+deltaX,deltaY,0,0,-1,-1])
+        else
+          imagepos.push(["Graphics/Pictures/Battle/battleCrest.png",sbX+megaX,deltaY,0,0,-1,-1])
+        end
+      # Delta + Armored
+      elsif @battler.isArmored? && @battler.isDelta?(illusion)
+        imagepos.push(["Graphics/Pictures/Battle/battleDelta.png",sbX+megaX,megaY,0,0,-1,-1])
+        if (@battler.pokemon.isShiny? && @battler.effects[:Illusion].nil?) || (!@battler.effects[:Illusion].nil? && @battler.effects[:Illusion].pokemon.isShiny?)
+          imagepos.push(["Graphics/Pictures/Battle/BattleArmor.png",sbX+deltaX,deltaY,0,0,-1,-1])
+        else
+          imagepos.push(["Graphics/Pictures/Battle/BattleArmor.png",sbX+megaX,deltaY,0,0,-1,-1])
+        end
       elsif @battler.isArmored?
         imagepos.push(["Graphics/Pictures/Battle/BattleArmor.png",sbX+megaX,megaY,0,0,-1,-1])
       elsif @battler.isMega?
