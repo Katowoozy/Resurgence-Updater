@@ -729,7 +729,7 @@ class PokeBattle_Pokemon
       return pkmn.item == :TYRANITARARMOR ? 2 : 0
     end
     if pkmn.species == :FLYGON
-      return pkmn.item == :FLYGONARMOR ? 1 : 0
+      return pkmn.item == :FLYGONARMOR ? 2 : 0
     end
     if pkmn.species == :VOLCARONA
       if pkmn.form == 2 || pkmn.form == 3

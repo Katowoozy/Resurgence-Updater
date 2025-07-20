@@ -936,7 +936,7 @@ class PokeBattle_Battle
     return true if item == :PULSEHOLD
     # Resurgence Armor
     return true if pkmn.species == :TYRANITAR && item == :TYRANITARARMOR && pkmn.form == 2
-    return true if pkmn.species == :FLYGON    && item == :FLYGONARMOR && pkmn.form == 1
+    return true if pkmn.species == :FLYGON    && item == :FLYGONARMOR && pkmn.form == 2
     return true if pkmn.species == :VOLCARONA && item == :DVOLCARONAARMOR && pkmn.form == 3
     return true if pkmn.species == :LEAVANNY  && item  == :LEAVANNYARMOR && pkmn.form == 2
 

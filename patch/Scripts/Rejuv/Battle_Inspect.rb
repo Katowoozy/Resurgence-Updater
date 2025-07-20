@@ -33,9 +33,9 @@ PokeBattle_Battler.class_eval {
     # Resurgence - Winter Joy
     if self.ability == :WINTERJOY
       if @battle.pbWeather == :HAIL || [:ICY, :SNOWYMOUNTAIN, :FROZENDIMENSION].include?(@battle.FE)
-        atkmult *= 1.4
+        atkmult = (atkmult * 1.4).round
       elsif (@battle.pbWeather == :SUNNYDAY && !self.hasWorkingItem(:UTILITYUMBRELLA)) || @battle.FE == :DESERT
-        atkmult *= 0.7
+        atkmult = (atkmult * 0.7).round
       end
     end
     atkmult = (atkmult * 0.75).round if @battle.pbCheckGlobalAbility(:VESSELOFRUIN) && !self.ability == :VESSELOFRUIN # Gen 9 Mod - Added Vessel of Ruin
@@ -68,9 +68,9 @@ PokeBattle_Battler.class_eval {
     atkmult = (atkmult * 1.5).round if self.ability == :ABSOLUTION && (@battle.pbWeather == :SHADOWSKY || [:DARKCRYSTALCAVERN, :DARKNESS1, :DARKNESS2, :DARKNESS3, :SHORTCIRCUIT, :DIMENSIONAL].include?(@battle.FE))
     if self.ability == :WINTERJOY
       if @battle.pbWeather == :HAIL || [:ICY, :SNOWYMOUNTAIN, :FROZENDIMENSION].include?(@battle.FE)
-        spatkmult *= 1.4
+        atkmult = (atkmult * 1.4).round
       elsif (@battle.pbWeather == :SUNNYDAY && !self.hasWorkingItem(:UTILITYUMBRELLA)) || @battle.FE == :DESERT
-        spatkmult *= 0.7
+        atkmult = (atkmult * 0.7).round
       end
     end
     atkmult = (atkmult * 1.5).round if self.crested == :CASFTFORM && self.form == 1 && @battle.pbWeather == :SUNNYDAY

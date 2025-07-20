@@ -221,7 +221,7 @@ class PokeBattle_Battler
 
   def isArmored?(illusion=false)
     return true if pokemon.species == :TYRANITAR && pokemon.form == 2
-    return true if pokemon.species == :FLYGON    && pokemon.form == 1
+    return true if pokemon.species == :FLYGON    && pokemon.form == 2
     return true if pokemon.species == :VOLCARONA && pokemon.form == 3
     return true if pokemon.species == :LEAVANNY  && pokemon.form == 2
   end
