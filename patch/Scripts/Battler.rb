@@ -1416,15 +1416,16 @@ class PokeBattle_Battler
     end
     # Resurgence - Delta Typhlosion - Super Cell
     if (self.pokemon && self.pokemon.species == :TYPHLOSION) && !self.isFainted?
-      case @battle.pbWeather
-      when :RAINDANCE
-        if self.form==4 && self.ability == :SUPERCELL
-          self.form=5
+      if [:RAINDANCE, :SHADOWSKY].include?(@battle.pbWeather)
+        if self.form == 4 && self.ability == :SUPERCELL
+          @battle.pbCommonAnimation("Charge", self, nil)
+          self.form = 5
           @battle.scene.pbChangePokemon(self,@pokemon)
           @battle.pbDisplay(_INTL("{1}'s Supercell was activated!",pbThis))
         end
       else
-        if self.form==5 && @battle.FE != :FACTORY && @battle.FE != :SHORTCIRCUIT && @battle.FE != :ELECTRICT
+        if self.form == 5 && @battle.FE != :FACTORY && @battle.FE != :SHORTCIRCUIT && @battle.FE != :ELECTRICT
+          @battle.pbCommonAnimation("Charge", self, nil)
           self.form=4
           @battle.scene.pbChangePokemon(self,@pokemon)
           @battle.pbDisplay(_INTL("{1}'s Supercell deactivated",pbThis))
@@ -1530,6 +1531,7 @@ class PokeBattle_Battler
           end
         end
       end
+      @battle.pbCommonAnimation("Charge",self,nil) if self.species == :TYPHLOSION && self.form == 3
 
       # Battler update
       if self.species == :AEGISLASH && (self.type1 != @pokemon.type1 || self.type2 != @pokemon.type2)

@@ -80,12 +80,13 @@ TEAMARRAY = [{
 :defeat => "Sparkle on Wednesday.",
 :items => [],
 :mons => [{
-	:species => :METAGROSS,
+	:species => :NOIVERN,
 	:level => 25,
-	:moves => [:FURYSWIPES,:WATERSHURIKEN,nil,nil],
-	:ability => :SKILLLINK,
+	:moves => [:SCALD,nil,nil,nil],
+	:ability => :FLOWERGIFT,
 	:nature => :JOLLY,
-	:form => 4,
+	:shiny => true,
+	:form => 1,
 },
 ]},
 {

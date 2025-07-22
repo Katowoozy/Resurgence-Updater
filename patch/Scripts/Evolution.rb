@@ -936,6 +936,15 @@ def getEvolutionForm(mon,item=nil)
     else
       return 0
     end
+  # Partner Pikachu
+  when :PICHU
+    if form == 1
+      return 3
+    elsif form == 2
+      return 2
+    else
+      return 0
+    end
   # Gen 9 Mod - Gimmighoul evolution is always form 0.
   when :GIMMIGHOUL then return 0
   # Resurgence Form Fixes
@@ -943,7 +952,6 @@ def getEvolutionForm(mon,item=nil)
   when :CHARMELEON then return 4 if form == 1
   when :WARTORTLE then return 3 if form == 1
   when :PIDGEOTTO then return 2 if form == 1
-  when :PICHU then return 3 if form == 1
   when :GRAVELER then return 3 if form == 2
   when :SCYTHER then return 2 if form == 1
   when :ARON then return 3 if form == 1

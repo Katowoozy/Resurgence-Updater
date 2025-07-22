@@ -22661,7 +22661,7 @@ MONHASH = {
 		:BaseStats => [64, 51, 23, 51, 23, 28],
 		:EVs => [1, 0, 0, 0, 0, 0],
 		:Abilities => [:SOUNDPROOF, :AMPLIFIER],
-		:HiddenAbilities => [:RATTLED],
+		:HiddenAbilities => :RATTLED,
 		:GrowthRate => :MediumSlow,
 		:GenderRatio => :FemHalf,
 		:BaseEXP => 48,
@@ -22711,7 +22711,7 @@ MONHASH = {
 		:BaseStats => [84, 71, 43, 71, 43, 48],
 		:EVs => [2, 0, 0, 0, 0, 0],
 		:Abilities => [:SOUNDPROOF, :AMPLIFIER],
-		:HiddenAbilities => [:SCRAPPY],
+		:HiddenAbilities => :SCRAPPY,
 		:GrowthRate => :MediumSlow,
 		:GenderRatio => :FemHalf,
 		:BaseEXP => 126,
@@ -22770,7 +22770,7 @@ MONHASH = {
 		:BaseStats => [104, 91, 63, 91, 73, 68],
 		:EVs => [3, 0, 0, 0, 0, 0],
 		:Abilities => [:SOUNDPROOF, :AMPLIFIER],
-		:HiddenAbilities => [:SCRAPPY],
+		:HiddenAbilities => :SCRAPPY,
 		:GrowthRate => :MediumSlow,
 		:GenderRatio => :FemHalf,
 		:BaseEXP => 221,
@@ -36849,7 +36849,7 @@ MONHASH = {
 		:BaseStats => [70, 90, 90, 135, 90, 125],
 		:EVs => [0, 0, 0, 2, 0, 1],
 		:Abilities => [:BADDREAMS],
-		:HiddenAbilities => [:ABSOLUTION],
+		:HiddenAbilities => :ABSOLUTION,
 		:GrowthRate => :Slow,
 		:GenderRatio => :Genderless,
 		:BaseEXP => 270,
@@ -43329,7 +43329,6 @@ MONHASH = {
 		:BattlerPlayerY => 24,
 		:BattlerEnemyY => 8,
 		:BattlerAltitude => 0,
-		:toobig => true,
 	},
 
 	:OnCreation => {},
@@ -47337,7 +47336,7 @@ MONHASH = {
 	},
 
 	"Mega" => {
-		:BaseStats => [92,130,105,98,170,105],
+		:BaseStats => [92,130,105,170,105,98],
 		:Abilities => [:LERNEAN],
 		:BattlerPlayerY => 12,
 		:BattlerEnemyY => 8,
@@ -47345,7 +47344,7 @@ MONHASH = {
 	},
 
 	"6 Headed" => {
-		:BaseStats => [92,130,105,98,170,105],
+		:BaseStats => [92,130,105,170,105,98],
 		:Abilities => [:LERNEAN],
 		:BattlerPlayerY => 12,
 		:BattlerEnemyY => 8,
@@ -47353,7 +47352,7 @@ MONHASH = {
 	},
 
 	"7 Headed" => {
-		:BaseStats => [92,130,105,98,170,105],
+		:BaseStats => [92,130,105,170,105,98],
 		:Abilities => [:LERNEAN],
 		:BattlerPlayerY => 12,
 		:BattlerEnemyY => 8,
@@ -47361,7 +47360,7 @@ MONHASH = {
 	},
 
 	"8 Headed" => {
-		:BaseStats => [92,130,105,98,170,105],
+		:BaseStats => [92,130,105,170,105,98],
 		:Abilities => [:LERNEAN],
 		:BattlerPlayerY => 12,
 		:BattlerEnemyY => 8,
@@ -47369,7 +47368,7 @@ MONHASH = {
 	},
 
 	"9 Headed" => {
-		:BaseStats => [92,130,105,98,170,105],
+		:BaseStats => [92,130,105,170,105,98],
 		:Abilities => [:LERNEAN],
 		:BattlerPlayerY => 12,
 		:BattlerEnemyY => 8,
@@ -52646,7 +52645,7 @@ MONHASH = {
 			:form => 0
 		},
 		:Moveset => [
-			[0,:DRAGONPULSE],
+			[0,:DRAKONVOICE],
 			[1,:BOOMBURST],
 			[1,:HURRICANE],
 			[1,:MOONLIGHT],
