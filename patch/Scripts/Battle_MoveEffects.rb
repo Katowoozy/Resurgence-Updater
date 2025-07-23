@@ -501,6 +501,10 @@ class PokeBattle_Move_007 < PokeBattle_Move
     return if !showanimation
     if id == :ETHEREALTEMPEST
       @battle.pbAnimation(:HURRICANE,attacker,opponent,hitnum)
+    elsif id == :SPLISHYSPLASH
+      @battle.pbAnimation(:SURF,attacker,opponent,hitnum)
+    elsif id == :BUZZYBUZZ
+      @battle.pbAnimation(:CHARGEBEAM,attacker,opponent,hitnum)
     else
       @battle.pbAnimation(id,attacker,opponent,hitnum)
     end
@@ -577,6 +581,8 @@ class PokeBattle_Move_00A < PokeBattle_Move
       @battle.pbAnimation(:POWERWHIP,attacker,opponent,hitnum)
     elsif id == :PYROKINESIS
       @battle.pbAnimation(:MYSTICALFIRE,attacker,opponent,hitnum)
+    elsif id == :SIZZLYSLIDE
+      @battle.pbAnimation(:FLAMECHARGE,attacker,opponent,hitnum)
     else
       @battle.pbAnimation(id,attacker,opponent,hitnum)
     end
@@ -698,6 +704,18 @@ class PokeBattle_Move_00F < PokeBattle_Move
       return true
     end
     return false
+  end
+
+  # Replacement animation till a proper one is made
+  def pbShowAnimation(id,attacker,opponent,hitnum=0,alltargets=nil,showanimation=true)
+    return if !showanimation
+    if id == :MOUNTAINGALE
+      @battle.pbAnimation(:AVALANCHE,attacker,opponent,hitnum)
+    elsif id == :FLOATYFALL
+      @battle.pbAnimation(:FLYINGPRESS,attacker,opponent,hitnum)
+    else
+      @battle.pbAnimation(id,attacker,opponent,hitnum)
+    end
   end
 end
 
@@ -4668,6 +4686,15 @@ end
 ################################################################################
 class PokeBattle_Move_0A0 < PokeBattle_Move
 # Handled in superclass, do not edit!
+
+  def pbShowAnimation(id,attacker,opponent,hitnum=0,alltargets=nil,showanimation=true)
+    return if !showanimation
+    if id == :ZIPPYZAP
+      @battle.pbAnimation(:VOLTTACKLE,attacker,opponent,hitnum)
+    else
+      @battle.pbAnimation(id,attacker,opponent,hitnum)
+    end
+  end
 end
 
 ################################################################################
@@ -6727,6 +6754,15 @@ class PokeBattle_Move_0DD < PokeBattle_Move
       end
     end
     return damage
+  end
+
+  def pbShowAnimation(id,attacker,opponent,hitnum=0,alltargets=nil,showanimation=true)
+    return if !showanimation
+    if id == :BOUNCYBUBBLE
+      @battle.pbAnimation(:BUBBLEBEAM,attacker,opponent,hitnum)
+    else
+      @battle.pbAnimation(id,attacker,opponent,hitnum)
+    end
   end
 end
 
@@ -11112,6 +11148,15 @@ class PokeBattle_Move_772 < PokeBattle_Move
     end
     return ret
   end
+
+  def pbShowAnimation(id,attacker,opponent,hitnum=0,alltargets=nil,showanimation=true)
+    return if !showanimation
+    if id == :GLITZYGLOW
+      @battle.pbAnimation(:PSYCHOBOOST,attacker,opponent,hitnum)
+    else
+      @battle.pbAnimation(id,attacker,opponent,hitnum)
+    end
+  end
 end
 
 ################################################################################
@@ -11137,6 +11182,15 @@ class PokeBattle_Move_773 < PokeBattle_Move
       attacker.pbIncreaseStat(PBStats::EVASION, 1, abilitymessage: false, statsource: attacker)
     end
     return ret
+  end
+
+  def pbShowAnimation(id,attacker,opponent,hitnum=0,alltargets=nil,showanimation=true)
+    return if !showanimation
+    if id == :BADDYBAD
+      @battle.pbAnimation(:NIGHTDAZE,attacker,opponent,hitnum)
+    else
+      @battle.pbAnimation(id,attacker,opponent,hitnum)
+    end
   end
 end
 
@@ -11169,6 +11223,15 @@ class PokeBattle_Move_774 < PokeBattle_Move
     @battle.pbDisplay(_INTL("{1} was seeded!", opponent.pbThis))
     return ret
   end
+
+  def pbShowAnimation(id,attacker,opponent,hitnum=0,alltargets=nil,showanimation=true)
+    return if !showanimation
+    if id == :SAPPYSEED
+      @battle.pbAnimation(:FRENZYPLANT,attacker,opponent,hitnum)
+    else
+      @battle.pbAnimation(id,attacker,opponent,hitnum)
+    end
+  end
 end
 
 ################################################################################
@@ -11189,6 +11252,15 @@ class PokeBattle_Move_775 < PokeBattle_Move
     pbShowAnimation(@move, attacker, opponent, hitnum, alltargets, showanimation = false)
     @battle.pbDisplay(_INTL("All stat changes were eliminated!"))
     return ret
+  end
+
+  def pbShowAnimation(id,attacker,opponent,hitnum=0,alltargets=nil,showanimation=true)
+    return if !showanimation
+    if @move == :FREEZYFROST
+      @battle.pbAnimation(:ICEHAMMER,attacker,opponent,hitnum)
+    else
+      @battle.pbAnimation(id,attacker,opponent,hitnum)
+    end
   end
 end
 
@@ -11246,21 +11318,40 @@ class PokeBattle_Move_776 < PokeBattle_Move
     end
     return ret
   end
+
+  def pbShowAnimation(id,attacker,opponent,hitnum=0,alltargets=nil,showanimation=true)
+    return if !showanimation
+    if @move == :SPARKLYSWIRL
+      @battle.pbAnimation(:HURRICANE,attacker,opponent,hitnum)
+    else
+      @battle.pbAnimation(id,attacker,opponent,hitnum)
+    end
+  end
 end
 
 ################################################################################
 # Damage scales with Happiness, always hits. (Veevee Volley & Pika Papow)
 ################################################################################
 class PokeBattle_Move_777 < PokeBattle_Move
-  def pbAccuracyCheck(attacker, opponent, precheckedacc: nil)
+  def pbAccuracyCheck(attacker,opponent)
     return true
   end
-
-  def pbBaseDamage(basedmg, attacker, opponent)
-    return [attacker.happiness, 250].min if attacker.crested == :LUVDISC
+  
+  def pbBaseDamage(basedmg,attacker,opponent)
+    return [attacker.happiness,250].min if attacker.crested == :LUVDISC
     return 102 if @battle.FE == :CONCERT4
+    return [(attacker.happiness*2/5).floor,1].max
+  end
 
-    return [(attacker.happiness * 2 / 5).floor, 1].max
+  def pbShowAnimation(id,attacker,opponent,hitnum=0,alltargets=nil,showanimation=true)
+    return if !showanimation
+    if id == :PIKAPAPOW
+      @battle.pbAnimation(:GIGAVOLTHAVOC,attacker,opponent,hitnum)
+    elsif id == :VEEVEEVOLLEY
+      @battle.pbAnimation(:BREAKNECKBLITZ,attacker,opponent,hitnum)
+    else
+      @battle.pbAnimation(id,attacker,opponent,hitnum)
+    end
   end
 end
 

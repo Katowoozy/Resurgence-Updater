@@ -1571,7 +1571,7 @@ BOSSINFOHASH = {
             :item => :LIFEORB,
             :moves => [:ROCKBLAST,:CLOSECOMBAT,:BULLETSEED,:BARRAGE],
             :nature => :NAUGHTY,
-            :form => 3,
+            :form => 2,
             :iv => 31,
             :ev => [0,252,0,252,0,4]
         },
@@ -1668,7 +1668,7 @@ BOSSINFOHASH = {
             :moves => [:DRAINPUNCH,:BODYPRESS,:ROCKSLIDE,:EARTHQUAKE],
             :nature => :IMPISH,
             :iv => 31,
-            :form => 2,
+            :form => 1,
             :item => :LEFTOVERS,
             :ev => [100,52,252,0,100,0]
         },
@@ -5602,7 +5602,7 @@ BOSSINFOHASH = {
             :item => :LIFEORB,
             :moves => [:ROCKBLAST,:ARMTHRUST,:BULLETSEED,:BARRAGE],
             :nature => :NAUGHTY,
-            :form => 3,
+            :form => 2,
             :iv => 31,
         },
         :onBreakEffects => {
