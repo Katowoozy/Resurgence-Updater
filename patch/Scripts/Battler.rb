@@ -986,7 +986,7 @@ class PokeBattle_Battler
     end
     speed *= 2 if self.crested == :CASTFORM && self.form == 3 && (@battle.pbWeather == :HAIL || [:ICY, :SNOWYMOUNTAIN, :FROZENDIMENSION].include?(@battle.FE))
     speed *= 2 if self.crested == :CASTFORM && self.form == 5 && (@battle.pbWeather == :SHADOWSKY || [:DARKCRYSTALCAVERN, :DARKNESS1, :DARKNESS2, :DARKNESS3, :SHORTCIRCUIT, :DIMENSIONAL].include?(@battle.FE))
-    speed *= 2 if self.crested == :EMPOLEON && @battle.pbWeather == :HAIL || [:ICY, :SNOWYMOUNTAIN, :FROZENDIMENSION].include?(@battle.FE)
+    speed *= 2 if self.crested == :EMPOLEON && (@battle.pbWeather == :HAIL || [:ICY, :SNOWYMOUNTAIN, :FROZENDIMENSION].include?(@battle.FE))
     speed *= 0.5 if self.item == :IRONBALL && @battle.FE != :DEEPEARTH
     if self.status == :PARALYSIS && self.ability != :QUICKFEET
       speed = (speed / 2.0).floor
