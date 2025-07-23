@@ -11741,7 +11741,7 @@ class PokeBattle_AI
         when :INEXORABLE then basedamage = (basedamage * 1.5).round if pbAIfaster?(move, nil, attacker, opponent) && type == :DRAGON
         when :GORILLATACTICS then atk = (atk * 1.5).round if move.pbIsPhysical?(type)
         # only check attacker ability here, partner ability is checked seperately
-        when :FLOWERGIFT then atk = (atk * 1.5).round if attacker.pbPartner.flowerGiftActive? && (move.pbIsPhysical?(type) || (move.pbIsSpecial?(type) && attackerUseSpDef))
+        when :FLOWERGIFT then atk = (atk * 1.5).round if attacker.pbPartner.flowerGiftActive? && (move.pbIsPhysical?(type) || move.pbIsSpecial?(type))
         when :QUARKDRIVE then basedamage = (basedamage * 1.3).round if (attacker.effects[:Quarkdrive][0] == PBStats::ATTACK && move.pbIsPhysical?(type)) || (attacker.effects[:Quarkdrive][0] == PBStats::SPATK && move.pbIsSpecial?(type))
         # Gen 9 Mod - Prothosynthesis
         when :PROTOSYNTHESIS then basedamage = (basedamage * 1.3).round if (attacker.effects[:Protosynthesis][0] == PBStats::ATTACK && move.pbIsPhysical?(type)) || (attacker.effects[:Protosynthesis][0] == PBStats::SPATK && move.pbIsSpecial?(type))
@@ -11814,7 +11814,7 @@ class PokeBattle_AI
         # Steely Spirit does not stack if user AND partner have the ability
         when :STEELYSPIRIT then basedamage = @battle.FE == :FAIRYTALE ? (basedamage * 2.0).round : (basedamage * 1.5).round if type == :STEEL && attacker.ability != :STEELYSPIRIT
         when :BATTERY then atk = (Rejuv && @battle.FE == :ELECTERRAIN) ? (atk * 1.5).round : (atk * 1.3).round if move.pbIsSpecial?(type)
-        when :FLOWERGIFT then atk = (atk * 1.5).round if attacker.pbPartner.flowerGiftActive? && (move.pbIsPhysical?(type) || (move.pbIsSpecial?(type) && attackerUseSpDef))
+        when :FLOWERGIFT then atk = (atk * 1.5).round if attacker.pbPartner.flowerGiftActive? && (move.pbIsPhysical?(type) || move.pbIsSpecial?(type))
       end
 
       ############ OPPONENT ABILITY CHECKS ############

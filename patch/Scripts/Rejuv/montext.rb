@@ -16676,8 +16676,8 @@ MONHASH = {
 	"Delta Form" => {
 		:Type1 => :STEEL,
 		:Type2 => :POISON,
-		:BaseStats => [70, 80, 65, 90, 65, 85],
-		:Abilities => [:ANGERPOINT, :STENCH, :INTIMIDATE],
+		:Abilities => [:ANGERPOINT, :STENCH],
+		:HiddenAbilities => :INTIMIDATE,
 		:EggMoves => [],
 		:Moveset => [
 			[1,:BELCH],
@@ -16743,7 +16743,15 @@ MONHASH = {
 		:toobig => true,
 	},
 
-	:OnCreation => {},
+	:OnCreation => proc{
+ 		# Map IDs for Delta form
+ 		if $game_map && Girafarig.include?($game_map.map_id)
+			next 1
+		else
+			next 0
+ 		end
+ 	},
+
 	:DefaultForm => [0,1],
 	:MegaForm => {
 		:GIRAFARIGITE => 2,

@@ -4600,7 +4600,7 @@ class PokeBattle_Battler
         end
       # Resurgence - Delta Crustle (Berry) Crest sharing berry effects with Partner
       when :LANSATBERRY #unique berry, doing the processing now
-        if @effects[:FocusEnergy]<3 && self.hp <= health_threshold
+        if @effects[:FocusEnergy]<3 && (self.hp <= health_threshold || special)
           healing = 0
           message = _INTL("{1} used its {2} to get pumped!", pbThis, itemname)
           @effects[:FocusEnergy]+=1

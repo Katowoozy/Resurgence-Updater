@@ -78,12 +78,13 @@ TEAMARRAY = [{
 {
 :teamid => ["Reukra",:PERFECTIONIST,9],
 :defeat => "Sparkle on Wednesday.",
-:items => [],
+:items => [:DECRUSCREST],
 :mons => [{
-	:species => :NOIVERN,
+	:species => :CRUSTLE,
 	:level => 25,
-	:moves => [:SCALD,nil,nil,nil],
-	:ability => :FLOWERGIFT,
+	:item => :PETAYABERRY,
+	:moves => [:TEATIME,nil,nil,nil],
+	:ability => :HARVEST,
 	:nature => :JOLLY,
 	:shiny => true,
 	:form => 1,

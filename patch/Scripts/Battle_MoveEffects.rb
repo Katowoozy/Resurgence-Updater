@@ -10818,7 +10818,11 @@ class PokeBattle_Move_17F < PokeBattle_Move
         mons.item=nil
         mons.pokemon.itemRecycle = ourberry
         mons.pokemon.itemInitial=nil if mons.pokemon.itemInitial==ourberry
-        @battle.pbDisplay(_INTL("{1} ate its {2}!",mons.pbThis,itemname))
+        if mons.crested == :CRUSTLE && mons.pbPartner && @battle.doublebattle
+          @battle.pbDisplay(_INTL("{1} ate and shared its {2} with its partner!",mons.pbThis,itemname))
+        else
+          @battle.pbDisplay(_INTL("{1} ate its {2}!",mons.pbThis,itemname))
+        end
         mons.pbUseBerry(ourberry,true)
       end
     end
