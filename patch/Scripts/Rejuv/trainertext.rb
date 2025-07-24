@@ -29897,6 +29897,35 @@ TEAMARRAY = [{
 	:ability => :INNERFOCUS,
 }]},
 {
+:teamid => ["Karl",:ROCKER,0],
+:defeat => "Alright alright! Jeez, I'll give you back the damn- Wait, what the hell?",
+:items => [:HYPERPOTION],
+:mons => [{
+	:species => :LAPRAS,
+	:level => 78,
+	:moves => [:FREEZEDRY,:SURF,:PSYCHIC,:HIDDENPOWERFIR],
+	:ability => :WATERABSORB,
+	:nature => :MODEST,
+	:iv => 31,
+},
+{
+	:species => :MACHAMP,
+	:level => 78,
+	:moves => [:STRENGTH,:SMELLINGSALTS,:BULLETPUNCH,:KNOCKOFF],
+	:ability => :GUTS,
+	:nature => :ADAMANT,
+	:iv => 31,
+},
+{
+	:species => :WEEZING,
+	:level => 79,
+	:moves => [:BOOMBURST,:THUNDERBOLT,:ACROBATICS,:ROOST],
+	:ability => :AMPLIFIER,
+	:form => 2,
+	:nature => :QUIET,
+	:iv => 31,
+}]},
+{
 :teamid => ["Shiela",:AROMALADY,0],
 :defeat => "You wouldn't happen to have something I could us to defrost myself?",
 :mons => [{
@@ -30195,6 +30224,30 @@ TEAMARRAY = [{
 	:species => :GLALIE,
 	:level => 38,
 	:ability => :INNERFOCUS,
+}]},
+{
+:teamid => ["Karl",:ROCKER,100],
+:mons => [{
+	:species => :LAPRAS,
+	:level => 75,
+	:moves => [:FREEZEDRY,:SURF,:PSYCHIC,:HIDDENPOWERFIR],
+	:ability => :WATERABSORB,
+	:nature => :MODEST,
+},
+{
+	:species => :MACHAMP,
+	:level => 75,
+	:moves => [:STRENGTH,:SMELLINGSALTS,:BULLETPUNCH,:KNOCKOFF],
+	:ability => :GUTS,
+	:nature => :ADAMANT,
+},
+{
+	:species => :WEEZING,
+	:level => 76,
+	:moves => [:BOOMBURST,:THUNDERBOLT,:ACROBATICS,:ROOST],
+	:ability => :AMPLIFIER,
+	:form => 2,
+	:nature => :QUIET,
 }]},
 {
 :teamid => ["Shiela",:AROMALADY,100],
