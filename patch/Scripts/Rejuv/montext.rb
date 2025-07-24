@@ -15199,7 +15199,7 @@ MONHASH = {
 	},
 
 	"Mega Form" => { # Insurgence Mega
-		:Type1 => :GRASS,
+		:Type2 => :GRASS,
 		:BaseStats => [70, 140, 145, 40, 95, 20],
 		:Abilities => [:ANALYTIC],
 	},

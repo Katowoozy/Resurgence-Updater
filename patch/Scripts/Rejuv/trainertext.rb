@@ -16291,7 +16291,6 @@ TEAMARRAY = [{
 	:buffactivation => :Always,
 	0 => {
 		:message => "...",
-		:animation => :PulseEvolution,
 		:pokemonStatChanges => { # any statboosts that are given
 			PBStats::SPDEF => 1,
 			PBStats::SPEED => 1,
@@ -16299,7 +16298,6 @@ TEAMARRAY = [{
 	},
 	1 => {
 		:message => "...",
-		:animation => :PulseEvolution,
 		:typeChange => [:GRASS,:DRAGON],
 		:pokemonStatChanges => { # any statboosts that are given
 			PBStats::ATTACK => 1,
@@ -16308,7 +16306,6 @@ TEAMARRAY = [{
 	},
 	2 => {
 		:message => "...",
-		:animation => :PulseEvolution,
 		:typeChange => [:WATER,:GHOST],
 		:pokemonStatChanges => { # any statboosts that are given
 			PBStats::SPEED => 1,
@@ -16317,7 +16314,6 @@ TEAMARRAY = [{
 	},
 	3 => {
 		:message => "...",
-		:animation => :PulseEvolution,
 		:typeChange => [:POISON,:ELECTRIC],
 		:pokemonStatChanges => { # any statboosts that are given
 			PBStats::SPATK => 1,
@@ -16326,7 +16322,6 @@ TEAMARRAY = [{
 	},
 	4 => {
 		:message => "...",
-		:animation => :PulseEvolution,
 		:typeChange => [:GROUND,:POISON],
 		:pokemonStatChanges => { # any statboosts that are given
 			PBStats::DEFENSE => 1,
@@ -46566,7 +46561,7 @@ TEAMARRAY = [{
 	:ev => [252, 252, 4, 0, 0, 0]},
 {
 	:species => :METAGROSS, #Resurgence
-	:form => 4,
+	:form => 2,
 	:level => 83,
 	:item => :DELTAMETAGROSSITE2,
 	:moves => [:RETURN,:HEADSMASH,:WOODHAMMER,:MATRIXSHOT],
@@ -49133,7 +49128,7 @@ TEAMARRAY = [{
 	:catchtime => [-10,8,18]},
 {
 	:species => :METAGROSS, #Resurgence
-	:form => 4,
+	:form => 2,
 	:level => 85,
 	:item => :DELTAMETAGROSSITE2,
 	:moves => [:CRYSTALRUSH,:HEADSMASH,:WOODHAMMER,:MATRIXSHOT],
@@ -50283,7 +50278,6 @@ TEAMARRAY = [{
 	:name => "Zepto"},
 {
 	:species => :FLYGON, #Resurgence
-	:form => 1, #Flygon Armor
 	:level => 84,
 	:item => :WISEGLASSES,
 	:moves => [:EARTHPOWER,:DRAGONPULSE,:BUGBUZZ,:HIDDENPOWERSTE],
