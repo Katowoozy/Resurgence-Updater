@@ -15199,7 +15199,7 @@ MONHASH = {
 	},
 
 	"Mega Form" => { # Insurgence Mega
-		:Type2 => :GRASS,
+		:Type1 => :GRASS,
 		:BaseStats => [70, 140, 145, 40, 95, 20],
 		:Abilities => [:ANALYTIC],
 	},
@@ -28648,7 +28648,7 @@ MONHASH = {
 		:Abilities => [:STURDY, :ROCKHEAD],
 		:preevo => {
 			:species => :BELDUM,
-			:form => 2
+			:form => 1
 		},
 		:Moveset => [
 			[1,:STEALTHROCK],
@@ -28684,7 +28684,7 @@ MONHASH = {
 		:Abilities => [:POISONTOUCH, :IMMUNITY, :POISONHEAL],
 		:preevo => {
 			:species => :BELDUM,
-			:form => 1
+			:form => 2
 		},
 		:Moveset => [
 			[1,:TOXICSPIKES],
@@ -28787,7 +28787,7 @@ MONHASH = {
 		:Abilities => [:STURDY, :ROCKHEAD],
 		:preevo => {
 			:species => :METANG,
-			:form => 3
+			:form => 2
 		},
 		:Moveset => [
 			[1,:STEALTHROCK],
@@ -28858,7 +28858,7 @@ MONHASH = {
 		:Abilities => [:POISONTOUCH, :IMMUNITY, :POISONHEAL],
 		:preevo => {
 			:species => :METANG,
-			:form => 2
+			:form => 3
 		},
 		:Moveset => [
 			[1,:TOXICSPIKES],
