@@ -804,6 +804,7 @@ DELTAPOKEMON = {
   :PETILIL => [1],
   :LILLIGANT => [2],
   :GIRAFARIG => [1],
+  :FARIGIRAF => [1],
   :BUNEARY => [1],
   :LOPUNNY => [2,3],
 }

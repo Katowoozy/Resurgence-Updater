@@ -15199,6 +15199,7 @@ MONHASH = {
 	},
 
 	"Mega Form" => { # Insurgence Mega
+		:Type1 => :GRASS,
 		:BaseStats => [70, 140, 145, 40, 95, 20],
 		:Abilities => [:ANALYTIC],
 	},
@@ -16711,7 +16712,9 @@ MONHASH = {
 		:EggGroups => [:Undiscovered],
 		:kind => "Tormented",
 		:dexentry => "A Delta Species discovered by nico. The tail's insults temper the Pokémon's iron will, becoming stronger as the Pokémon grows.",
-		:evolutions => [] # Resurgence - For now since there's still no back sprite made for Delta Farigiraf.
+		:evolutions => [
+			[:FARIGIRAF,:HasMove,:IRONHEAD]
+		]
 	},
 
 	"Mega Form" => { # Insurgence Mega
@@ -24388,7 +24391,7 @@ MONHASH = {
 			[19,:FEINTATTACK],
 			[25,:DAZZLINGGLEAM],
 			[28,:MISTYTERRAIN],
-			[31,:NEWMOON],
+			[31,:SHADOWPRAYER],
 			[34,:FLATTER],
 			[37,:DARKPULSE],
 			[40,:LOVELYKISS],
@@ -31087,7 +31090,7 @@ MONHASH = {
 			[19,:FEINTATTACK],
 			[25,:DAZZLINGGLEAM],
 			[28,:AIRSLASH],
-			[31,:NEWMOON],
+			[31,:SHADOWPRAYER],
 			[34,:FLATTER],
 			[37,:DARKPULSE],
 			[40,:LOVELYKISS],
@@ -68538,7 +68541,50 @@ MONHASH = {
 		:BattlerAltitude => 0,
 	},
 
-	:OnCreation => {},
+	"Delta Form" => {
+		:Type1 => :STEEL,
+		:Type2 => :POISON,
+		:Abilities => [:ANGERPOINT, :ARMORTAIL],
+		:HiddenAbilities => :INTIMIDATE,
+		:preevo => {
+			:species => :GIRAFARIG,
+			:form => 1
+		},
+		:Moveset => [
+			[1,:BELCH],
+			[1,:RECYCLE],
+			[1,:SMOG],
+			[1,:TACKLE],
+			[1,:LEER],
+			[1,:CLEARSMOG],
+			[5,:POISONGAS],
+			[10,:BITE],
+			[14,:STOMP],
+			[19,:MIRRORSHOT],
+			[23,:AUTOTOMIZE],
+			[25,:CROSSPOISON],
+			[28,:BODYSLAM],
+			[32,:IRONHEAD],
+			[37,:CRUNCH],
+			[41,:TOXICSPIKES],
+			[46,:NASTYPLOT],
+			[50,:SLUDGEBOMB],
+		],
+		:compatiblemoves => [:WORKUP,:ROAR,:VENOSHOCK,:TAUNT,:HYPERBEAM,:RAINDANCE,:SMACKDOWN,:THUNDERBOLT,:THUNDER,:EARTHQUAKE,:SHADOWBALL,:SLUDGEWAVE,:SLUDGEBOMB,:SANDSTORM,:ROCKTOMB,:TORMENT,:THIEF,:ECHOEDVOICE,:CHARGEBEAM,:WILLOWISP,:EMBARGO,:EXPLOSION,:PAYBACK,:GIGAIMPACT,:THUNDERWAVE,:GYROBALL,:BULLDOZE,:DRAGONTAIL,:INFESTATION,:POISONJAB,:FLASHCANNON,:WILDCHARGE,:SNARL,:DARKPULSE,:BRUTALSWING,:SELFDESTRUCT,:SCARYFACE,:ASSURANCE,:ICEFANG,:FIREFANG,:THUNDERFANG,:CROSSPOISON,:STRENGTH,:ROCKSMASH,:ROCKCLIMB,:SUCKERPUNCH,:RETALIATE,:AQUATAIL,:BATONPASS,:BODYPRESS,:BODYSLAM,:CRUNCH,:FOULPLAY,:GIGADRAIN,:GUNKSHOT,:HEADBUTT,:HEATCRASH,:HEAVYSLAM,:HYPERVOICE,:IRONDEFENSE,:IRONHEAD,:IRONTAIL,:KNOCKOFF,:LASTRESORT,:MAGNETRISE,:NASTYPLOT,:OUTRAGE,:PSYCHICFANGS,:RECYCLE,:REVENGE,:SHOCKWAVE,:SNATCH,:SPITE,:STOMPINGTANTRUM,:SUPERFANG,:SWIFT,:TOXICSPIKES,:UPROAR,:VENOMDRENCH,:ZENHEADBUTT,:POISONSWEEP,:IRRITATION,:CORROSIVEGAS,:LASHOUT,:STEELBEAM,:MIMIC,:POWERSHIFT,:TAKEDOWN,:ACIDSPRAY,:TRAILBLAZE,:POISONTAIL,:DOUBLEEDGE,:TEMPERFLARE,:METALSOUND,:HARDPRESS,:ACID,:ACHILLESHEEL,:CORRODE,:DARKMATTER],
+		:moveexceptions => [],
+		:Color => "Gray",
+		:kind => "Tormented",
+		:dexentry => "A Delta Species discovered by nico and Chun. Both heads together now feel twice the amount of anger, and gain twice the amount of strength.",
+	},
+
+	:OnCreation => proc{
+ 		# Map IDs for Delta form
+ 		if $game_map && Girafarig.include?($game_map.map_id)
+			next 1
+		else
+			next 0
+ 		end
+ 	},
 },
 
 :DUDUNSPARCE => {
