@@ -10111,7 +10111,14 @@ MONHASH = {
 		]
 	},
 
-	:OnCreation => {},
+	:OnCreation => proc{
+		# Map IDs for Aevian form
+		if $game_map && Scyther.include?($game_map.map_id)
+            next 1
+        else
+            next 0
+        end
+    },
 },
 
 :JYNX => {

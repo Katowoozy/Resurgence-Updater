@@ -683,11 +683,10 @@ class PokeBattle_Move
     mod2 = otype1 == otype2 ? 2 : mod2
 
     # Inversemode password/field
-    if ($game_switches[:Inversemode] && !@battle.isOnline?) ^ (@battle.FE == :INVERSE)
-      mod1 = 1 if mod1 == 0
-      mod2 = 1 if mod2 == 0
-      mod1 = 4 / mod1
-      mod2 = 4 / mod2
+    if $game_switches[:Inversemode] && @battle.FE != :INVERSE
+      mod1 = 1 if mod1==0
+      mod2 = 1 if mod2==0
+      return 16 / (mod1 * mod2)
     end
     if opponent.crested == :TORTERRA || opponent.ability == :REVERSALBARRIER
       mod1 = 4 / mod1 if mod1 != 0
@@ -831,11 +830,10 @@ class PokeBattle_Move
     mod2 = otype1 == otype2 ? 2 : mod2
 
     # Inversemode password/field
-    if ($game_switches[:Inversemode] && !@battle.isOnline?) ^ (@battle.FE == :INVERSE)
-      mod1 = 1 if mod1 == 0
-      mod2 = 1 if mod2 == 0
-      mod1 = 4 / mod1
-      mod2 = 4 / mod2
+    if $game_switches[:Inversemode] && @battle.FE != :INVERSE
+      mod1 = 1 if mod1==0
+      mod2 = 1 if mod2==0
+      return 16 / (mod1 * mod2)
     end
     if (opponent.species == :TORTERRA && opponent.item == :TORCREST) || opponent.ability == :REVERSALBARRIER
       mod1 = 4 / mod1 if mod1 != 0
