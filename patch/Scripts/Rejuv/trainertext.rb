@@ -47047,7 +47047,7 @@ TEAMARRAY = [{
 },
 {
 	:species => :METAGROSS, #Resurgence
-	:form => 4,
+	:form => 2,
 	:level => 79,
 	:item => :MUSCLEBAND,
 	:moves => [:RETURN,:CRYSTALRUSH,:SEEDBOMB,:MATRIXSHOT],
