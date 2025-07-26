@@ -2018,6 +2018,7 @@ METAHASH = {
 	:Outdoor => true,
 	:ShowArea => true,
 	:SnapEdges => true,
+	:BattleBack => "DarkCrystalCavern",
 },
 
 #Kugearen City

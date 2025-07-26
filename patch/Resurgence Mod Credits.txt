@@ -201,6 +201,9 @@ Mapping and Eventing Advice
 - wingdings
 - Dred
 
+Battle Bond Code
+- Karvanha
+
 Porting over PULSE-3 Mechanics for Delta Avalugg's Crest
 - wingdings
 - Moto

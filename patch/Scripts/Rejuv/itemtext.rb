@@ -11123,7 +11123,7 @@ ITEMHASH = {
 	:ID => 1272,
 	:name => "IM11",
 	:desc => "The user pecks the target. If the target is holding a Berry, the user gains its effect.",
-	:price => 75000,
+	:price => 10000,
 	:tm => :PLUCK,
 	:noUseInBattle => true,
 },

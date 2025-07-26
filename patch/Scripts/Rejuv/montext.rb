@@ -13189,7 +13189,7 @@ MONHASH = {
 
 	"Mega Form" => { # Insurgence Mega
 		:BaseStats => [78, 89, 88, 159, 110, 110],
-		:Abilities => [:HUBRIS],
+		:Abilities => [:CONTRARY],
 		:toobig => true,
 	},
 
@@ -13441,7 +13441,7 @@ MONHASH = {
 
 	"Mega Form" => { # Insurgence Mega
 		:BaseStats => [85, 140, 110, 89, 103, 103],
-		:Abilities => [:TOUGHCLAWS],
+		:Abilities => [:MULTISCALE],
 		:BattlerPlayerY => 14,
 		:BattlerEnemyY => 10,
 		:BattlerAltitude => 0,
@@ -43872,7 +43872,7 @@ MONHASH = {
 		:kind => "Fire Squirrel",
 		:dexentry => "A Delta Species discovered by EchoTheThird. On cold nights they spit hot embers on their tails and feet to ignite them. The ensuing blaze can be seen for miles.",
 		:BattlerPlayerY => 28,
-		:BattlerEnemyY => 22,
+		:BattlerEnemyY => 32,
 		:BattlerAltitude => 0,
 	},
 
@@ -43902,7 +43902,7 @@ MONHASH = {
 		:kind => "Fire Squirrel",
 		:dexentry => "A Delta Species discovered by EchoTheThird. On cold nights they spit hot embers on their tails and feet to ignite them. The ensuing blaze can be seen for miles.",
 		:BattlerPlayerY => 28,
-		:BattlerEnemyY => 22,
+		:BattlerEnemyY => 32,
 		:BattlerAltitude => 0,
 	},
 
