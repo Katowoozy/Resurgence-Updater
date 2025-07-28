@@ -881,7 +881,7 @@ class PokeBattle_Battler
   end
 
   def nullsWater?
-    return [:WATERABSORB,:STORMDRAIN,:DRYSKIN].include?(@ability) || pbPartner.ability == :STORMDRAIN
+    return [:WATERABSORB,:STORMDRAIN,:DRYSKIN,:CASTLEMOAT].include?(@ability) || pbPartner.ability == :STORMDRAIN
   end
 
   def nullsFire?
@@ -3172,6 +3172,58 @@ class PokeBattle_Battler
             end
           end
         end
+      end
+    end
+    # Resurgence - Aroma Aura
+    if self.ability == :AROMAAURA && onactive
+	    if self.spdef > self.defense
+          if pbOwnSide.effects[:Reflect] > 0
+            return -1
+          end
+		    @battle.pbAnimation(:REFLECT, self, nil)
+		    pbOwnSide.effects[:Reflect] = 5
+		    pbOwnSide.effects[:Reflect] = 8 if @battle.FE == :GRASSY || @battle.ProgressiveFieldCheck(PBFields::FLOWERGARDEN, 2, 5)
+		    @battle.pbDisplay(_INTL("{1}'s {2} raised their team's Defense!", pbThis, getAbilityName(ability)))
+        if @battle.ProgressiveFieldCheck(PBFields::FLOWERGARDEN, 3, 5)
+          if !pbTooHigh?(PBStats::DEFENSE)
+            pbIncreaseStatBasic(PBStats::DEFENSE,1)
+            @battle.pbCommonAnimation("StatUp", self)
+            @battle.pbDisplay(_INTL("{1}'s {2} boosted its Defense amidst the flowery field!", pbThis, getAbilityName(ability)))
+          end
+        end
+		    return 0
+      elsif self.defense > self.spdef
+        if pbOwnSide.effects[:LightScreen] > 0
+          return -1
+        end
+		    @battle.pbAnimation(:LIGHTSCREEN, self, nil)
+		    pbOwnSide.effects[:LightScreen] = 5
+		    pbOwnSide.effects[:LightScreen] = 8 if @battle.FE == :GRASSY || @battle.ProgressiveFieldCheck(PBFields::FLOWERGARDEN, 2, 5)
+		    @battle.pbDisplay(_INTL("{1}'s {2} raised their team's Special Defense!", pbThis, getAbilityName(ability)))
+        if @battle.ProgressiveFieldCheck(PBFields::FLOWERGARDEN, 3, 5)
+          if !pbTooHigh?(PBStats::SPDEF)
+            pbIncreaseStatBasic(PBStats::SPDEF,1)
+            @battle.pbCommonAnimation("StatUp", self)
+            @battle.pbDisplay(_INTL("{1}'s {2} boosted its Special Defense amidst the flowery field!", pbThis, getAbilityName(ability)))
+          end
+		    end
+		    return 0
+	    elsif self.spdef = self.defense
+        if pbOwnSide.effects[:Reflect] > 0
+          return -1
+        end
+		    @battle.pbAnimation(:REFLECT, self, nil)
+		    pbOwnSide.effects[:Reflect] = 5
+		    pbOwnSide.effects[:Reflect] = 8 if @battle.FE == :GRASSY || @battle.ProgressiveFieldCheck(PBFields::FLOWERGARDEN, 2, 5)
+		    @battle.pbDisplay(_INTL("{1}'s {2} raised their team's Defense!", pbThis, getAbilityName(ability)))
+        if @battle.ProgressiveFieldCheck(PBFields::FLOWERGARDEN, 3, 5)
+          if !pbTooHigh?(PBStats::DEFENSE)
+            pbIncreaseStatBasic(PBStats::DEFENSE,1)
+            @battle.pbCommonAnimation("StatUp", self)
+            @battle.pbDisplay(_INTL("{1}'s {2} boosted its Defense amidst the flowery field!", pbThis, getAbilityName(ability)))
+          end
+		    end
+		    return 0
       end
     end
     # Screen Cleaner

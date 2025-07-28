@@ -2387,4 +2387,24 @@ ABILHASH = {
 	:desc => "Boosts SpAtk if there is a status problem...",
 	:fullDesc => "Boosts Special Attack if there is a status problem by 50%."
 },
+
+:AROMAAURA => {
+	:ID => 445,
+	:name => "Aroma Aura",
+	:desc => "Sets screen on entry based on defenses...",
+	:fullDesc => "Sets up Reflect on entry if Pokémon's Defense is higher than its Special Defense, and Light Screen if vice versa."
+},
+
+:CASTLEMOAT => {
+	:ID => 445,
+	:name => "Castle Moat",
+	:desc => "Absorbs Water-type moves to boost Sp. Def...",
+	:fullDesc => "When hit by a Water-type move, Special Defense is increased by one stage, and the move will have no effect."
+},
+
+:SYNTHETICALLOY => {
+	:ID => 446,
+	:name => "Synthetic Alloy",
+	:desc => "Receives neutral damage from Fire-type attacks."
+},
 }

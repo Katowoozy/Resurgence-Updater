@@ -36,7 +36,7 @@ class PBStuff
     # Gen 9 Mod - Added Gen 9 Abilities below
     :GUARDDOG,:MYCELIUMMIGHT,:WELLBAKEDBODY,:ARMORTAIL,
     # Resurgence - Added Ice Cleats, Supercell, and Winter Joy
-    :ICECLEATS, :SUPERCELL, :WINTERJOY]
+    :ICECLEATS, :SUPERCELL, :WINTERJOY, :CASTLEMOAT]
   NEGATIVEABILITIES = [:TRUANT,:DEFEATIST,:SLOWSTART,:KLUTZ,:STALL,:GORILLATACTICS,:RIVALRY]
 
   #Standardized lists of moves or abilities which are sometimes called

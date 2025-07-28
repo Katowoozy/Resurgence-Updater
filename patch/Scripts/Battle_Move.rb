@@ -328,10 +328,10 @@ class PokeBattle_Move
       return [opp1]
     end
     # immunity via immunity ability?
-    if (darttype == :WATER || fieldsecondtype.include?(:WATER)) && (([:DRYSKIN,:WATERABSORB,:STORMDRAIN].include?(opp2.ability) && !opp2.moldbroken) || (Rejuv && @battle.FE == :GLITCH && opp2.species == :GENESECT && opp2.hasWorkingItem(:DOUSEDRIVE)))
+    if (darttype == :WATER || fieldsecondtype.include?(:WATER)) && (([:DRYSKIN,:WATERABSORB,:STORMDRAIN,:CASTLEMOAT].include?(opp2.ability) && !opp2.moldbroken) || (Rejuv && @battle.FE == :GLITCH && opp2.species == :GENESECT && opp2.hasWorkingItem(:DOUSEDRIVE)))
       return [opp1]
     end
-    if (darttype == :WATER || fieldsecondtype.include?(:WATER)) && (([:DRYSKIN,:WATERABSORB,:STORMDRAIN].include?(opp1.ability) && !opp1.moldbroken) || (Rejuv && @battle.FE == :GLITCH && opp1.species == :GENESECT && opp1.hasWorkingItem(:DOUSEDRIVE)))
+    if (darttype == :WATER || fieldsecondtype.include?(:WATER)) && (([:DRYSKIN,:WATERABSORB,:STORMDRAIN,:CASTLEMOAT].include?(opp1.ability) && !opp1.moldbroken) || (Rejuv && @battle.FE == :GLITCH && opp1.species == :GENESECT && opp1.hasWorkingItem(:DOUSEDRIVE)))
       return [opp2]
     end
     if (darttype == :ELECTRIC || fieldsecondtype.include?(:ELECTRIC)) && (([:MOTORDRIVE,:VOLTABSORB,:LIGHTNINGROD].include?(opp2.ability) && !opp2.moldbroken) || (Rejuv && @battle.FE == :GLITCH && opp2.species == :GENESECT && opp2.hasWorkingItem(:SHOCKDRIVE)))
@@ -726,13 +726,17 @@ class PokeBattle_Move
       mod1 = 4 if otype1 == :WATER
       mod2 = 4 if otype2 == :WATER
     end
-    # Resurgence - Achlles Heel and Corrode
+    # Resurgence - Achlles Heel, Corrode, and Synthetic Alloy
     if @move == :ACHILLESHEEL && opponent.effects[:Protect]
       return 8 if mod1 != 0 && mod2 != 0
     end
     if @move == :CORRODE
       mod1 = 4 if otype1 == :STEEL
       mod2 = 4 if otype2 == :STEEL
+    end
+    if opponent.ability == :SYNTHETICALLOY
+      mod1 = 2 if atype == :FIRE
+      mod2 = 2 if atype == :FIRE
     end
     # Aevian Mega Evolutions by Fish - Oppressive Cold
     if attacker.ability == :OPPRESSIVECOLD
@@ -873,13 +877,17 @@ class PokeBattle_Move
       mod1 = 4 if otype1 == :WATER
       mod2 = 4 if otype2 == :WATER
     end
-    # Resurgence - Achlles Heel and Corrode
+    # Resurgence - Achlles Heel, Corrode, and Synthetic Alloy
     if @move == :ACHILLESHEEL && opponent.effects[:Protect]
       return 8 if mod1 != 0 && mod2 != 0
     end
     if @move == :CORRODE
       mod1 = 4 if otype1 == :STEEL
       mod2 = 4 if otype2 == :STEEL
+    end
+    if opponent.ability == :SYNTHETICALLOY
+      mod1 = 2 if atype == :FIRE
+      mod2 = 2 if atype == :FIRE
     end
     # Aevian Mega Evolutions by Fish - Oppressive Cold
     if attacker.ability == :OPPRESSIVECOLD
@@ -1004,6 +1012,31 @@ class PokeBattle_Move
         end
         return 0
       end
+    end
+    if opponent.ability == :CASTLEMOAT && !opponent.moldbroken
+      negator = getAbilityName(opponent.ability)
+      if opponent.pbCanIncreaseStatStage?(PBStats::SPDEF)
+        if @battle.FE == :ASHENBEACH
+          opponent.pbIncreaseStatBasic(PBStats::SPDEF,3)
+          @battle.pbCommonAnimation("StatUp",opponent,nil)
+          @battle.pbDisplay(_INTL("{1}'s {2} drastically raised its Special Defense!",
+          opponent.pbThis,negator))
+        elsif [:WATERSURFACE,:MURKWATERSURFACE,:SWAMP].include?(@battle.FE)
+          opponent.pbIncreaseStatBasic(PBStats::SPDEF,2)
+          @battle.pbCommonAnimation("StatUp",opponent,nil)
+          @battle.pbDisplay(_INTL("{1}'s {2} sharply raised its Special Defense!",
+          opponent.pbThis,negator))
+        else
+          opponent.pbIncreaseStatBasic(PBStats::SPDEF,1)
+          @battle.pbCommonAnimation("StatUp",opponent,nil)
+          @battle.pbDisplay(_INTL("{1}'s {2} raised its Special Defense!",
+          opponent.pbThis,negator))
+        end
+      else
+        @battle.pbDisplay(_INTL("{1}'s {2} made {3} ineffective!",
+        opponent.pbThis,negator,self.name))
+      end
+      return 0
     end
     if ((opponent.ability == :FLASHFIRE && !opponent.moldbroken) ||
       (Rejuv && @battle.FE == :GLITCH && opponent.species == :GENESECT && opponent.hasWorkingItem(:BURNDRIVE))) &&
@@ -1240,6 +1273,27 @@ class PokeBattle_Move
         end
         return 0
       end
+    end
+    if opponent.ability == :CASTLEMOAT && !opponent.moldbroken
+      negator = getAbilityName(opponent.ability)
+      if opponent.pbCanIncreaseStatStage?(PBStats::SPDEF)
+        if @battle.FE == :ASHENBEACH
+          opponent.pbIncreaseStatBasic(PBStats::SPDEF, 3)
+          @battle.pbCommonAnimation("StatUp", opponent, nil)
+          @battle.pbDisplay(_INTL("{1}'s {2} drastically raised its Special Defense!", opponent.pbThis, negator))
+        elsif [:WATERSURFACE,:MURKWATERSURFACE,:SWAMP].include?(@battle.FE)
+          opponent.pbIncreaseStatBasic(PBStats::SPDEF, 2)
+          @battle.pbCommonAnimation("StatUp", opponent, nil)
+          @battle.pbDisplay(_INTL("{1}'s {2} sharply raised its Special Defense!", opponent.pbThis, negator))
+        else
+          opponent.pbIncreaseStatBasic(PBStats::SPDEF, 1)
+          @battle.pbCommonAnimation("StatUp", opponent, nil)
+          @battle.pbDisplay(_INTL("{1}'s {2} raised its Special Defense!", opponent.pbThis, negator))
+        end
+      else
+        @battle.pbDisplay(_INTL("{1}'s {2} made {3} ineffective!", opponent.pbThis, negator, self.name))
+      end
+      return 0
     end
     # Immunity Crests
     case opponent.crested

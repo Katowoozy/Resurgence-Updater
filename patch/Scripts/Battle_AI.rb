@@ -575,7 +575,7 @@ class PokeBattle_AI
             if mondata.trainer && (mondata.trainer.trainertype == :UMBTITANIA || mondata.trainer.trainertype == :UMBAMARIA) && @battle.doublebattle
               scoremult *= (1 + 2 * mondata.scorearray[pi][moveindex] / 100.0)
             elsif (move.pbType(battler) == :FIRE && (battler.pbPartner.ability == :FLASHFIRE || battler.pbPartner.crested == :DRUDDIGON)) ||
-                  (move.pbType(battler) == :WATER && (battler.pbPartner.ability == :WATERABSORB || battler.pbPartner.ability == :STORMDRAIN || battler.pbPartner.ability == :DRYSKIN)) ||
+                  (move.pbType(battler) == :WATER && (battler.pbPartner.ability == :WATERABSORB || battler.pbPartner.ability == :STORMDRAIN || battler.pbPartner.ability == :DRYSKIN || battler.pbPartner.ability == :CASTLEMOAT)) ||
                   (move.pbType(battler) == :GRASS && (battler.pbPartner.ability == :SAPSIPPER || battler.pbPartner.crested == :WHISCASH)) ||
                   (move.pbType(battler) == :ELECTRIC && (battler.pbPartner.ability == :VOLTABSORB || battler.pbPartner.ability == :LIGHTNINGROD || battler.pbPartner.ability == :MOTORDRIVE)) ||
                   (move.pbType(battler) == :FLYING && (battler.pbPartner.ability == :WINDFORCE || battler.pbPartner.ability == :WINDBORNETYRANT)) # Resurgence - Added Wind Force and Windborne Tyrant
@@ -7548,7 +7548,7 @@ class PokeBattle_AI
     bestmove2 = checkAIbestMove(@attacker.pbOpposing2)
     if @opponent.ability == :FLASHFIRE || battler.pbPartner.crested == :DRUDDIGON
       miniscore*=3 if bestmove1.pbType(@attacker.pbOpposing1) ==:FIRE || bestmove2.pbType(@attacker.pbOpposing2) ==:FIRE
-    elsif @opponent.ability == :STORMDRAIN || @opponent.ability == :DRYSKIN || @opponent.ability == :WATERABSORB
+    elsif @opponent.ability == :STORMDRAIN || @opponent.ability == :DRYSKIN || @opponent.ability == :WATERABSORB || @opponent.ability == :CASTLEMOAT
       miniscore*=3 if bestmove1.pbType(@attacker.pbOpposing1) ==:WATER || bestmove2.pbType(@attacker.pbOpposing2) ==:WATER
     elsif @opponent.ability == :MOTORDRIVE || @opponent.ability == :LIGHTNINGROD || @opponent.ability == :VOLTABSORB
       miniscore*=3 if bestmove1.pbType(@attacker.pbOpposing1) ==:ELECTRIC ||bestmove2.pbType(@attacker.pbOpposing2) ==:ELECTRIC
@@ -8284,7 +8284,7 @@ class PokeBattle_AI
         when :SAPSIPPER              then return -1 if type == :GRASS || (!secondtype.nil? && secondtype.include?(:GRASS))
         when :LEVITATE,:SOLARIDOL,:LUNARIDOL   then return 0 if (type == :GROUND || (!secondtype.nil? && secondtype.include?(:GROUND))) && @battle.FE != :CAVE && !opponent.hasWorkingItem(:IRONBALL) && @battle.state.effects[:Gravity]==0
         when :MAGNETPULL,:CONTRARY,:UNAWARE,:OBLIVIOUS   then return 0 if (type == :GROUND || (!secondtype.nil? && secondtype.include?(:GROUND))) && @battle.FE == :DEEPEARTH && !opponent.hasWorkingItem(:IRONBALL)
-        when :STORMDRAIN             then return -1 if type == :WATER || (!secondtype.nil? && secondtype.include?(:WATER))
+        when :STORMDRAIN,:CASTLEMOAT             then return -1 if type == :WATER || (!secondtype.nil? && secondtype.include?(:WATER))
         when :LIGHTNINGROD,:MOTORDRIVE      then return -1 if type == :ELECTRIC || (!secondtype.nil? && secondtype.include?(:ELECTRIC))
         when :DRYSKIN               then return -1 if type == :WATER || (!secondtype.nil? && secondtype.include?(:WATER)) && opponent.effects[:HealBlock]==0
         when :VOLTABSORB             then return -1 if type == :ELECTRIC || (!secondtype.nil? && secondtype.include?(:ELECTRIC)) && opponent.effects[:HealBlock]==0
@@ -8525,7 +8525,7 @@ class PokeBattle_AI
           abilityscore*=3 if attacker.moves.all? {|moveloop| moveloop!=nil && moveloop.pbType(attacker) == :ELECTRIC}
           abilityscore*=2 if pbTypeModNoMessages(elecmove.pbType(attacker),attacker,opponent,elecmove)>4
         end
-      when :WATERABSORB, :STORMDRAIN, :DRYSKIN
+      when :WATERABSORB, :STORMDRAIN, :DRYSKIN, :CASTLEMOAT
         for i in attacker.moves
           next if i.nil?
           watermove=i if i.pbType(attacker)==:WATER
@@ -9887,9 +9887,9 @@ class PokeBattle_AI
             end
           when :TRACE
             # Gen 9 Mod - Added Earth Eater, Well-Baked Body, Wind Rider
-            # Resurgence - Ice Cleats, Wind Force, Windborne Tyrant
+            # Resurgence - Ice Cleats, Wind Force, Windborne Tyrant, Castle Moat
             if ([:WATERABSORB,:VOLTABSORB,:STORMDRAIN,:MOTORDRIVE,:FLASHFIRE,:LEVITATE,:LUNARIDOL,:SOLARIDOL,:LIGHTNINGROD,
-              :SAPSIPPER,:DRYSKIN,:SLUSHRUSH,:SANDRUSH,:SWIFTSWIM,:CHLOROPHYLL,:SPEEDBOOST,
+              :SAPSIPPER,:DRYSKIN,:SLUSHRUSH,:SANDRUSH,:SWIFTSWIM,:CHLOROPHYLL,:SPEEDBOOST,:CASTLEMOAT,
               :WONDERGUARD,:PRANKSTER, :EARTHEATER, :WELLBAKEDBODY, :WINDRIDER ,:ICECLEATS ,:WINDFORCE,:WINDBORNETYRANT].include?(@opponent.ability) ||
               (pbAIfaster?() && ((@opponent.ability == :ADAPTABILITY) || (@opponent.ability == :DOWNLOAD) || (@opponent.ability == :PROTEAN) || (@opponent.ability == :LIBERO))) ||
               (@opponent.attack>@opponent.spatk && (@opponent.ability == :INTIMIDATE)) || (@opponent.ability == :UNAWARE) || (i.hp==i.totalhp && ((@opponent.ability == :MULTISCALE) || (@opponent.ability == :SHADOWSHIELD)))) && i.item != :ABILITYSHIELD # Gen 9 Mod - Added Ability Shield
@@ -10080,6 +10080,7 @@ class PokeBattle_AI
             fieldscore+=30 if (i.ability == :SUPERCELL)
         when :GRASSY
             fieldscore+=30 if (i.ability == :GRASSPELT)
+            fieldscore+=30 if (i.ability == :AROMAAURA)
             fieldscore+=30 if (i.ability == :COTTONDOWN)
             fieldscore+=30 if Rejuv && (i.ability == :OVERGROW)
             fieldscore+=20 if Rejuv && (i.ability == :SAPSIPPER)
@@ -10362,6 +10363,7 @@ class PokeBattle_AI
             fieldscore+=20 if Rejuv && ((i.ability == :GRASSYSURGE) || (nonmegaform.ability == :GRASSYSURGE))
             fieldscore+=15 if (i.ability == :SEEDSOWER || (nonmegaform.ability == :SEEDSOWER)) # Gen 9 Mod - Added Seed Sower
             fieldscore+=25 if (i.ability == :RIPEN)
+            fieldscore+=40 if (i.ability == :AROMAAURA)
         when :STARLIGHT
             fieldscore+=25 if i.hasType?(:PSYCHIC)
             fieldscore+=25 if i.hasType?(:FAIRY)

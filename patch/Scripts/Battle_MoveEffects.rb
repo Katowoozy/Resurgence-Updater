@@ -7242,7 +7242,8 @@ class PokeBattle_Move_0EE < PokeBattle_Move
       end
       if @move == :FLIPTURN && (opponent.ability == :DRYSKIN ||
         opponent.ability == :WATERABSORB ||
-        opponent.ability == :STORMDRAIN)
+        opponent.ability == :STORMDRAIN ||
+        opponent.ability == :CASTLEMOAT)
         attacker.userSwitch = false
         attacker.vanished=false
       end
@@ -11333,7 +11334,7 @@ end
 # Damage scales with Happiness, always hits. (Veevee Volley & Pika Papow)
 ################################################################################
 class PokeBattle_Move_777 < PokeBattle_Move
-  def pbAccuracyCheck(attacker,opponent)
+  def pbAccuracyCheck(attacker, opponent, precheckedacc: nil)
     return true
   end
   
