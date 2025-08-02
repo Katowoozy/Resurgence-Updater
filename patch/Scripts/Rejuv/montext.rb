@@ -2306,7 +2306,15 @@ MONHASH = {
 		:Weight => 2456,
 	},
 
-	:OnCreation => {},
+	:OnCreation => proc{
+		# Map IDs for Delta form
+		if $game_map && Pichu.include?($game_map.map_id)
+            next 3
+        else
+            next 0
+        end
+    },
+
 	:DefaultForm => [0,2],
   	:MegaForm => {
 		:PIKACHUTITE => {
@@ -2404,7 +2412,14 @@ MONHASH = {
 		:toobig => true,
 	},
 
-	:OnCreation => {},
+	:OnCreation => proc{
+		# Map IDs for Delta form
+		if $game_map && Pichu.include?($game_map.map_id)
+            next 2
+        else
+            next 0
+        end
+    },
 },
 
 :SANDSHREW => {
@@ -14275,7 +14290,14 @@ MONHASH = {
 		:BaseStats => [30, 60, 35, 55, 55, 80],
 	},
 
-	:OnCreation => {},
+	:OnCreation => proc{
+		# Map IDs for Delta form
+		if $game_map && Pichu.include?($game_map.map_id)
+            next 1
+        else
+            next 0
+        end
+    },
 },
 
 :CLEFFA => {

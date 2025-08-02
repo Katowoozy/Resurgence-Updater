@@ -2470,10 +2470,11 @@ FIELDEFFECTS = {
 	},
 	:statusMods => [],
 	:changeEffects => {},
+	# Resurgence - Scuffed fix for Normalize not working properly with Magical Seed on Inverse Field
 	:seed => {
 		:seedtype => :MAGICALSEED,
-		:effect => :HyperBeam,
-		:duration => 1,
+		:effect => :Normalized,
+		:duration => 0,
 		:message => "{1} was normalized!",
 		:animation => :SHARPEN,
 		:stats => {},
@@ -2825,7 +2826,7 @@ FIELDEFFECTS = {
 	:damageMods => {
 		1.5 => [:HEX, :MYSTICALFIRE, :SPIRITBREAK, :SPIRITAWAY],
 		1.4 => [:ICEBEAM, :HYPERBEAM, :SIGNALBEAM, :AURORABEAM, :CHARGEBEAM, :PSYBEAM, :FLASHCANNON, :MIRRORBEAM, :MAGICALLEAF, :BUBBLEBEAM],
-		1.2 => [:DARKPULSE, :NIGHTDAZE, :MOONBLAST],
+		1.2 => [:DARKPULSE, :NIGHTDAZE, :MOONBLAST, :LUNARCANNON],
 	},
 	:accuracyMods => {
 		85 => [:SLEEPPOWDER, :POISONPOWDER, :STUNSPORE, :GRASSWHISTLE],

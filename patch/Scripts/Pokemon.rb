@@ -791,6 +791,8 @@ class PokeBattle_Pokemon
   def isMega?
     # Gen 9 Mod - Ogerpon Mega/Tera is handled differently, we need this to be true
     return true if PBStuff::OGERPONTERAFORMS.keys.include?(@species) && PBStuff::OGERPONTERAFORMS[@species].include?(self.form)
+    # Resurgence - Eevee needs this to turn back to its base form after battle.
+    return true if PBStuff::EEVEEMEGAFORMS.keys.include?(@species) && PBStuff::EEVEEMEGAFORMS[@species].include?(self.form)
     v = $cache.pkmn[@species].formData.dig(:MegaForm)
     v = $cache.pkmn[@species].formData.dig(:PulseForm) if (Reborn && !v)
     v = $cache.pkmn[@species].formData.dig(:RiftForm) if (Rejuv && !v)

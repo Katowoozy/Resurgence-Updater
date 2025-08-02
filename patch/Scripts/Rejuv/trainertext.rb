@@ -79,12 +79,20 @@ TEAMARRAY = [{
 :teamid => ["Reukra",:PERFECTIONIST,9],
 :defeat => "Sparkle on Wednesday.",
 :items => [:DECRUSCREST],
+:trainereffect => {
+	:effectmode => :Party,
+	:buffactivation => :Limited,
+	0 => {
+		:message => "REUKRA: Inverse the field.",
+		:fieldChange => [:INVERSE,"The type chart was inverted!",0],
+	}
+},
 :mons => [{
-	:species => :EMOLGA,
+	:species => :LIEPARD,
 	:level => 25,
-	:item => :SEVCREST,
-	:moves => [:EMBER,nil,nil,nil],
-	:ability => :HARVEST,
+	:item => :ZOROCREST,
+	:moves => [:SPLASH,nil,nil,nil],
+	:ability => :ILLUSION,
 	:nature => :JOLLY,
 	:shiny => true,
 	:form => 1,
@@ -17184,7 +17192,7 @@ TEAMARRAY = [{
 	:ability => :SHEDSKIN,
 }]},
 {
-:teamid => ["Mac",:XENGRUNT_M,0],
+:teamid => ["Mac",:XENANALYST_M,0],
 :defeat => "Man, I was probably just fodder wasn't I?",
 :mons => [{
 	:species => :LIEPARD,
@@ -18205,7 +18213,7 @@ TEAMARRAY = [{
 	:ability => :SHEDSKIN,
 }]},
 {
-:teamid => ["Mac",:XENGRUNT_M,0],
+:teamid => ["Mac",:XENANALYST_M,100],
 :defeat => "Man, I was probably just fodder wasn't I?",
 :mons => [{
 	:species => :LIEPARD,
@@ -28403,15 +28411,16 @@ TEAMARRAY = [{
 	:iv => 31,
 	:ev => [0, 252, 0, 0, 0, 252]},
 {
-	:species => :JYNX,
+	:species => :ROSERADE,
 	:level => 83,
 	:item => :FOCUSSASH,
-	:moves => [:LOVELYKISS,:ICYWIND,:ICEBEAM,:PSYCHIC],
-	:ability => :FOREWARN,
+	:moves => [:MOONBLAST,:DARKPULSE,:LOVELYKISS,:MOONLIGHT],
+	:ability => :SHADOWDANCE,
 	:gender => "F",
+	:form => 2,
 	:nature => :TIMID,
 	:iv => 31,
-	:ev => [252, 0, 0, 0, 0, 252]},
+	:ev => [0, 0, 0, 252, 0, 252]},
 {
 	:species => :DRIFBLIM,
 	:level => 83,

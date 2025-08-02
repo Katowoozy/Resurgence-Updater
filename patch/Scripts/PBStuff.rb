@@ -692,6 +692,11 @@ OGERPONTERAFORMS = {
   :OGERPON => [8, 9, 10, 11],
 }
 
+# Resurgence - Required hash for Eevee Mega Forms.
+EEVEEMEGAFORMS = {
+  :EEVEE => [1, 3, 4],
+}
+
 # Resurgence - Delta Species List
 DELTAPOKEMON = {
   :BULBASAUR => [1],
@@ -808,6 +813,15 @@ DELTAPOKEMON = {
   :BUNEARY => [1],
   :LOPUNNY => [2,3],
 }
+
+# Resurgence - Armored Species List
+ARMORPOKEMON = {
+  :TYRANITAR => [2],
+  :FLYGON => [2],
+  :VOLCARONA => [3],
+  :LEAVANNY => [2],
+}
+
 
 # Resurgence Mega Evolve base form check
 CORRECTMEGAFORM = {

@@ -983,8 +983,8 @@ def getEvolutionForm(mon,item=nil)
     return 2 if form == 1
     return 3 if form == 2
   when :METANG
-    return 2 if form == 2
-    return 4 if form == 3
+    return 4 if form == 2
+    return 2 if form == 3
 
   else return form
   end  

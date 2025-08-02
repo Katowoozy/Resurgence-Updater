@@ -97,7 +97,7 @@ def pbGetPocket(item)
   return 3 if itemdata.checkFlag?(:ball)
   return 4 if itemdata.checkFlag?(:tm)
   return 5 if itemdata.checkFlag?(:berry)
-  return 6 if itemdata.checkFlag?(:crystal) || itemdata.checkFlag?(:crest)
+  return 6 if itemdata.checkFlag?(:crystal) || itemdata.checkFlag?(:crest) || itemdata.checkFlag?(:armor)
   return 7 if itemdata.checkFlag?(:battleitem)
   return 8 if itemdata.checkFlag?(:keyitem)
   return 1

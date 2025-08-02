@@ -213,6 +213,10 @@ class PokeBattle_Move
     if attacker.effects[:Electrify] || (type == :NORMAL && @battle.state.effects[:IonDeluge])
       type = :ELECTRIC
     end
+    # Resurgence - Scuffed fix for Normalize not working properly with Magical Seed on Inverse Field
+    if attacker.effects[:Normalized]
+      type = :NORMAL
+    end
     return type
   end
 

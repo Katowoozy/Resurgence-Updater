@@ -98,7 +98,8 @@ class PokeBattle_Battler
     # Gen 9 Mod - Added Commander/Commandee effects, Double Shock & Charge lasts until electric move is used or switches
     :Commander, :Commandee, :DoubleShock, :Charge, :GlaiveRush, :SaltCure, :Lernean, :ElectroCharge, :CryoCharge,
     # Resurgence - Added effect for Partner receiving Micle Berry Accuracy boost if partnered with Crested Delta Crustle
-    :PartnerMicle, :CrustleBerryPartner]
+    # Also added Normalized because I can't get Normalize to work with the Magical Seed on Inverse
+    :PartnerMicle, :CrustleBerryPartner, :Normalized]
   
   #turn count vars
   # Gen 9 Mod - Removed Charge from TurnEff
@@ -216,14 +217,13 @@ class PokeBattle_Battler
   end
 
   def isDelta?(illusion=false)
-    return PBStuff::DELTAPOKEMON.include?(pokemon.species) && PBStuff::DELTAPOKEMON[pokemon.species].include?(pokemon.form)
+    deltamon = illusion==true ? @effects[:Illusion] : self
+    return PBStuff::DELTAPOKEMON.include?(deltamon.species) && PBStuff::DELTAPOKEMON[deltamon.species].include?(deltamon.form)
   end
 
   def isArmored?(illusion=false)
-    return true if pokemon.species == :TYRANITAR && pokemon.form == 2
-    return true if pokemon.species == :FLYGON    && pokemon.form == 2
-    return true if pokemon.species == :VOLCARONA && pokemon.form == 3
-    return true if pokemon.species == :LEAVANNY  && pokemon.form == 2
+    armormon = illusion==true ? @effects[:Illusion] : self
+    return PBStuff::ARMORPOKEMON.include?(armormon.species) && PBStuff::ARMORPOKEMON[armormon.species].include?(armormon.form)
   end
 
   def chargeTurns?

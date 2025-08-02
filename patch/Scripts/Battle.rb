@@ -1417,7 +1417,7 @@ class PokeBattle_Battle
         return false
       end
     end
-    if basemove.hasFlag?(:heavymove) && !instructed && !basemove.zmove
+    if basemove.hasFlag?(:cooldown) && !instructed && !basemove.zmove
       if basemove.move == thispkmn.lastRegularMoveUsed
         if showMessages
           pbDisplayPaused(_INTL("{1} can't use {2} twice in a row!", thispkmn.pbThis, basemove.name))

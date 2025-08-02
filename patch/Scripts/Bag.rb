@@ -543,6 +543,7 @@ class PokemonBag_Scene
       },
       :orb => ->(item) { item.checkFlag?(:crystal) && [:REDORB, :BLUEORB, :CRYSTALPIECE].include?(item.item)},
       :crest => ->(item) { item.checkFlag?(:crest) },
+      :armor => ->(item) { item.checkFlag?(:armor) },
       :mail => ->(item) { item.checkFlag?(:mail) },
       :battleitem => ->(item) { item.checkFlag?(:battleitem) },
       :generalusekey => ->(item) { 

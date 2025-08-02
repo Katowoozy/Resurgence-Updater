@@ -139,6 +139,7 @@ DSnorunt = [140]
 Combee = [55,474]
 Girafarig = [201]
 Scyther = [470]
+Pichu = [433]
 
 #===============================================================================
 # * Constants for maps to reflect sprites on

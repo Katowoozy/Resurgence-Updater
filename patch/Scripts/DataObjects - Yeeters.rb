@@ -263,6 +263,7 @@ def itemDump
       exporttext += "  :keys => true,\n" if keys.include?(item[ITEMID])
       exporttext += "  :image => \"key\",\n" if (649..659).to_a.include?(item[ITEMID])
       exporttext += "  :legendary => true,\n" if legendary.include?(item[ITEMID])
+      exporttext += "  :armor => true,\n" if armor.include?(item[ITEMID])
     end
     if Rejuv
       exporttext += "  :crest => true,\n" if crest.include?(item[ITEMID])
