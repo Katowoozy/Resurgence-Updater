@@ -16452,6 +16452,7 @@ MONHASH = {
 		:Type2 => :FAIRY,
 		:BaseStats => [60, 60, 60, 85, 85, 85],
 		:Abilities => [:MAGICGUARD],
+		:HiddenAbilities => :WINTERJOY,
 		:EggMoves => [],
 		:Moveset => [
 			[1,:SING],
@@ -26853,7 +26854,7 @@ MONHASH = {
 	"Delta Mega Form" => { # Resurgence Mega
 		:Type1 => :GHOST,
 		:BaseStats => [95, 70, 109, 130, 155, 81],
-		:Abilities => [:ABSOLUTION],
+		:Abilities => [:HELIOPHOBIA],
 		:Moveset => [
 			[1,:INFESTATION],
 			[1,:SHADOWSNEAK],
@@ -46625,6 +46626,9 @@ MONHASH = {
 		:EggGroups => [:Undiscovered],
 		:kind => "Flying Sword",
 		:dexentry => "It commands a large group of Pawniard. A single swing of its arm is enough to summon a hurricane.",
+		:evolutions => [
+			[:KINGAMBIT,:Item,:LEADERSCREST]
+		]
 	},
 
 	"Mega Form" => { # Insurgence Mega
@@ -62127,6 +62131,7 @@ MONHASH = {
 		:BaseStats => [58, 95, 145, 50, 105, 30],
 		:EVs => [0, 0, 2, 0, 0, 0],
 		:Abilities => [:WANDERINGSPIRIT],
+		:HiddenAbilities => :HELIOPHOBIA,
 		:GrowthRate => :MediumFast,
 		:GenderRatio => :FemHalf,
 		:BaseEXP => 169,

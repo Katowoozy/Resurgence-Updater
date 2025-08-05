@@ -2646,7 +2646,8 @@ class PokeBattle_Move
       when :DARK
         damage*=1.35 if @battle.pbWeather == :SHADOWSKY
       when :FAIRY
-        damage*=0.75 if @battle.pbWeather == :SHADOWSKY
+        damage*=1.5 if @battle.pbWeather == :SHADOWSKY && @move == :MOONBLAST
+        damage*=0.75 if @battle.pbWeather == :SHADOWSKY && !@move == :MOONBLAST
     end
     # Critical hits
     if opponent.damagestate.critical

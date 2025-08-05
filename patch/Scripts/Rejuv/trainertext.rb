@@ -79,14 +79,6 @@ TEAMARRAY = [{
 :teamid => ["Reukra",:PERFECTIONIST,9],
 :defeat => "Sparkle on Wednesday.",
 :items => [:DECRUSCREST],
-:trainereffect => {
-	:effectmode => :Party,
-	:buffactivation => :Limited,
-	0 => {
-		:message => "REUKRA: Inverse the field.",
-		:fieldChange => [:INVERSE,"The type chart was inverted!",0],
-	}
-},
 :mons => [{
 	:species => :LIEPARD,
 	:level => 25,
@@ -94,8 +86,16 @@ TEAMARRAY = [{
 	:moves => [:SPLASH,nil,nil,nil],
 	:ability => :ILLUSION,
 	:nature => :JOLLY,
-	:shiny => true,
 	:form => 1,
+},
+{
+	:species => :TYRANITAR,
+	:level => 25,
+	:item => :TYRANITARARMOR,
+	:moves => [:SPLASH,nil,nil,nil],
+	:ability => :DAZZLING,
+	:nature => :JOLLY,
+	:shiny => true,
 },
 ]},
 {

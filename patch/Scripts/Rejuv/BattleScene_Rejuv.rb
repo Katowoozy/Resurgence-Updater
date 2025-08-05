@@ -556,8 +556,6 @@ class PokemonDataBox < SpriteWrapper
         else
           imagepos.push(["Graphics/Pictures/Battle/BattleArmor.png",sbX+megaX,deltaY,0,0,-1,-1])
         end
-      elsif @battler.isArmored?
-        imagepos.push(["Graphics/Pictures/Battle/BattleArmor.png",sbX+megaX,megaY,0,0,-1,-1])
       elsif @battler.isMega?
         imagepos.push(["Graphics/Pictures/Battle/battleMegaEvoBox.png",sbX+megaX,megaY,0,0,-1,-1])
       elsif @battler.isUltra? # Maybe temporary until new icon
@@ -570,6 +568,10 @@ class PokemonDataBox < SpriteWrapper
       # Delta
       if @battler.isDelta?(illusion)
         imagepos.push(["Graphics/Pictures/Battle/battleDelta.png",sbX+megaX,megaY,0,0,-1,-1])
+      end
+      # Armored
+      if @battler.isArmored?(illusion)
+        imagepos.push(["Graphics/Pictures/Battle/BattleArmor.png",sbX+megaX,megaY,0,0,-1,-1])
       end
       # Alpha / Omega
       if @battler.species == :KYOGRE && @battler.form == 1 && !illusion

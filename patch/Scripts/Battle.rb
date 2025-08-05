@@ -653,7 +653,7 @@ class PokeBattle_Battle
         @battle.pbDisplay(_INTL("{1}'s Protocryophilic heightened its {2}!", i.pbThis, i.pbGetStatName(boostStat)))
       end
     end
-    if pbWeather != :HAIL || ![:ICY, :SNOWYMOUNTAIN, :FROZENDIMENSION].include?(@field.effect)
+    if pbWeather != :HAIL && ![:ICY, :SNOWYMOUNTAIN, :FROZENDIMENSION].include?(@field.effect)
       for i in priority
         next if i.isFainted?
         next if i.effects[:Protocryophilic][0] == 0

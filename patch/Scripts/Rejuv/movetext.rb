@@ -8434,7 +8434,7 @@ MOVEHASH = {
 	:maxpp => 15,
 	:effect => 30,
 	:target => :SingleNonUser,
-	:desc => "The user attacks with moon power. It might lower the target's Sp. Atk. "
+	:desc => "The user attacks with moon power that's boosted under shadowy skies. It might lower the target's Sp. Atk. "
 },
 
 :MYSTICALFIRE => {

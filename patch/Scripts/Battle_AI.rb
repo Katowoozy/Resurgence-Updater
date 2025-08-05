@@ -6368,6 +6368,7 @@ class PokeBattle_AI
     miniscore*=1.5 if [:PROTOSYNTHESIS,:ORICHALCUMPULSE].include?(@attacker.ability)
     miniscore*=0.5 if pbPartyHasType?(:WATER)
     miniscore*=0.7 if @attacker.pbHasMove?(:THUNDER) || @attacker.pbHasMove?(:HURRICANE)
+    miniscore*=0.5 if @attacker.pbHasMove?(:LUNARCANNON) 
     miniscore*=0.5 if @attacker.ability == :DRYSKIN
     miniscore*=0.5 if @attacker.ability == :WINTERJOY && @attacker.item != :UTILITYUMBRELLA
     miniscore*=1.5 if @attacker.ability == :HARVEST
@@ -6456,7 +6457,7 @@ class PokeBattle_AI
     miniscore*=1.3 if @attacker.ability == :ABSOLUTION
     miniscore*=1.3 if @attacker.ability == :HELIOPHOBIA
     miniscore*=1.5 if @attacker.ability == :PROTOABSOLUTION
-    miniscore*=1.5 if @attacker.pbHasMove?(:MOONLIGHT) || @attacker.pbHasMove?(:LUNARCANNON) || @attacker.pbHasMove?(:PHANTOMFORCE) || @attacker.pbHasMove?(:SHADOWFORCE)
+    miniscore*=1.5 if @attacker.pbHasMove?(:MOONLIGHT) || @attacker.pbHasMove?(:LUNARCANNON) || @attacker.pbHasMove?(:PHANTOMFORCE) || @attacker.pbHasMove?(:SHADOWFORCE) || @attacker.pbHasMove?(:MOONBLAST)
     return miniscore
   end
 
@@ -12335,9 +12336,14 @@ class PokeBattle_AI
           elsif type == :WATER
             damage = (damage * 1.5).round
           end
+        # Resurgence - Shadow Sky readjustments
         when :SHADOWSKY
           if type == :FAIRY
-            damage = (damage * 0.5).round
+            if move.move == :MOONBLAST
+              damage = (damage * 1.5).round
+            else
+              damage = (damage * 0.5).round
+            end
           elsif type == :SHADOW
             damage = (damage * 1.5).round
           elsif type == :DARK
