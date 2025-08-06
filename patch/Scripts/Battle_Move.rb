@@ -1145,23 +1145,6 @@ class PokeBattle_Move
           end
           return 0
         end
-      # Resurgence - Delta Luxray's Crest boosting Speed if hit by and immunity to Ground-type attacks
-      when :LUXRAY
-        if opponent.form == 1
-          if type == :GROUND
-            if opponent.pbCanIncreaseStatStage?(PBStats::SPEED)
-              opponent.pbIncreaseStatBasic(PBStats::SPEED,1)
-              @battle.pbCommonAnimation("StatUp",opponent,nil)
-              @battle.pbDisplay(_INTL("{1}'s {2} raised its Speed!",
-               opponent.pbThis,getItemName(opponent.item)))
-            else
-              @battle.pbDisplay(_INTL("{1}'s {2} made {3} ineffective!",
-               opponent.pbThis,getItemName(opponent.item),self.name))
-            end
-          end
-          return 0
-        end
-      end
     return 4
   end
 
@@ -1334,20 +1317,7 @@ class PokeBattle_Move
           end
           return 0
         end
-      # Resurgence - Delta Luxray's Crest boosting Speed if hit by and immunity to Ground-type attacks
-      when :LUXRAY
-        if opponent.form == 1
-          if type == :GROUND || (!secondtype.nil? && secondtype.include?(:GROUND))
-            if opponent.pbCanIncreaseStatStage?(PBStats::SPEED)
-              opponent.pbIncreaseStatBasic(PBStats::SPEED, 1)
-              @battle.pbCommonAnimation("StatUp", opponent, nil)
               @battle.pbDisplay(_INTL("{1}'s {2} raised its Speed!", opponent.pbThis, getItemName(opponent.item)))
-            else
-              @battle.pbDisplay(_INTL("{1}'s {2} made {3} ineffective!", opponent.pbThis, getItemName(opponent.item), self.name))
-            end
-            return 0
-          end
-        end
     end
     if opponent.ability == :BULLETPROOF && !opponent.moldbroken
       if PBStuff::BULLETMOVE.include?(@move)
