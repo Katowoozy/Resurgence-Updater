@@ -1145,6 +1145,7 @@ class PokeBattle_Move
           end
           return 0
         end
+      end
     return 4
   end
 
@@ -1317,7 +1318,6 @@ class PokeBattle_Move
           end
           return 0
         end
-              @battle.pbDisplay(_INTL("{1}'s {2} raised its Speed!", opponent.pbThis, getItemName(opponent.item)))
     end
     if opponent.ability == :BULLETPROOF && !opponent.moldbroken
       if PBStuff::BULLETMOVE.include?(@move)
