@@ -23695,7 +23695,7 @@ MONHASH = {
 
 	"Delta Mega Form" => {
 		:Type1 => :FIRE,
-		:Type2 => :FIRE,
+		:Type2 => nil,
 		:BaseStats => [70, 140, 230, 60, 80, 50],
 		:Abilities => [:SLAG],
 		:BaseEXP => 284,
@@ -46584,7 +46584,7 @@ MONHASH = {
 		:BattlerEnemyY => 16,
 		:BattlerAltitude => 0,
 		:evolutions => [
-			[:KINGAMBIT,:EnemyDefeat,3]
+			[:KINGAMBIT,:Item,:LEADERSCREST]
 		]
 	},
 
@@ -46626,9 +46626,6 @@ MONHASH = {
 		:EggGroups => [:Undiscovered],
 		:kind => "Flying Sword",
 		:dexentry => "It commands a large group of Pawniard. A single swing of its arm is enough to summon a hurricane.",
-		:evolutions => [
-			[:KINGAMBIT,:Item,:LEADERSCREST]
-		]
 	},
 
 	"Mega Form" => { # Insurgence Mega

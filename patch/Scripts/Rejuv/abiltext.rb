@@ -2200,7 +2200,8 @@ ABILHASH = {
 :VENOMOUS => {
 	:ID => 417,
 	:name => "Venomous",
-	:desc => "This Pokemon always badly poisons.",
+	:desc => "This Pokémon always badly poisons...",
+	:fullDesc => "This Pokémon will always inflict toxic poisoning instead of regular poisoning if it poisons its target."
 },
 
 :PRISMGUARD => {

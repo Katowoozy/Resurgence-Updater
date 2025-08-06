@@ -997,7 +997,7 @@ def checkEvolutionEx(pokemon)
   return nil if pokemon.species.nil? || pokemon.isEgg?
   return nil if [:EVERSTONE,:EEVIUMZ,:EVIOLITE].include?(pokemon.item)
   return nil if pokemon.species == :PRIMEAPE && $game_switches[:InterceptorsWish] == false
-  return nil if pokemon.species == :BISHARP
+  # return nil if pokemon.species == :BISHARP
   ret=nil
   d= pbGetEvolvedFormData(pokemon.species,pokemon)
   if !d.nil?

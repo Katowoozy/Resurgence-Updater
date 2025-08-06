@@ -10052,9 +10052,8 @@ ITEMHASH = {
 	:name => "Leader's Crest",
 	:desc => "A shard of what appears to be an old blade of some sort. It is held only by a head of certain Pokémon group.",
 	:price => 3000,
-	:noUse => true,
-	:noUseInBattle => true,
 	:evoitem => true,
+	:noUseInBattle => true,
 },
 
 :BOOSTERENERGY => {
