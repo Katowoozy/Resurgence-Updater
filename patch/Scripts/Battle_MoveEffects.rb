@@ -9892,6 +9892,11 @@ class PokeBattle_Move_159 < PokeBattle_Move
       return true
     end
 
+    # Resurgence - Delta Slither Wing
+    if attacker.species == :SLITHERWING && attacker.form == 1
+      return true
+    end
+
     # any non-hoopa Pokemon
     @battle.pbDisplay(_INTL("But {1} can't use the move!", attacker.pbThis))
     return false

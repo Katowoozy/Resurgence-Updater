@@ -1433,7 +1433,7 @@ METAHASH = {
 #Goldenwood Cave
 157 => { 
 	:MapPosition => [0, 22, 25],
-	:BattleBack => "Cave",
+	:BattleBack => "Haunted",
 },
 
 #The Silent Grove

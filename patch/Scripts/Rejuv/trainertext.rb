@@ -1557,7 +1557,7 @@ TEAMARRAY = [{
 {
 	:species => :FURRET,
 	:level => 16,
-	:moves => [:COIL,:QUICKATTACK,:PURSUIT,:SLASH],
+	:moves => [:AGILITY,:QUICKATTACK,:PURSUIT,:SLASH],
 	:ability => :KEENEYE,
 }]},
 {

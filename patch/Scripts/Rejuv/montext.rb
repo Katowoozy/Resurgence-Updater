@@ -1463,7 +1463,7 @@ MONHASH = {
 		:moveexceptions => [],
 		:EggGroups => [:Undiscovered],
 		:kind => "Cockatrice",
-		:dexentry => "A Delta Species discovered by RuneBlad3. It uses its piercing gaze to petrify foes and then perches on top of their immobile bodies.",
+		:dexentry => "A Delta Species discovered by Rune Script. It uses its piercing gaze to petrify foes and then perches on top of their immobile bodies.",
 	},
 
 	:OnCreation => proc{
@@ -10114,9 +10114,7 @@ MONHASH = {
 			[57,:HONECLAWS],
 			[61,:CLOSECOMBAT],
 		],
-		:compatiblemoves => [:ROAR,:HAIL,:BULKUP,:TAUNT,:ICEBEAM,:BLIZZARD,:HYPERBEAM,:BRICKBREAK,:ROCKTOMB,:AERIALACE,:LOWSWEEP,:FOCUSBLAST,:FALSESWIPE,:FLING,:ACROBATICS,:SHADOWCLAW,:PAYBACK,:ROOST,:GIGAIMPACT,:STONEEDGE,:SWORDSDANCE,:PSYCHUP,:FROSTBREATH,:ROCKSLIDE,:XSCISSOR,:UTURN,:SNARL,:POWERUPPUNCH,:BRUTALSWING,:ICICLESPEAR,:PSYCHOCUT,:CUT,:STRENGTH,:ROCKSMASH,:HONECLAWS,:AVALANCHE,:RETALIATE,:VACUUMWAVE,:AFTERYOU,:AGILITY,:BATONPASS,:CLOSECOMBAT,:DRAINPUNCH,:DUALCHOP,:ENDEAVOR,:FOCUSENERGY,:FURYCUTTER,:HELPINGHAND,:ICYWIND,:IRONHEAD,:KNOCKOFF,:LASERFOCUS,:REVENGE,:REVERSAL,:SNATCH,:SPIKES,:SUPERPOWER,:SWIFT,:TAILWIND,:WATERPULSE,:STACKINGSHOT,:SLASHANDBURN,:COACHING,:TRIPLEAXEL,:ICEBALL,:MIMIC,:TAKEDOWN,:ICESPINNER,:HAZE,:VACUUMWAVE,:DOUBLEEDGE,:CURSE,:UPPERHAND,:ACID,:ACHILLESHEEL,:JETSTREAM,:PERMAFROST,:COUNTER,
-			#Resurgence only moves
-			:JETSTREAM],
+		:compatiblemoves => [:ROAR,:HAIL,:BULKUP,:TAUNT,:ICEBEAM,:BLIZZARD,:HYPERBEAM,:BRICKBREAK,:ROCKTOMB,:AERIALACE,:LOWSWEEP,:FOCUSBLAST,:FALSESWIPE,:FLING,:ACROBATICS,:SHADOWCLAW,:PAYBACK,:ROOST,:GIGAIMPACT,:STONEEDGE,:SWORDSDANCE,:PSYCHUP,:FROSTBREATH,:ROCKSLIDE,:XSCISSOR,:UTURN,:SNARL,:POWERUPPUNCH,:BRUTALSWING,:ICICLESPEAR,:PSYCHOCUT,:CUT,:STRENGTH,:ROCKSMASH,:HONECLAWS,:AVALANCHE,:RETALIATE,:VACUUMWAVE,:AFTERYOU,:AGILITY,:BATONPASS,:CLOSECOMBAT,:DRAINPUNCH,:DUALCHOP,:ENDEAVOR,:FOCUSENERGY,:FURYCUTTER,:HELPINGHAND,:ICYWIND,:IRONHEAD,:KNOCKOFF,:LASERFOCUS,:REVENGE,:REVERSAL,:SNATCH,:SPIKES,:SUPERPOWER,:SWIFT,:TAILWIND,:WATERPULSE,:STACKINGSHOT,:SLASHANDBURN,:COACHING,:TRIPLEAXEL,:ICEBALL,:MIMIC,:TAKEDOWN,:ICESPINNER,:HAZE,:VACUUMWAVE,:DOUBLEEDGE,:CURSE,:UPPERHAND,:ACID,:ACHILLESHEEL,:JETSTREAM,:PERMAFROST,:COUNTER],
 		:moveexceptions => [],
 		:EggGroups => [:Undiscovered],
 		:kind => "Ice Cleaver",
@@ -14153,7 +14151,44 @@ MONHASH = {
 		]
 	},
 
-	:OnCreation => {},
+	"Delta Form" => {
+		:Type1 => :GHOST,
+		:Type2 => :FIRE,
+		:Abilities => [:FLASHFIRE, :UNNERVE],
+		:HiddenAbilities => :LEVITATE,
+		:EggMoves => [],
+		:Moveset => [
+			[1,:ASTONISH],
+			[1,:SMOKESCREEN],
+			[6,:HAZE],
+			[9,:EMBER],
+			[12,:SMOG],
+			[17,:CONFUSERAY],
+			[20,:INCINERATE],
+			[23,:NIGHTSHADE],
+			[28,:WILLOWISP],
+			[31,:FOLLOWME],
+			[34,:FLAMETHROWER],
+			[39,:CLEARSMOG],
+			[42,:PAINSPLIT],
+			[45,:PHANTOMFORCE],
+			[47,:FAKETEARS],
+			[50,:TAILGLOW]],
+		:compatiblemoves => [:VENOSHOCK,:SUNNYDAY,:SAFEGUARD,:PSYCHIC,:SHADOWBALL,:FLAMETHROWER,:SLUDGEBOMB,:FIREBLAST,:TORMENT,:FLAMECHARGE,:OVERHEAT,:CHARGEBEAM,:INCINERATE,:WILLOWISP,:EMBARGO,:DREAMEATER,:TRICKROOM,:DAZZLINGGLEAM,:FAKETEARS,:PHANTOMFORCE,:AFTERYOU,:ALLYSWITCH,:BOUNCE,:EARTHPOWER,:ENDEAVOR,:GRAVITY,:HEATWAVE,:MAGICCOAT,:MAGICROOM,:OMINOUSWIND,:PAINSPLIT,:SKILLSWAP,:SPITE,:TRICK,:WONDERROOM,:MIMIC,:CONFUSERAY,:NIGHTSHADE,:HAZE,:SHADOWPRAYER,:LUNARCANNON,:ACID,:ACHILLESHEEL,:DARKMATTER],
+		:moveexceptions => [],
+		:EggGroups => [:Undiscovered],
+		:kind => "Wisp",
+		:dexentry => "A Delta Species discovered by CommanderPhoenix. When it senses danger, it emits bright flames and fades into the shadows.",
+	},
+
+	:OnCreation => proc{
+		# Map IDs for Delta form
+		if $game_map && Chinchou.include?($game_map.map_id)
+            next 1
+        else
+            next 0
+        end
+    },
 },
 
 :LANTURN => {
@@ -14219,7 +14254,50 @@ MONHASH = {
 		:BattlerAltitude => 11,
 	},
 
-	:OnCreation => {},
+	"Delta Form" => {
+		:Type1 => :GHOST,
+		:Type2 => :FIRE,
+		:Abilities => [:FLASHFIRE, :UNNERVE],
+		:HiddenAbilities => :LEVITATE,
+		:EggMoves => [],
+		:Moveset => [
+			[0,:STOCKPILE],
+			[0,:SWALLOW],
+			[0,:SPITUP],
+			[1,:HYPNOSIS],
+			[1,:ASTONISH],
+			[1,:SMOKESCREEN],
+			[1,:HAZE],
+			[1,:EMBER],
+			[6,:HAZE],
+			[9,:EMBER],
+			[12,:SMOG],
+			[17,:CONFUSERAY],
+			[20,:INCINERATE],
+			[23,:NIGHTSHADE],
+			[29,:WILLOWISP],
+			[33,:FOLLOWME],
+			[37,:FLAMETHROWER],
+			[43,:CLEARSMOG],
+			[47,:PAINSPLIT],
+			[51,:PHANTOMFORCE],
+			[54,:FAKETEARS],
+			[58,:TAILGLOW]],
+		:compatiblemoves => [:VENOSHOCK,:SUNNYDAY,:HYPERBEAM,:SAFEGUARD,:PSYCHIC,:SHADOWBALL,:SLUDGEWAVE,:FLAMETHROWER,:SLUDGEBOMB,:FIREBLAST,:TORMENT,:FLAMECHARGE,:OVERHEAT,:CHARGEBEAM,:INCINERATE,:WILLOWISP,:EMBARGO,:GIGAIMPACT,:DREAMEATER,:TRICKROOM,:DAZZLINGGLEAM,:FAKETEARS,:PHANTOMFORCE,:AFTERYOU,:ALLYSWITCH,:BOUNCE,:EARTHPOWER,:ENDEAVOR,:GRAVITY,:GUNKSHOT,:HEATWAVE,:MAGICCOAT,:MAGICROOM,:OMINOUSWIND,:PAINSPLIT,:SKILLSWAP,:SPITE,:TRICK,:WONDERROOM,:MIMIC,:CONFUSERAY,:NIGHTSHADE,:HAZE,:SHADOWPRAYER,:LUNARCANNON,:ACID,:ACHILLESHEEL,:DARKMATTER,:HYPNOSIS],
+		:moveexceptions => [],
+		:EggGroups => [:Undiscovered],
+		:kind => "Ghost Light",
+		:dexentry => "The flames it produces are extraordinarily hot. Due to its reclusive nature, lost travelers that stumble upon it may mistake its presence for the gateway to hell.",
+	},
+
+	:OnCreation => proc{
+		# Map IDs for Delta form
+		if $game_map && Chinchou.include?($game_map.map_id)
+            next 1
+        else
+            next 0
+        end
+    },
 },
 
 :PICHU => {
@@ -15650,7 +15728,7 @@ MONHASH = {
 		:moveexceptions => [],
 		:EggGroups => [:Undiscovered],
 		:kind => "Blazing Oil",
-		:dexentry => "A Delta Species discovered by DankRabbit and EchoTheThird. It is able to emit a purple fire that poisons its enemies.",
+		:dexentry => "A Delta Species discovered by SleepLate and EchoTheThird. It is able to emit a purple fire that poisons its enemies.",
 		:evolutions => [
 			[:SUNFLORA,:Item,:FIRESTONE]
 		]
@@ -40420,7 +40498,7 @@ MONHASH = {
 		:kind => "Molten",
 		:WildItemCommon => :RAWSTBERRY,
 		:WildItemUncommon => :CHARCOAL,
-		:dexentry => "A Delta Species discovered by DankRabbit. It is highly aggressive and will attempt to set its surroundings on fire when agitated.",
+		:dexentry => "A Delta Species discovered by SleepLate. It is highly aggressive and will attempt to set its surroundings on fire when agitated.",
 	},
 
 	:OnCreation => proc{
@@ -41661,7 +41739,7 @@ MONHASH = {
 		:EggGroups => [:Undiscovered],
 		:WildItemUncommon => :WHIPPEDDREAM,
 		:kind => "Cupcake",
-		:dexentry => "A Delta Species discovered by DankRabbit. It entices strangers with its sweet scent, taking offense if they do not immediately attempt to taste its frosting.",
+		:dexentry => "A Delta Species discovered by SleepLate. It entices strangers with its sweet scent, taking offense if they do not immediately attempt to taste its frosting.",
 	},
 
 	:OnCreation => proc{
@@ -41917,7 +41995,7 @@ MONHASH = {
 		:moveexceptions => [],
 		:EggGroups => [:Undiscovered],
 		:kind => "Bush",
-		:dexentry => "A Delta Species discovered by DankRabbit. Despite being a Grass-type, it is quite adept at hunting Bug-types for food.",
+		:dexentry => "A Delta Species discovered by SleepLate. Despite being a Grass-type, it is quite adept at hunting Bug-types for food.",
 	},
 
 	:OnCreation => proc{
@@ -46303,7 +46381,7 @@ MONHASH = {
 		:EggGroups => [:Undiscovered],
 		:kind => "Gladiator",
 		:WildItemUncommon => :IRONBALL,
-		:dexentry => "A Delta Species discovered by RuneBlad3. It battles in arenas every day, honing its skills in the hopes that it will one day become a champion.",
+		:dexentry => "A Delta Species discovered by Rune Script. It battles in arenas every day, honing its skills in the hopes that it will one day become a champion.",
 	},
 
 	:OnCreation => proc{

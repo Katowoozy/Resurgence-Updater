@@ -1491,6 +1491,25 @@ ENCHASH = {
 		:QUAGSIRE => [[35,75,86],[7,75,86],[3,75,86]],
 	},
 },
+157 => {# Goldenwood Cave
+	:landrate => 20,
+	:caverate => 5,
+	:waterrate => 5,
+	:OldRod => {
+		:DUSKULL => [[60,20,22]],
+		:SHUPPET => [[40,20,22]],
+	},
+	:GoodRod => {
+		:CHINCHOU => [[50,32,34]],
+		:DUSKULL => [[30,30,33]],
+		:SHUPPET => [[20,30,33]],
+	},
+	:SuperRod => {
+		:LANTURN => [[40,78,80]],
+		:DUSCLOPS => [[35,78,80]],
+		:BANETTE => [[25,78,80]],
+	},
+},
 159 => {# Amethyst Cave
 	:landrate => 20,
 	:caverate => 5,
