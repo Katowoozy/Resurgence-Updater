@@ -14259,7 +14259,10 @@ MONHASH = {
 		:Type2 => :FIRE,
 		:Abilities => [:FLASHFIRE, :UNNERVE],
 		:HiddenAbilities => :LEVITATE,
-		:EggMoves => [],
+		:preevo => {
+			:species => :CHINCHOU,
+			:form => 1
+		},
 		:Moveset => [
 			[0,:STOCKPILE],
 			[0,:SWALLOW],

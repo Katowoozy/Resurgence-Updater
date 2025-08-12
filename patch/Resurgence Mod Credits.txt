@@ -215,6 +215,7 @@ Porting over PULSE-3 Mechanics for Delta Avalugg's Crest
 
 Help with tracking down the original Delta Artists (because there's so many lol)
 - springSideways
+- Gelius
 
 Allowing the Mining Overhaul Mod to be ported into Rejuvenation
 - AiedailEclipsed

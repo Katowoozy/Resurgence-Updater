@@ -11978,7 +11978,7 @@ class PokeBattle_AI
             basedamage = attacker.hasType?(type) ? (basedamage * 1.2).round : (basedamage * 1.5).round if attacker.moves[0] == move
           elsif attacker.crested == :CASTFORM && attacker.form == 1
             basedamage = (basedamage * 1.5).round if @battle.pbWeather == :SUNNYDAY && move.pbIsSpecial?(type)
-          elseif attacker.crested == :DUDUNSPARCE
+          elsif attacker.crested == :DUDUNSPARCE
             @category = :physical if move.pbIsMultiHit
           # Resurgence - Making base Luxray and Delta Luxray's Crest Effects exclusive to each of their respective forms
           elsif attacker.crested == :LUXRAY
