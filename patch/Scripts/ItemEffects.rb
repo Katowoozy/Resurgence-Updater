@@ -332,7 +332,9 @@ ItemHandlers::UseOnPokemon.copy(:FIRESTONE,
    :BLACKAUGURITE,:PEATBLOCK,:APOPHYLLPAN,:XENWASTE,:NIGHTMAREFUEL,:ANCIENTTEACH,
    # Gen 9 Mod - Added Gen 9 Evolution Items
    :AUSPICIOUSARMOR,:MALICIOUSARMOR,:SYRUPYAPPLE,:UNREMARKABLETEACUP,:MASTERPIECETEACUP,
-   :METALALLOY,:LEADERSCREST)
+   :METALALLOY,:LEADERSCREST,
+   # Resurgence - Added Blue Augurite
+   :BLUEAUGURITE)
 
 ItemHandlers::UseOnPokemon.add(:POTION,proc{|item,pokemon,scene|
    next pbHPItem(pokemon,20,scene)

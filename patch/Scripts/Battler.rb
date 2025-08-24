@@ -108,7 +108,7 @@ class PokeBattle_Battler
     :Metronome, :MultiTurn, :Outrage, :PerishSong, :Substitute, :Taunt,
     :Telekinesis, :ThroatChop, :Toxic, :Uproar, :Yawn, :TwoTurnAttack,:ChtonicMalady,
     # Gen 9 Mod - Added Gen 9 Effects. Resurgence - Chlorofury, Unleafed, and Amplifier
-    :SyrupBomb, :Chlorofury, :Unleafed, :Amplifier]
+    :SyrupBomb, :Chlorofury, :Unleafed, :Amplifier, :Flicker]
 
   #position vars
   PosEff = [:Attract, :BideTarget, :Counter, :MirrorCoat, :LeechSeed, :LockOnPos, :MeanLook,
@@ -2628,6 +2628,13 @@ class PokeBattle_Battler
       self.type2 = nil
       typename = getTypeName(self.type1)
       @battle.pbDisplay(_INTL("{1} transformed into an {2}-type!", self.pbThis, typename))
+    end
+    # Resurgence - Flicker activating on Switch In
+    if self.ability == :FLICKER && onactive
+      @battle.pbAnimation(:BURNINGBULWARK, self, nil)
+      @effects[:Protect] = :BurningBulwark
+      @effects[:ProtectRate] += 1
+      @battle.pbDisplay(_INTL("{1}'s fiery boulder started bursting in flames to protect its holder!", self.pbThis))
     end
     #Surges
     duration=5

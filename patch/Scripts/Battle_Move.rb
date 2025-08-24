@@ -1017,7 +1017,7 @@ class PokeBattle_Move
         return 0
       end
     end
-    if opponent.ability == :CASTLEMOAT && !opponent.moldbroken
+    if opponent.ability == :CASTLEMOAT && type == :WATER && !opponent.moldbroken
       negator = getAbilityName(opponent.ability)
       if opponent.pbCanIncreaseStatStage?(PBStats::SPDEF)
         if @battle.FE == :ASHENBEACH
@@ -1262,7 +1262,7 @@ class PokeBattle_Move
         return 0
       end
     end
-    if opponent.ability == :CASTLEMOAT && !opponent.moldbroken
+    if opponent.ability == :CASTLEMOAT && type == :WATER && !opponent.moldbroken
       negator = getAbilityName(opponent.ability)
       if opponent.pbCanIncreaseStatStage?(PBStats::SPDEF)
         if @battle.FE == :ASHENBEACH

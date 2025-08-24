@@ -14857,4 +14857,20 @@ MOVEHASH = {
 	:desc => "The user brings the air around the target down to subzero, causing the target to be frostbitten."
 },
 
+:FLASHFREEZE => {
+	:ID => 1021,
+	:name => "Flash Freeze",
+	:function => 0x971,
+	:type => :ICE,
+	:category => :physical,
+	:basedamage => 70,
+	:accuracy => 100,
+	:maxpp => 20,
+	:target => :SingleNonUser,
+	:contact => true,
+	:sharpmove => true,
+	:desc => "Skating around, the user slices the target. This move always goes first in Hail and Ice fields."
+
+},
+
 }

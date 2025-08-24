@@ -13151,6 +13151,8 @@ class PokeBattle_Move_923 < PokeBattle_Move
       pri = oppmovedata.priority
     end
     pri += 1 if oppmoveid == :GRASSYGLIDE && (@battle.FE == :GRASSY || @battle.state.effects[:GRASSY] > 0)
+    # Resurgence - Flash Freeze
+    pri += 1 if oppmoveid == :FLASHFREEZE && (@battle.weather == :HAIL || @battle.FE == :ICY || @battle.FE == :SNOWYMOUNTAIN || @battle.FE == :FROZENDIMENSION)
     pri += 1 if @battle.FE == :CHESS && opponent.pokemon && opponent.pokemon.piece == :KING
     pri += 1 if opponent.crested == :FERALIGATR && oppmovedata.basedamage != 0 && opponent.turncount == 1 # Feraligatr Crest
     pri += 1 if opponent.ability == :GALEWINGS && oppmovedata.type ==:FLYING && ((opponent.hp == opponent.totalhp) || @battle.FE == :SKY || ((@battle.FE == :MOUNTAIN || @battle.FE == :SNOWYMOUNTAIN || @battle.FE == :VOLCANICTOP) && @battle.weather == :STRONGWINDS))
@@ -13492,4 +13494,11 @@ class PokeBattle_Move_97F < PokeBattle_Move
     return if !showanimation 
     @battle.pbAnimation(:SPITUP,attacker,opponent,hitnum)
   end
+end
+
+################################################################################
+# Adds 1 to priority on Hail and Icy Terrains (Flash Freeze)
+################################################################################
+class PokeBattle_Move_971 < PokeBattle_Move
+  # Handled in Battle -> def pbPriority
 end

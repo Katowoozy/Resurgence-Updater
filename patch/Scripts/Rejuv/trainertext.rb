@@ -80,22 +80,16 @@ TEAMARRAY = [{
 :defeat => "Sparkle on Wednesday.",
 :items => [:DECRUSCREST],
 :mons => [{
-	:species => :LIEPARD,
-	:level => 25,
-	:item => :ZOROCREST,
-	:moves => [:SPLASH,nil,nil,nil],
-	:ability => :ILLUSION,
-	:nature => :JOLLY,
-	:form => 1,
-},
+	:species => :MAGIKARP,
+	:level => 1,
+	:moves => [:SPLASH,nil,nil,nil]},
 {
-	:species => :TYRANITAR,
+	:species => :SABLEYE,
 	:level => 25,
-	:item => :TYRANITARARMOR,
 	:moves => [:SPLASH,nil,nil,nil],
-	:ability => :DAZZLING,
+	:ability => :FLICKER,
 	:nature => :JOLLY,
-	:shiny => true,
+	:form => 3,
 },
 ]},
 {
@@ -19840,12 +19834,12 @@ TEAMARRAY = [{
 	:iv => 31,
 },
 {
-	:species => :SCIZOR, #Resurgence
-	:form => 2,
+	:species => :KLEAVOR, #Resurgence
+	:form => 1,
 	:level => 49,
-	:item => :MUSCLEBAND,
-	:moves => [:ROCKSLIDE,:BRICKBREAK,:ICICLECRASH,:KNOCKOFF],
-	:ability => :ICECLEATS,
+	:item => :SCOPELENS,
+	:moves => [:SLASH,:SMARTSTRIKE,:FLASHFREEZE,:KNOCKOFF],
+	:ability => :SUPERLUCK,
 	:gender => "M",
 	:nature => :ADAMANT,
 	:iv => 31,
@@ -19977,12 +19971,12 @@ TEAMARRAY = [{
 	:nature => :TIMID,
 },
 {
-	:species => :SCIZOR, #Resurgence
-	:form => 2,
+	:species => :KLEAVOR, #Resurgence
+	:form => 1,
 	:level => 46,
 	:item => :MUSCLEBAND,
-	:moves => [:LOWSWEEP,:BRICKBREAK,:ICICLECRASH,:NIGHTSLASH],
-	:ability => :ICECLEATS,
+	:moves => [:LOWSWEEP,:STEELWING,:FLASHFREEZE,:NIGHTSLASH],
+	:ability => :SHARPNESS,
 	:gender => "M",
 	:nature => :ADAMANT,
 },
@@ -21836,12 +21830,12 @@ TEAMARRAY = [{
 	:iv => 31,
 	:ev => [4, 0, 0, 252, 0, 252]},
 {
-	:species => :SCIZOR, #Resurgence
-	:form => 2,
+	:species => :KLEAVOR, #Resurgence
+	:form => 1,
 	:level => 84,
-	:item => :FOCUSSASH,
-	:moves => [:ROCKSLIDE,:CLOSECOMBAT,:ICICLECRASH,:KNOCKOFF],
-	:ability => :ICECLEATS,
+	:item => :SCOPELENS,
+	:moves => [:SLASH,:SMARTSTRIKE,:FLASHFREEZE,:KNOCKOFF],
+	:ability => :SUPERLUCK,
 	:gender => "M",
 	:nature => :ADAMANT,
 	:iv => 31,
@@ -21900,12 +21894,12 @@ TEAMARRAY = [{
 	:iv => 31,
 	:ev => [4, 0, 0, 252, 0, 252]},
 {
-	:species => :SCIZOR, #Resurgence
-	:form => 2,
+	:species => :KLEAVOR, #Resurgence
+	:form => 1,
 	:level => 84,
-	:item => :FOCUSSASH,
-	:moves => [:ROCKSLIDE,:CLOSECOMBAT,:ICICLECRASH,:KNOCKOFF],
-	:ability => :ICECLEATS,
+	:item => :SCOPELENS,
+	:moves => [:SLASH,:SMARTSTRIKE,:FLASHFREEZE,:KNOCKOFF],
+	:ability => :SUPERLUCK,
 	:gender => "M",
 	:nature => :ADAMANT,
 	:iv => 31,
@@ -22096,11 +22090,11 @@ TEAMARRAY = [{
 	:iv => 31,
 },
 {
-	:species => :SCIZOR, #Resurgence
-	:form => 2,
+	:species => :KLEAVOR, #Resurgence
+	:form => 1,
 	:level => 80,
-	:moves => [:ROCKSLIDE,:LOWSWEEP,:ICICLECRASH,:NIGHTSLASH],
-	:ability => :ICECLEATS,
+	:moves => [:SLASH,:SMARTSTRIKE,:FLASHFREEZE,:NIGHTSLASH],
+	:ability => :SHARPNESS,
 	:gender => "M",
 	:nature => :ADAMANT,
 	:iv => 31,
@@ -22155,11 +22149,11 @@ TEAMARRAY = [{
 	:iv => 31,
 },
 {
-	:species => :SCIZOR, #Resurgence
-	:form => 2,
+	:species => :KLEAVOR, #Resurgence
+	:form => 1,
 	:level => 80,
-	:moves => [:ROCKSLIDE,:LOWSWEEP,:ICICLECRASH,:NIGHTSLASH],
-	:ability => :ICECLEATS,
+	:moves => [:SLASH,:SMARTSTRIKE,:FLASHFREEZE,:NIGHTSLASH],
+	:ability => :SHARPNESS,
 	:gender => "M",
 	:nature => :ADAMANT,
 	:iv => 31,

@@ -10120,7 +10120,8 @@ MONHASH = {
 		:kind => "Ice Cleaver",
 		:dexentry => "A Delta Species discovered by EchoTheThird. Its scythes are immensely sharp but also very fragile, and can easily be shattered when hit from the side.",
 		:evolutions => [
-			[:SCIZOR,:TradeItem,:NEVERMELTICE]
+			[:SCIZOR,:TradeItem,:NEVERMELTICE],
+			[:KLEAVOR,:Item,:BLUEAUGURITE]
 		]
 	},
 
@@ -15951,6 +15952,37 @@ MONHASH = {
 		]
 	},
 
+	"Delta Form" => {
+		:Type1 => :GRASS,
+		:Type2 => :FLYING,
+		:Abilities => [:ADAPTABILITY, :LEAFGUARD],
+		:HiddenAbilities => :NATURALCURE,
+		:EggMoves => [],
+		:Moveset => [
+			[1,:VINEWHIP],
+			[1,:CAMOUFLAGE],
+			[6,:GUST],
+			[11,:GROWTH],
+			[14,:RAZORLEAF],
+			[17,:DETECT],
+			[22,:AIRCUTTER],
+			[27,:LEAFTORNADO],
+			[30,:PURSUIT],
+			[33,:ANCIENTPOWER],
+			[38,:GRASSWHISTLE],
+			[43,:AIRSLASH],
+			[46,:WORRYSEED],
+			[49,:UTURN],
+			[54,:HURRICANE],
+			[57,:LEAFSTORM],
+		],
+		:compatiblemoves => [:SUNNYDAY,:TAUNT,:HYPERBEAM,:SAFEGUARD,:SOLARBEAM,:DIG,:AERIALACE,:ENERGYBALL,:FLING,:SKYDROP,:ACROBATICS,:ROOST,:GIGAIMPACT,:GRASSKNOT,:UTURN,:NATUREPOWER,:BULLETSEED,:AIRSLASH,:FLY,:AIRCUTTER,:ANCIENTPOWER,:BOUNCE,:BUGBITE,:COVET,:DEFOG,:ELECTROWEB,:ENDEAVOR,:FURYCUTTER,:GIGADRAIN,:HELPINGHAND,:HURRICANE,:KNOCKOFF,:LEAFSTORM,:RECYCLE,:ROLEPLAY,:SEEDBOMB,:SIGNALBEAM,:SYNTHESIS,:TAILWIND,:TWISTER,:WORRYSEED,:BIND,:MIMIC,:ACID,:SILVERWIND,:ACHILLESHEEL,:JETSTREAM],
+		:moveexceptions => [],
+		:EggGroups => [:Undiscovered],
+		:kind => "Leaf Wing",
+		:dexentry => "A Delta Species discovered by SapphirePhoenix. Though it specializes in camouflage, it is also a great flier capable of quickly chasing down lured prey.",
+	},
+
 	:OnCreation => {},
 },
 
@@ -21374,6 +21406,28 @@ MONHASH = {
 		]
 	},
 
+	"Delta Form" => {
+		:Type1 => :ELECTRIC,
+		:Type2 => nil,
+		:Abilities => [:VOLTABSORB, :MINUS],
+		:HiddenAbilities => :STATIC,
+		:EggMoves => [],
+		:Moveset => [
+			[1,:BIDE],
+			[3,:FLASH],
+			[9,:CHARGE],
+			[15,:CHARGEBEAM],
+			[21,:ELECTRICTERRAIN],
+			[27,:BARRIER],
+			[33,:DAZZLINGGLEAM],
+		],
+		:compatiblemoves => [:TAUNT,:LIGHTSCREEN,:RAINDANCE,:THUNDERBOLT,:THUNDER,:ENERGYBALL,:CHARGEBEAM,:EMBARGO,:VOLTSWITCH,:THUNDERWAVE,:WILDCHARGE,:DAZZLINGGLEAM,:ELECTRICTERRAIN,:FLASH,:BODYSLAM,:ELECTROWEB,:ENDEAVOR,:IRONHEAD,:MAGNETRISE,:RECYCLE,:SHOCKWAVE,:SIGNALBEAM,:SNATCH,:TWISTER,:MIMIC,:CHARGE,:ACID,:ACHILLESHEEL,:LIVEWIRE],
+		:moveexceptions => [],
+		:EggGroups => [:Undiscovered],
+		:kind => "Lightbulb",
+		:dexentry => "A Delta Species discovered by SketchyGamer. Its face flashes at varying frequencies depending on its mood at the time.",
+	},
+
 	:OnCreation => {},
 },
 
@@ -21440,6 +21494,39 @@ MONHASH = {
 		:BattlerAltitude => 0,
 		:evolutions => [
 			[:SHIFTRY,:Item,:LEAFSTONE]
+		]
+	},
+
+	"Delta Form" => {
+		:Type1 => :ELECTRIC,
+		:Type2 => nil,
+		:Abilities => [:VOLTABSORB, :MINUS],
+		:HiddenAbilities => :HUBRIS,
+		:preevo => {
+			:species => :SEEDOT,
+			:form => 1
+		},
+		:Moveset => [
+			[1,:BIDE],
+			[3,:COTTONSPORE],
+			[6,:CHARGE],
+			[9,:CHARGEBEAM],
+			[12,:FAKEOUT],
+			[14,:SHOCKWAVE],
+			[16,:COTTONGUARD],
+			[20,:THUNDERPUNCH],
+			[24,:BOUNCE],
+			[28,:DISCHARGE],
+			[32,:SWAGGER],
+			[36,:THUNDERBOLT],
+		],
+		:compatiblemoves => [:TAUNT,:LIGHTSCREEN,:RAINDANCE,:THUNDERBOLT,:THUNDER,:BRICKBREAK,:THIEF,:ENERGYBALL,:FLING,:CHARGEBEAM,:ACROBATICS,:EMBARGO,:VOLTSWITCH,:THUNDERWAVE,:UTURN,:WILDCHARGE,:SNARL,:POWERUPPUNCH,:DAZZLINGGLEAM,:MEGAKICK,:AIRCUTTER,:BODYSLAM,:BOUNCE,:COVET,:ELECTROWEB,:ENDEAVOR,:IRONHEAD,:KNOCKOFF,:LOWKICK,:MAGNETRISE,:RECYCLE,:SHOCKWAVE,:SIGNALBEAM,:SNATCH,:TAILWIND,:THUNDERPUNCH,:TWISTER,:MIMIC,:CHARGE,:ACID,:ACHILLESHEEL,:JETSTREAM,:LIVEWIRE,:FAKEOUT],
+		:moveexceptions => [],
+		:EggGroups => [:Undiscovered],
+		:kind => "Energetic",
+		:dexentry => "Though it has a cloud around its waist, it is still too heavy to levitate. It clings to its cloud desperately whenever someone gets too close to it.",
+		:evolutions => [
+			[:SHIFTRY,:Item,:THUNDERSTONE]
 		]
 	},
 
@@ -21515,6 +21602,31 @@ MONHASH = {
 		:BattlerAltitude => 0,
 	},
 
+	"Delta Form" => {
+		:Type1 => :ELECTRIC,
+		:Type2 => nil,
+		:Abilities => [:VOLTABSORB, :MINUS],
+		:HiddenAbilities => :HUBRIS,
+		:preevo => {
+			:species => :NUZLEAF,
+			:form => 1
+		},
+		:Moveset => [
+			[1,:BOUNCE],
+			[1,:LIGHTSCREEN],
+			[1,:SHOCKWAVE],
+			[1,:NASTYPLOT],
+			[20,:VOLTSWITCH],
+			[32,:DOUBLEHIT],
+			[44,:THUNDER],
+		],
+		:compatiblemoves => [:TAUNT,:HYPERBEAM,:LIGHTSCREEN,:RAINDANCE,:THUNDERBOLT,:THUNDER,:BRICKBREAK,:FLAMETHROWER,:FIREBLAST,:FLAMECHARGE,:THIEF,:FOCUSBLAST,:ENERGYBALL,:FLING,:CHARGEBEAM,:SKYDROP,:ACROBATICS,:EMBARGO,:GIGAIMPACT,:VOLTSWITCH,:THUNDERWAVE,:SWORDSDANCE,:UTURN,:FLASHCANNON,:WILDCHARGE,:SNARL,:POWERUPPUNCH,:DAZZLINGGLEAM,:MEGAKICK,:STRENGTH,:AIRCUTTER,:BODYSLAM,:BOUNCE,:COVET,:DUALCHOP,:ELECTROWEB,:ENDEAVOR,:FIREPUNCH,:ICYWIND,:IRONHEAD,:KNOCKOFF,:LOWKICK,:MAGNETRISE,:NASTYPLOT,:RECYCLE,:SHOCKWAVE,:SIGNALBEAM,:SNATCH,:SUPERPOWER,:TAILWIND,:THUNDERPUNCH,:TWISTER,:MIMIC,:ACID,:ACHILLESHEEL,:JETSTREAM,:LIVEWIRE,:FAKEOUT],
+		:moveexceptions => [],
+		:EggGroups => [:Undiscovered],
+		:kind => "Discharge",
+		:dexentry => "It is said to appear suddenly during thunderstorms. When it needs to feed, it will insert its arms into electrical outlets.",
+	},
+
 	"Mega Form" => { # Insurgence Mega
 		:BaseStats => [90, 135, 70, 125, 60, 100],
 		:Abilities => [:SHADOWDANCE],
@@ -21523,7 +21635,7 @@ MONHASH = {
 	:OnCreation => {},
 	:DefaultForm => 0,
 	:MegaForm => {
-		:SHIFTRITE => 1,
+		:SHIFTRITE => 2,
 	},
 },
 
@@ -23355,10 +23467,92 @@ MONHASH = {
 		:Weight => 1610,
 	},
 
-	:OnCreation => {},
-	:DefaultForm => 0,
+	"Delta Form" => {
+		:Type1 => :FIRE,
+		:Type2 => :ROCK,
+		:Abilities => [:SOLIDROCK, :WEAKARMOR],
+		:HiddenAbilities => :UNBURDEN,
+		:EggMoves => [],
+		:Moveset => [
+			[1,:LEER],
+			[1,:POUND],
+			[4,:GLARE],
+			[6,:ROCKTHROW],
+			[9,:EMBER],
+			[11,:BARRAGE],
+			[14,:DETECT],
+			[16,:ROCKTOMB],
+			[19,:INCINERATE],
+			[21,:FAKEOUT],
+			[24,:ROCKBLAST],
+			[26,:KNOCKOFF],
+			[29,:FIREPUNCH],
+			[31,:WILLOWISP],
+			[34,:FLING],
+			[36,:ROCKSMASH],
+			[39,:INFERNO],
+			[41,:ROCKSLIDE],
+			[44,:LAVAPLUME],
+			[46,:MEANLOOK]],
+		:compatiblemoves => [:SUNNYDAY,:TAUNT,:HYPERBEAM,:SMACKDOWN,:EARTHQUAKE,:DIG,:BRICKBREAK,:REFLECT,:FLAMETHROWER,:SANDSTORM,:FIREBLAST,:ROCKTOMB,:TORMENT,:FLAMECHARGE,:THIEF,:OVERHEAT,:FOCUSBLAST,:FALSESWIPE,:FLING,:INCINERATE,:QUASH,:WILLOWISP,:SHADOWCLAW,:PAYBACK,:GIGAIMPACT,:ROCKPOLISH,:STONEEDGE,:GYROBALL,:SWORDSDANCE,:BULLDOZE,:ROCKSLIDE,:SNARL,:POWERUPPUNCH,:MEGAPUNCH,:MEGAKICK,:ROCKBLAST,:CUT,:STRENGTH,:ROCKSMASH,:ROCKCLIMB,:HONECLAWS,:METRONOME,:DYNAMICPUNCH,:AFTERYOU,:ANCIENTPOWER,:BLOCK,:BODYSLAM,:COVET,:EARTHPOWER,:ENDEAVOR,:FIREPUNCH,:FOCUSPUNCH,:FOULPLAY,:HEATWAVE,:IRONDEFENSE,:IRONHEAD,:KNOCKOFF,:SNATCH,:SPIKES,:SPITE,:STEALTHROCK,:TRICK,:ZENHEADBUTT,:MIMIC,:ACID,:ACHILLESHEEL,:WILDFIRE,:FAKEOUT,:SEISMICTOSS,:COUNTER],
+		:moveexceptions => [],
+		:Color => "Red",
+		:Habitat => "Mountain",
+		:EggGroups => [:Undiscovered],
+		# Resurgence - D. Sableye isn't usually found holding anything in Insurgence, so it's being given a Hard Stone so that it doesn't get a Wide Lens.
+		:WildItemUncommon => :HARDSTONE,
+		:kind => "Inferno",
+		:dexentry => "A Delta Species discovered by SketchyGamer. It digs deep holes into the earth in search of charcoal and molten rocks, which it uses for food.",
+	},
+
+	"Mega Delta Form" => { # Resurgence Mega
+		:Type1 => :FIRE,
+		:Type2 => :ROCK,
+		:BaseStats => [50, 85, 125, 85, 115, 20],
+		:Abilities => [:FLICKER],
+		:BaseEXP => 168,
+		:Moveset => [
+			[1,:LEER],
+			[1,:POUND],
+			[4,:GLARE],
+			[6,:ROCKTHROW],
+			[9,:EMBER],
+			[11,:BARRAGE],
+			[14,:DETECT],
+			[16,:ROCKTOMB],
+			[19,:INCINERATE],
+			[21,:FAKEOUT],
+			[24,:ROCKBLAST],
+			[26,:KNOCKOFF],
+			[29,:FIREPUNCH],
+			[31,:WILLOWISP],
+			[34,:FLING],
+			[36,:ROCKSMASH],
+			[39,:INFERNO],
+			[41,:ROCKSLIDE],
+			[44,:LAVAPLUME],
+			[46,:MEANLOOK]],
+		:Color => "Red",
+		:Habitat => "Mountain",
+		:kind => "Inferno",
+		:dexentry => "A Delta Species discovered by SketchyGamer. It digs deep holes into the earth in search of charcoal and molten rocks, which it uses for food.",
+		:Height => 5,
+		:Weight => 1610,
+	},
+
+	:OnCreation => proc{
+ 		# Map IDs for Delta form
+ 		if $game_map && Sableye.include?($game_map.map_id)
+			next 2
+		else
+			next 0
+ 		end
+ 	},
+
+	:DefaultForm => [0,2],
 	:MegaForm => {
 		:SABLENITE => 1,
+		:DELTASABLENITE => 3,
 	},
 },
 
@@ -35467,6 +35661,46 @@ MONHASH = {
 		:BattlerPlayerY => 22,
 		:BattlerEnemyY => 12,
 		:BattlerAltitude => 11,
+	},
+
+	"Delta Form" => {
+		:Type1 => :GRASS,
+		:Type2 => :FLYING,
+		:Abilities => [:ADAPTABILITY, :CHLOROPHYLL],
+		:HiddenAbilities => :NATURALCURE,
+		:preevo => {
+			:species => :YANMA,
+			:form => 1
+		},
+		:Moveset => [
+			[1,:LEAFSTORM],
+			[1,:HURRICANE],
+			[1,:NATUREPOWER],
+			[1,:POWERWHIP],
+			[1,:VINEWHIP],
+			[1,:CAMOUFLAGE],
+			[1,:GUST],
+			[1,:GROWTH],
+			[6,:GUST],
+			[11,:GROWTH],
+			[14,:RAZORLEAF],
+			[17,:DETECT],
+			[22,:AIRCUTTER],
+			[27,:LEAFTORNADO],
+			[30,:PURSUIT],
+			[33,:ANCIENTPOWER],
+			[38,:GRASSWHISTLE],
+			[43,:AIRSLASH],
+			[46,:WORRYSEED],
+			[49,:UTURN],
+			[54,:HURRICANE],
+			[57,:LEAFSTORM],
+		],
+		:compatiblemoves => [:SUNNYDAY,:TAUNT,:HYPERBEAM,:SAFEGUARD,:SOLARBEAM,:DIG,:AERIALACE,:STEELWING,:ENERGYBALL,:FLING,:SKYDROP,:ACROBATICS,:ROOST,:GIGAIMPACT,:DRAGONTAIL,:GRASSKNOT,:UTURN,:NATUREPOWER,:DAZZLINGGLEAM,:BULLETSEED,:AIRSLASH,:FLY,:AIRCUTTER,:ANCIENTPOWER,:AQUATAIL,:BOUNCE,:BUGBITE,:COVET,:DEFOG,:DRAGONPULSE,:ELECTROWEB,:ENDEAVOR,:FURYCUTTER,:GIGADRAIN,:HELPINGHAND,:HURRICANE,:IRONTAIL,:KNOCKOFF,:LEAFSTORM,:POWERWHIP,:RECYCLE,:ROLEPLAY,:SEEDBOMB,:SIGNALBEAM,:SYNTHESIS,:TAILWIND,:TWISTER,:WORRYSEED,:BIND,:MIMIC,:ACID,:SILVERWIND,:ACHILLESHEEL,:JETSTREAM],
+		:moveexceptions => [],
+		:EggGroups => [:Undiscovered],
+		:kind => "Ogre Flytrap",
+		:dexentry => "Using its wings to generate massive gusts, it blends in with surrounding foliage and tricks prey into seeking shelter beneath its leaves.",
 	},
 
 	:OnCreation => {},
@@ -64161,6 +64395,33 @@ MONHASH = {
 		:BattlerPlayerY => 28,
 		:BattlerEnemyY => 15,
 		:BattlerAltitude => 0,
+	},
+
+	"Delta Form" => {
+		:Type1 => :ICE,
+		:Type2 => :STEEL,
+		:Abilities => [:SHARPNESS, :WEAKARMOR, :SUPERLUCK],
+		:Moveset => [
+			[0,:FLASHFREEZE],
+			[1,:ICESHARD],
+			[1,:FOCUSENERGY],
+			[4,:PURSUIT],
+			[8,:ICEBALL],
+			[12,:ICICLESPEAR],
+			[16,:IRONDEFENSE],
+			[20,:STEELWING],
+			[24,:SLASH],
+			[28,:FOCUSENERGY],
+			[32,:HAIL],
+			[36,:SMARTSTRIKE],
+			[40,:ICICLECRASH],
+			[44,:HONECLAWS],
+		],
+		:compatiblemoves => [:ROAR,:HAIL,:BULKUP,:TAUNT,:ICEBEAM,:BLIZZARD,:HYPERBEAM,:BRICKBREAK,:ROCKTOMB,:AERIALACE,:LOWSWEEP,:FOCUSBLAST,:FALSESWIPE,:FLING,:ACROBATICS,:SHADOWCLAW,:PAYBACK,:ROOST,:GIGAIMPACT,:STONEEDGE,:SWORDSDANCE,:PSYCHUP,:FROSTBREATH,:ROCKSLIDE,:XSCISSOR,:UTURN,:SNARL,:POWERUPPUNCH,:BRUTALSWING,:ICICLESPEAR,:PSYCHOCUT,:CUT,:STRENGTH,:ROCKSMASH,:HONECLAWS,:AVALANCHE,:RETALIATE,:VACUUMWAVE,:AFTERYOU,:AGILITY,:BATONPASS,:CLOSECOMBAT,:DRAINPUNCH,:DUALCHOP,:ENDEAVOR,:FOCUSENERGY,:FURYCUTTER,:HELPINGHAND,:ICYWIND,:IRONHEAD,:KNOCKOFF,:LASERFOCUS,:REVENGE,:REVERSAL,:SNATCH,:SPIKES,:SUPERPOWER,:SWIFT,:TAILWIND,:WATERPULSE,:STACKINGSHOT,:SLASHANDBURN,:COACHING,:TRIPLEAXEL,:ICEBALL,:MIMIC,:TAKEDOWN,:ICESPINNER,:HAZE,:VACUUMWAVE,:DOUBLEEDGE,:CURSE,:UPPERHAND,:ACID,:ACHILLESHEEL,:JETSTREAM,:PERMAFROST,:COUNTER],
+		:moveexceptions => [],
+		:EggGroups => [:Undiscovered],
+		:kind => "Ice Scythe",
+		:dexentry => "A Delta Species discovered by Chun. Despite their size, the massive scythes on its arms are lighter than they appear. Kleavor overwhelms its opponents with breakneck speeds and frigid slashes.",
 	},
 
 	:OnCreation => {},

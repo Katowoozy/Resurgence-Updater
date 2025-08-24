@@ -1556,6 +1556,8 @@ class PokeBattle_Battle
         pri += 1 if @battlers[i].ability == :PRANKSTER && @choices[i][2].basedamage == 0 && @battlers[i].effects[:TwoTurnAttack] == 0 # Is status move
         pri += 1 if @battlers[i].ability == :GALEWINGS && @choices[i][2].type == :FLYING && (@battlers[i].hp == @battlers[i].totalhp || ((@field.effect == :MOUNTAIN || @field.effect == :SNOWYMOUNTAIN) && pbWeather == :STRONGWINDS))
         pri += 1 if @choices[i][2].move == :GRASSYGLIDE && (@field.effect == :GRASSY || @battle.state.effects[:GRASSY] > 0)
+        # Resurgence - Flash Freeze
+        pri += 1 if @choices[i][2].move == :FLASHFREEZE && (pbWeather == :HAIL || @field.effect == :ICY || @field.effect == :SNOWYMOUNTAIN || @field.effect == :FROZENDIMENSION)
         pri += 1 if @choices[i][2].move == :QUASH && @field.effect == :DIMENSIONAL
         pri += 1 if @choices[i][2].basedamage != 0 && @battlers[i].crested == :FERALIGATR && @battlers[i].turncount == 1 # Feraligatr Crest
         pri += 3 if @battlers[i].ability == :TRIAGE && PBStuff::HEALFUNCTIONS.include?(@choices[i][2].function)
@@ -4557,7 +4559,7 @@ class PokeBattle_Battle
     priority.each {|i| i.opportunistCheck}
     priority.each {|i| i.statsRaisedSinceLastCheck.clear}
 
-    # Protean Maxima
+    # Resurgence - Protean Maxima
     for i in priority
       if i.species == :EEVEE && i.form >= 4
         change = true
@@ -4591,6 +4593,17 @@ class PokeBattle_Battle
           scene.pbChangePokemon(i, i.pokemon)
           pbDisplay(_INTL("{1} transformed!", i.pbThis))
         end
+      end
+    end
+
+    # Resurgence - Flicker
+    for i in priority
+      if i.ability == :FLICKER && i.effects[:Flicker] == 3
+        pbAnimation(:BURNINGBULWARK, i, nil)
+        i.effects[:Flicker] = 0
+        i.effects[:Protect] = :BurningBulwark
+        i.effects[:ProtectRate] += 1
+        @battle.pbDisplay(_INTL("{1}'s fiery boulder started bursting in flames to protect its holder!", i.pbThis))
       end
     end
 
@@ -5580,6 +5593,12 @@ class PokeBattle_Battle
         return if !i.pbFaint
 
         next
+      end
+    end
+    # Resurgence - Flicker
+    for i in battlers # not priority
+      if i.ability == :FLICKER
+        i.effects[:Flicker] += 1
       end
     end
     for i in priority

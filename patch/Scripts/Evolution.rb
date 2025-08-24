@@ -929,14 +929,14 @@ def getEvolutionForm(mon,item=nil)
       return (((mon.personalID>>16)&0xFFFF)%10) < 9 ? 0 : 1
     end
   # Gen 9 Mod - Wooper evolution is always form 0.
-  # Unless Delta Wooper
+  # Resurgence - Delta Wooper
   when :WOOPER
     if form == 2
       return 1
     else
       return 0
     end
-  # Partner Pikachu
+  # Resurgence - Partner Pikachu
   when :PICHU
     if form == 1
       return 3
@@ -953,7 +953,6 @@ def getEvolutionForm(mon,item=nil)
   when :WARTORTLE then return 3 if form == 1
   when :PIDGEOTTO then return 2 if form == 1
   when :GRAVELER then return 3 if form == 2
-  when :SCYTHER then return 2 if form == 1
   when :ARON then return 3 if form == 1
   when :LAIRON then return 2 if form == 3
   when :WAILMER then return 2 if form == 1
@@ -969,6 +968,13 @@ def getEvolutionForm(mon,item=nil)
       else
         return 5
       end
+    else
+      return form
+    end
+  # Resurgence - Correct Scyther Evolutions
+  when :SCYTHER
+    if form == 1 && item == :BLACKAUGURITE
+      return 2
     else
       return form
     end

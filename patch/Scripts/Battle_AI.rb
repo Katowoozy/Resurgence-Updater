@@ -5233,6 +5233,7 @@ class PokeBattle_AI
 
   def protectcode
     return 0 if unseenFistCheck(@opponent) # Gen 9 Mod - Method that also checks Punching Glove
+    return 0 if @attacker.effects[:Flicker] == 3
 
     miniscore = 1.0
     miniscore *= 0.6

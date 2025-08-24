@@ -141,6 +141,7 @@ Girafarig = [201]
 Scyther = [470]
 Pichu = [273,433]
 Chinchou = [157]
+Sableye = [140]
 
 #===============================================================================
 # * Constants for maps to reflect sprites on

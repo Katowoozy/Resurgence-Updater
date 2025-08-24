@@ -11277,12 +11277,30 @@ ITEMHASH = {
 },
 
 :IM13 => {
-	:ID => 1273,
+	:ID => 1288,
 	:name => "IM13",
 	:desc => "The user brings the air around the target down to subzero, causing the target to be frostbitten.",
 	:price => 75000,
 	:tm => :HYPOTHERMIA,
 	:noUseInBattle => true,
+},
+
+:BLUEAUGURITE => {
+	:ID => 1289,
+	:name => "Blue Augurite",
+	:desc => "A jagged piece of hardened ice that can leave a deep cut with just a touch. It is loved by a certain Delta species.",
+	:price => 2100,
+	:noUseInBattle => true,
+},
+
+:DELTASABLENITE => {
+	:ID => 1290,
+	:name => "D. Sablenite",
+	:desc => "One variety of Mega Stone. Have Delta Sableye hold it, and this stone will enable it to Mega Evolve in battle.",
+	:price => 999,
+	:crystal => true,
+	:noUseInBattle => true,
+	:noUse => true,
 },
 
 }
