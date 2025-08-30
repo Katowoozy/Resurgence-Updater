@@ -11303,4 +11303,14 @@ ITEMHASH = {
 	:noUse => true,
 },
 
+:DELTASCEPTILITE => {
+	:ID => 1291,
+	:name => "D. Sceptilite",
+	:desc => "One variety of Mega Stone. Have Delta Sceptile hold it, and this stone will enable it to Mega Evolve in battle.",
+	:price => 999,
+	:crystal => true,
+	:noUseInBattle => true,
+	:noUse => true,
+},
+
 }

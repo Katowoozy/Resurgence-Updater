@@ -959,6 +959,8 @@ def getEvolutionForm(mon,item=nil)
   when :LAMPENT then return 3 if form == 2
   when :GOLETT then return 2 if form == 1
   when :BUNEARY then return 2 if form == 1
+  when :GROVYLE then return 2 if form == 1
+  when :MUNCHLAX then return 2 if form == 1
 
   # Kirlia evolves to Gardevoir or Gallade
   when :KIRLIA

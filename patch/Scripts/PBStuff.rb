@@ -528,7 +528,7 @@ POKEMONTOMEGASTONE = {
   :MEDICHAM   => [:MEDICHAMITE],    :PINSIR     => [:PINSIRITE],
   :TYRANITAR  => [:TYRANITARITE],   :BEEDRILL   => [:BEEDRILLITE],
   :SLOWBRO    => [:SLOWBRONITE],    :STEELIX    => [:STEELIXITE, :STEELIXITE2],
-  :SCEPTILE   => [:SCEPTILITE],     :SWAMPERT   => [:SWAMPERTITE],
+  :SWAMPERT   => [:SWAMPERTITE],    :SCEPTILE   => [:SCEPTILITE, :DELTASCEPTILITE],
   :SHARPEDO   => [:SHARPEDONITE],   :SABLEYE    => [:SABLENITE, :DELTASABLENITE],
   :CAMERUPT   => [:CAMERUPTITE],    :ALTARIA    => [:ALTARIANITE],
   :SALAMENCE  => [:SALAMENCITE],    :LOPUNNY    => [:LOPUNNITE, :DELTALOPUNNITE],
@@ -728,7 +728,7 @@ DELTAPOKEMON = {
   :KLEAVOR => [1],
   :DITTO => [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18],
   :MUNCHLAX => [1],
-  :SNORLAX => [2],
+  :SNORLAX => [2,3,4,5,6],
   :CYNDAQUIL => [1],
   :QUILAVA => [1],
   :TYPHLOSION => [2,4,5],
@@ -826,6 +826,8 @@ DELTAPOKEMON = {
   :FARIGIRAF => [1],
   :BUNEARY => [1],
   :LOPUNNY => [2,3],
+  :CROAGUNK => [1],
+  :TOXICROAK => [1],
 }
 
 # Resurgence - Armored Species List
@@ -887,7 +889,11 @@ CORRECTMEGAFORM = {
   :STUNFISKITE            => [0],
   :GIRAFARIGITE           => [0],
   :DELTAGIRAFARIGITE      => [1],
-
+  :SABLENITE              => [0],
+  :DELTASABLENITE         => [2],
+  :SNORLAXITE             => [0],
+  :SCEPTILITE             => [0],
+  :DELTASCEPTILITE        => [2],
   :PIKACHU                => [0,2],
   :EEVITE                 => [0],
   :AGGRONITE              => [0],
