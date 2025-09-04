@@ -2413,6 +2413,6 @@ ABILHASH = {
 	:ID => 447,
 	:name => "Flicker",
 	:desc => "Protects itself every 3 turns...",
-	:fullDesc => "On switch in and every 3 turns, the Pokemon will immediately set up a Burning Bulwark to protect itself from attacks."
+	:fullDesc => "On switch in and every 3 turns, the Pokémon will immediately set up a Burning Bulwark to protect itself from attacks."
 },
 }

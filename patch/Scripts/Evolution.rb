@@ -928,11 +928,92 @@ def getEvolutionForm(mon,item=nil)
     else
       return (((mon.personalID>>16)&0xFFFF)%10) < 9 ? 0 : 1
     end
+  # Gen 9 Mod - Gimmighoul evolution is always form 0.
+  when :GIMMIGHOUL then return 0
   # Gen 9 Mod - Wooper evolution is always form 0.
   # Resurgence - Delta Wooper
   when :WOOPER
     if form == 2
       return 1
+    else
+      return 0
+    end
+  # Resurgence - All Delta Form Evolutions
+  when :BUNEARY
+    if form == 1
+      return 2
+    else
+      return 0
+    end
+  when :IVYSAUR
+    if form == 1
+      return 3
+    else
+      return 0
+    end
+  when :CHARMELEON
+    if form == 1
+      return 4
+    else
+      return 0
+    end
+  when :WARTORTLE
+    if form == 1
+      return 3
+    else
+      return 0
+    end
+  when :PIDGEOTTO
+    if form == 1
+      return 3
+    else
+      return 0
+    end
+  when :GRAVELER
+    if form == 2
+      return 3
+    else
+      return 0
+    end
+  when :ARON
+    if form == 1
+      return 3
+    else
+      return 0
+    end
+  when :LAIRON
+    if form == 3
+      return 2
+    else
+      return 0
+    end
+  when :WAILMER
+    if form == 1
+      return 2
+    else
+      return 0
+    end
+  when :LAMPENT
+    if form == 2
+      return 3
+    else
+      return 0
+    end
+  when :GOLETT
+    if form == 1
+      return 2
+    else
+      return 0
+    end
+  when :GROVYLE
+    if form == 1
+      return 2
+    else
+      return 0
+    end
+  when :MUNCHLAX
+    if form == 1
+      return 2
     else
       return 0
     end
@@ -945,22 +1026,6 @@ def getEvolutionForm(mon,item=nil)
     else
       return 0
     end
-  # Gen 9 Mod - Gimmighoul evolution is always form 0.
-  when :GIMMIGHOUL then return 0
-  # Resurgence Form Fixes
-  when :IVYSAUR then return 3 if form == 1
-  when :CHARMELEON then return 4 if form == 1
-  when :WARTORTLE then return 3 if form == 1
-  when :PIDGEOTTO then return 2 if form == 1
-  when :GRAVELER then return 3 if form == 2
-  when :ARON then return 3 if form == 1
-  when :LAIRON then return 2 if form == 3
-  when :WAILMER then return 2 if form == 1
-  when :LAMPENT then return 3 if form == 2
-  when :GOLETT then return 2 if form == 1
-  when :BUNEARY then return 2 if form == 1
-  when :GROVYLE then return 2 if form == 1
-  when :MUNCHLAX then return 2 if form == 1
 
   # Kirlia evolves to Gardevoir or Gallade
   when :KIRLIA

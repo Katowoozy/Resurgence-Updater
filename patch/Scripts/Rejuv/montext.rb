@@ -22571,7 +22571,6 @@ MONHASH = {
 		:dexentry => "To protect its trainer, it can drop the temperature of itself and its surroundings to 0K. It discharges sparks when nuzzling trainers to keep them from freezing.",
 		:BaseEXP => 278,
 		:Weight => 484,
-		:toobig => true,
 	},
 
 	:OnCreation => {},
