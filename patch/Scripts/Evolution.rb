@@ -965,7 +965,7 @@ def getEvolutionForm(mon,item=nil)
     end
   when :PIDGEOTTO
     if form == 1
-      return 3
+      return 2
     else
       return 0
     end

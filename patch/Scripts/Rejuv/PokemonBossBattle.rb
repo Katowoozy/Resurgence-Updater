@@ -243,6 +243,8 @@ class PokeBattle_Battle
       battler = @battlers[indexbackup] if onBreakdata[:CustomMethod].include?("timewarp")
     end
     if onBreakdata[:fieldChange] && onBreakdata[:fieldChange] != @field.effect
+      pbAnimation(onBreakdata[:fieldChangeAnimation],battler,battler) if onBreakdata[:fieldChangeAnimation]
+      pbCommonAnimation(onBreakdata[:fieldChangeAnimationCommon],battler,nil) if onBreakdata[:fieldChangeAnimationCommon]
       setField(onBreakdata[:fieldChange])
       fieldmessage = (onBreakdata[:fieldChangeMessage] && onBreakdata[:fieldChangeMessage] != "") ? onBreakdata[:fieldChangeMessage] : "The field was changed!"
       pbDisplay(_INTL("{1}",fieldmessage))
@@ -381,7 +383,11 @@ class PokeBattle_Battle
       battler.pokemon.form=onBreakdata[:formchange]
       battler.form = battler.pokemon.form 
       battler.pokemon.ability = battler.pokemon.abilityIndex
-      pbAnimation(:TRANSFORM,battler,nil)
+      if [:CHESNAUGHT,:DELPHOX,:GRENINJA].include?(battler.species)
+        pbCommonAnimation("MegaEvolution",battler,nil)
+      else
+        pbAnimation(:TRANSFORM,battler,nil)
+      end
       battler.pbUpdate(true)
       @scene.pbChangePokemon(battler,battler.pokemon)
     end

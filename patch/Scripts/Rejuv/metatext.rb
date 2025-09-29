@@ -4624,6 +4624,7 @@ METAHASH = {
 583 => { 
 	:MapPosition => [3, 6, 4],
 	:ShowArea => true,
+	:DiveMap => 626,
 },
 
 #Eclysia Pyramid
@@ -4902,5 +4903,35 @@ METAHASH = {
 	:Weather => [:Snow,100],
 	:SnapEdges => true,
 	:BattleBack => "Time",
+},
+#Darchlight Woods (Delphox Statue)
+624 => { 
+	:MapPosition => [2, 12, 22],
+	:Outdoor => true,
+	:ShowArea => true,
+	:Bicycle => true,
+	:Weather => [:Rain,20],
+	:SnapEdges => true,
+	:BattleBack => "Darchlight",
+	:WildBattleBGM => "Wild Battle - Terrial",
+},
+
+#Evergreen Trench (Greninja Statue)
+625 => { 
+	:MapPosition => [0, 28, 16],
+	:BattleBack => "Underwater",
+},
+
+#Beneath the Spring
+626 => { 
+	:MapPosition => [3, 6, 4],
+	:BattleBack => "Underwater",
+},
+
+#Guardian's Respite
+627 => { 
+	:MapPosition => [3, 6, 4],
+	:SnapEdges => true,
+	:BattleBack => "Cave",
 },
 }

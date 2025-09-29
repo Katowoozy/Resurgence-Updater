@@ -1765,6 +1765,15 @@ TTYPEHASH = {
 	:battleBGM => "Battle - Rival 2.mp3",
 },
 
+:PROFSYLVAN => {
+	:ID => 240,
+	:title => "Professor",
+	:skill => 100,
+	:moneymult => 18,
+	:battleBGM => "Battle - Gyms.mp3",
+	:winBGM => "Gym Battle Victory.mp3",
+},
+
 :JOHTO_1 => {
 	:ID => 300,
 	:title => "Gym Leader",

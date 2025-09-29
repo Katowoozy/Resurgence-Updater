@@ -142,6 +142,7 @@ Scyther = [470]
 Pichu = [273,433]
 Chinchou = [157]
 Sableye = [140]
+Lotad = [624]
 
 #===============================================================================
 # * Constants for maps to reflect sprites on

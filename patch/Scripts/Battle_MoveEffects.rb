@@ -2084,7 +2084,7 @@ end
 ################################################################################
 class PokeBattle_Move_045 < PokeBattle_Move
   def pbEffect(attacker,opponent,hitnum=0,alltargets=nil,showanimation=true)
-    if @move == :MYSTICALFIRE && attacker.species == :DELPHOX && attacker.battle_bonded?
+    if @move == :MYSTICALFIRE && attacker.species == :DELPHOX && (attacker.battle_bonded? || (attacker.isbossmon && attacker.form == 3))
       defenseDamageCategory(attacker, opponent)
     end
     return super(attacker,opponent,hitnum,alltargets,showanimation) if @basedamage>0
@@ -2948,7 +2948,7 @@ class PokeBattle_Move_05B < PokeBattle_Move
       # Resurgence - Strong Winds increases Wind Force users speed by 1
       for i in @battle.battlers
         next if i.isFainted?
-        if i.ability == :WINDFORCE && !i.pbTooHigh?(PBStats::SPEED)
+        if (i.ability == :WINDFORCE || i.ability == :WINDBORNETYRANT) && !i.pbTooHigh?(PBStats::SPEED)
           @battle.pbDisplay(_INTL("{1}'s Wind Force activated!",i.pbThis))
           i.pbIncreaseStat(PBStats::SPEED,1)
         end
@@ -5660,7 +5660,7 @@ class PokeBattle_Move_0C0 < PokeBattle_Move
   end
   
   def pbBaseDamage(basedmg, attacker, opponent)
-    return 20 if @move == :WATERSHURIKEN && attacker.species == :GRENINJA && attacker.ability == :BATTLEBOND && attacker.battle_bonded?
+    return 20 if @move == :WATERSHURIKEN && attacker.species == :GRENINJA && ((attacker.ability == :BATTLEBOND && attacker.battle_bonded?) || (attacker.isbossmon && attacker.form == 2))
     return basedmg
   end
 
@@ -5669,7 +5669,7 @@ class PokeBattle_Move_0C0 < PokeBattle_Move
   end
 
   def pbNumHits(attacker)
-    return 3 if @move == :WATERSHURIKEN && attacker.species == :GRENINJA && attacker.ability == :BATTLEBOND && attacker.battle_bonded?
+    return 3 if @move == :WATERSHURIKEN && attacker.species == :GRENINJA && ((attacker.ability == :BATTLEBOND && attacker.battle_bonded?) || (attacker.isbossmon && attacker.form == 2))
     hitchances = [2, 2, 3, 3, 4, 5]
     ret = hitchances[@battle.pbRandom(hitchances.length)]
     # Gen 9 Mod - Added Loaded Dice
@@ -13250,6 +13250,22 @@ class PokeBattle_Move_952 < PokeBattle_Move
       end
       if attacker.pbPartner.ability == :WINDRIDER && attacker.pbPartner.pbCanIncreaseStatStage?(PBStats::ATTACK,false)
         attacker.pbPartner.pbIncreaseStat(PBStats::ATTACK,1,abilitymessage:false)
+      end
+    end
+    if (@battle.FE == :MOUNTAIN || @battle.FE == :SNOWYMOUNTAIN || @battle.FE == :VOLCANICTOP || @battle.FE == :SKY) && !@battle.state.effects[:HeavyRain] && !@battle.state.effects[:HarshSunlight]
+      @battle.weather=:STRONGWINDS
+      @battle.weatherduration=3
+      @battle.weatherduration=5 if @battle.FE == :SKY
+      @battle.pbCommonAnimation("Wind",nil,nil)
+      @battle.pbDisplay(_INTL("Strong winds kicked up around the field!"))
+
+      # Resurgence - Strong Winds increases Wind Force users speed by 1
+      for i in @battle.battlers
+        next if i.isFainted?
+        if (i.ability == :WINDFORCE || i.ability == :WINDBORNETYRANT) && !i.pbTooHigh?(PBStats::SPEED)
+          @battle.pbDisplay(_INTL("{1}'s Wind Force activated!",i.pbThis))
+          i.pbIncreaseStat(PBStats::SPEED,1)
+        end
       end
     end
     return 0

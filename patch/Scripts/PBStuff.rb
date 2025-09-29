@@ -828,6 +828,9 @@ DELTAPOKEMON = {
   :LOPUNNY => [2,3],
   :CROAGUNK => [1],
   :TOXICROAK => [1],
+  :LOTAD => [1],
+  :LOMBRE => [1],
+  :LUDICOLO => [1],
 }
 
 # Resurgence - Armored Species List

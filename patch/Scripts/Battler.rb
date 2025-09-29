@@ -5451,7 +5451,7 @@ class PokeBattle_Battler
             ####MODDED
             numerator = 1
             numerator += 1 if @battle.FE == :COLOSSEUM
-            numerator += 1 if target.species == :CHESNAUGHT && target.battle_bonded?
+            numerator += 1 if target.species == :CHESNAUGHT && (target.battle_bonded? || (target.isbossmon && target.form == 1))
             user.pbReduceHP((user.totalhp*(numerator/8.0)).floor)
             ####/MODDED
             @battle.pbDisplay(_INTL("{1}'s Spiky Shield hurt {2}!",target.pbThis,user.pbThis(true)))

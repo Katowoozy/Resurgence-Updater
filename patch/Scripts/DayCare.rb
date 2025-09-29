@@ -201,6 +201,8 @@ def pbDayCareGenerateEgg
   babyspecies=pbGetBabySpecies(babyspecies,mainparent.form)
   if (babyspecies[0] == :MANAPHY) && !($cache.pkmn[:PHIONE].nil?)
     babyspecies[0]=:PHIONE
+  elsif [:FURFROU, :ROTOM, *(Rejuv ? [:SOLROCK, :LUNATONE] : [])].include?(babyspecies[0])
+    babyspecies[1] = 0
   end
   if (babyspecies[0] == :NIDORANfE) && !($cache.pkmn[:NIDORANmA].nil?)
     babyspecies[0]=[(:NIDORANmA), (:NIDORANfE)][rand(2)]

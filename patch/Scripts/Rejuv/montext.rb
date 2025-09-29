@@ -21559,7 +21559,41 @@ MONHASH = {
 		]
 	},
 
-	:OnCreation => {},
+	"Delta Form" => {
+		:Type1 => :PSYCHIC,
+		:Type2 => :WATER,
+		:Abilities => [:MAGICBOUNCE, :SYNCHRONIZE],
+		:HiddenAbilities => :UNAWARE,
+		:EggMoves => [],
+		:Moveset => [
+			[1,:CONFUSION],
+			[3,:TELEKINESIS],
+			[6,:PSYWAVE],
+			[9,:WATERGUN],
+			[12,:ROLEPLAY],
+			[15,:ENTRAINMENT],
+			[18,:PSYBEAM],
+			[21,:WATERPULSE],
+			[24,:ACUPRESSURE],
+			[27,:PSYSHOCK],
+			[30,:RAINDANCE],
+			[33,:STOREDPOWER],
+			[36,:WHIRLPOOL]],
+		:compatiblemoves => [:PSYSHOCK,:CALMMIND,:HAIL,:ICEBEAM,:BLIZZARD,:LIGHTSCREEN,:RAINDANCE,:SAFEGUARD,:PSYCHIC,:SHADOWBALL,:REFLECT,:ECHOEDVOICE,:SCALD,:CHARGEBEAM,:EMBARGO,:PSYCHUP,:DAZZLINGGLEAM,:WHIRLPOOL,:BRINE,:SURF,:WATERFALL,:DIVE,:FLASH,:AFTERYOU,:ALLYSWITCH,:BODYSLAM,:FUTURESIGHT,:GRAVITY,:HEALBELL,:HELPINGHAND,:ICYWIND,:MAGICCOAT,:MAGICROOM,:RECYCLE,:ROLEPLAY,:SIGNALBEAM,:SKILLSWAP,:SNATCH,:STOREDPOWER,:SWIFT,:TRICK,:UPROAR,:WATERPULSE,:WONDERROOM,:ZENHEADBUTT,:TELEKINESIS,:MIMIC,:PSYBEAM,:ACID,:ACHILLESHEEL,:PERMAFROST],
+		:moveexceptions => [],
+		:EggGroups => [:Undiscovered],
+		:kind => "Magician",
+		:dexentry => "A Delta Species discovered by Kalorian. It is known to entertain small Pokémon by performing magic tricks for them.",
+	},
+
+	:OnCreation => proc {
+ 		# Map IDs for Delta form
+		if $game_map && Lotad.include?($game_map.map_id)
+            next 1
+ 		else
+ 			next 0
+ 		end
+ 	},
 },
 
 :LOMBRE => {
@@ -21621,7 +21655,41 @@ MONHASH = {
 		]
 	},
 
-	:OnCreation => {},
+	"Delta Form" => {
+		:Type1 => :PSYCHIC,
+		:Type2 => :WATER,
+		:Abilities => [:MAGICBOUNCE, :SYNCHRONIZE],
+		:HiddenAbilities => :UNAWARE,
+		:EggMoves => [],
+		:Moveset => [
+			[1,:CONFUSION],
+			[3,:TELEKINESIS],
+			[6,:PSYWAVE],
+			[9,:WATERGUN],
+			[12,:MAGICCOAT],
+			[16,:FAKEOUT],
+			[20,:PSYBEAM],
+			[24,:WATERPULSE],
+			[28,:MAGICROOM],
+			[32,:PSYSHOCK],
+			[36,:AURASPHERE],
+			[40,:FUTURESIGHT],
+			[44,:HYDROPUMP]],
+		:compatiblemoves => [:PSYSHOCK,:CALMMIND,:HAIL,:ICEBEAM,:BLIZZARD,:LIGHTSCREEN,:RAINDANCE,:SAFEGUARD,:PSYCHIC,:SHADOWBALL,:REFLECT,:ECHOEDVOICE,:ENERGYBALL,:SCALD,:CHARGEBEAM,:EMBARGO,:PSYCHUP,:DREAMEATER,:TRICKROOM,:DAZZLINGGLEAM,:WHIRLPOOL,:BRINE,:SURF,:WATERFALL,:DIVE,:FLASH,:DYNAMICPUNCH,:AFTERYOU,:ALLYSWITCH,:AURASPHERE,:BODYSLAM,:FUTURESIGHT,:GRAVITY,:HEADBUTT,:HEALBELL,:HELPINGHAND,:ICEPUNCH,:ICYWIND,:MAGICCOAT,:MAGICROOM,:RECYCLE,:ROLEPLAY,:SIGNALBEAM,:SKILLSWAP,:SNATCH,:SWIFT,:TRICK,:UPROAR,:WATERPULSE,:WONDERROOM,:ZENHEADBUTT,:TELEKINESIS,:MIMIC,:PSYBEAM,:ACID,:ACHILLESHEEL,:PERMAFROST,:FAKEOUT],
+		:moveexceptions => [],
+		:EggGroups => [:Undiscovered],
+		:kind => "Wizard",
+		:dexentry => "From morning until night, it trains and practices its magic. During the evening it puts on magic shows for large crowds.",
+	},
+
+	:OnCreation => proc {
+ 		# Map IDs for Delta form
+		if $game_map && Lotad.include?($game_map.map_id)
+            next 1
+ 		else
+ 			next 0
+ 		end
+ 	},
 },
 
 :LUDICOLO => {
@@ -21679,7 +21747,43 @@ MONHASH = {
 		:BattlerAltitude => 0,
 	},
 
-	:OnCreation => {},
+	"Delta Form" => {
+		:Type1 => :PSYCHIC,
+		:Type2 => :WATER,
+		:Abilities => [:MAGICBOUNCE, :SYNCHRONIZE],
+		:HiddenAbilities => :UNAWARE,
+		:EggMoves => [],
+		:Moveset => [
+			[0,:REFLECT],
+			[0,:LIGHTSCREEN],
+			[1,:CONFUSION],
+			[1,:TELEKINESIS],
+			[1,:PSYWAVE],
+			[1,:WATERGUN],
+			[1,:MAGICCOAT],
+			[1,:FAKEOUT],
+			[1,:PSYBEAM],
+			[1,:WATERPULSE],
+			[1,:MAGICROOM],
+			[1,:PSYSHOCK],
+			[1,:AURASPHERE],
+			[1,:FUTURESIGHT],
+			[1,:HYDROPUMP]],
+		:compatiblemoves => [:PSYSHOCK,:CALMMIND,:HAIL,:ICEBEAM,:BLIZZARD,:HYPERBEAM,:LIGHTSCREEN,:RAINDANCE,:SAFEGUARD,:THUNDERBOLT,:THUNDER,:PSYCHIC,:SHADOWBALL,:REFLECT,:ECHOEDVOICE,:FOCUSBLAST,:ENERGYBALL,:SCALD,:CHARGEBEAM,:EMBARGO,:GIGAIMPACT,:THUNDERWAVE,:PSYCHUP,:DREAMEATER,:TRICKROOM,:DARKPULSE,:DAZZLINGGLEAM,:MEGAPUNCH,:MEGAKICK,:WHIRLPOOL,:BRINE,:SURF,:WATERFALL,:DIVE,:ROCKSMASH,:FLASH,:METRONOME,:DYNAMICPUNCH,:AFTERYOU,:ALLYSWITCH,:AURASPHERE,:BODYSLAM,:FUTURESIGHT,:GRAVITY,:HEADBUTT,:HEALBELL,:HELPINGHAND,:ICEPUNCH,:ICYWIND,:MAGICCOAT,:MAGICROOM,:OMINOUSWIND,:RECYCLE,:ROLEPLAY,:SHOCKWAVE,:SIGNALBEAM,:SKILLSWAP,:SNATCH,:SWIFT,:THUNDERPUNCH,:TRICK,:UPROAR,:WATERPULSE,:WONDERROOM,:ZENHEADBUTT,:TELEKINESIS,:MIMIC,:PSYBEAM,:LUNARCANNON,:ACID,:ACHILLESHEEL,:DARKMATTER,:PERMAFROST,:FAKEOUT,:SEISMICTOSS,:COUNTER],
+		:moveexceptions => [],
+		:EggGroups => [:Undiscovered],
+		:kind => "Sage",
+		:dexentry => "Its knowledge and strength make it a common source of advice for its community. It produces massive barriers to protect those important to it.",
+	},
+
+	:OnCreation => proc {
+ 		# Map IDs for Delta form
+		if $game_map && Lotad.include?($game_map.map_id)
+            next 1
+ 		else
+ 			next 0
+ 		end
+ 	},
 },
 
 :SEEDOT => {
@@ -49347,7 +49451,6 @@ MONHASH = {
 		:BaseStats => [88, 107, 122, 74, 75, 64],
 		:EVs => [0, 0, 3, 0, 0, 0],
 		:Abilities => [:OVERGROW, :BULLETPROOF],
-		:HiddenAbilities => :BATTLEBOND,
 		:GrowthRate => :MediumSlow,
 		:GenderRatio => :FemEighth,
 		:BaseEXP => 239,
@@ -49403,7 +49506,12 @@ MONHASH = {
 	"Battle Bond Form" => {
 		:Type2 => :STEEL,
 		:BaseStats => [108,127,132,74,125,64],
-		:Ability => :BATTLEBOND
+		:Ability => :BATTLEBOND,
+		:Weight => 1500,
+	},
+
+	"Guardian Statue" => {
+		:ExcludeDex => true,
 	},
 
 	:OnCreation => {},
@@ -49528,7 +49636,6 @@ MONHASH = {
 		:BaseStats => [75, 69, 72, 114, 100, 104],
 		:EVs => [0, 0, 0, 3, 0, 0],
 		:Abilities => [:BLAZE, :MAGICIAN],
-		:HiddenAbilities => :BATTLEBOND,
 		:GrowthRate => :MediumSlow,
 		:GenderRatio => :FemEighth,
 		:BaseEXP => 240,
@@ -49735,7 +49842,6 @@ MONHASH = {
 		:BaseStats => [72, 95, 67, 103, 71, 122],
 		:EVs => [0, 0, 0, 0, 0, 3],
 		:Abilities => [:TORRENT, :PROTEAN],
-		:HiddenAbilities => :BATTLEBOND,
 		:GrowthRate => :MediumSlow,
 		:GenderRatio => :FemEighth,
 		:BaseEXP => 239,

@@ -9731,9 +9731,10 @@ TEAMARRAY = [{
 :teamid => ["Loriel",:XENGRUNT_F,0],
 :defeat => "You don't know what you're doing!",
 :mons => [{
-	:species => :XATU,
+	:species => :LOMBRE, #Resurgence
 	:level => 29,
-	:ability => :SYNCHRONIZE,
+	:ability => :MAGICBOUNCE,
+	:form => 1,
 },
 {
 	:species => :ARIADOS,
@@ -9832,9 +9833,10 @@ TEAMARRAY = [{
 {
 :teamid => ["Loriel",:XENGRUNT_F,100],
 :mons => [{
-	:species => :XATU,
+	:species => :LOMBRE, #Resurgence
 	:level => 27,
-	:ability => :SYNCHRONIZE,
+	:ability => :MAGICBOUNCE,
+	:form => 1,
 },
 {
 	:species => :ARIADOS,
@@ -28969,10 +28971,11 @@ TEAMARRAY = [{
 :teamid => ["Siri",:BLADESTAR_F,0],
 :defeat => "This isn't a job for plumbing?",
 :mons => [{
-	:species => :SAWSBUCK,
+	:species => :LUDICOLO, #Resurgence
 	:level => 63,
-	:moves => [:HORNLEECH,:HEADBUTT,:PROTECT,:TOXIC],
-	:ability => :CHLOROPHYLL,
+	:moves => [:HYDROPUMP,:PSYSHOCK,:SIGNALBEAM,:REFLECT],
+	:ability => :MAGICBOUNCE,
+	:form => 1,
 },
 {
 	:species => :FERROSEED,
@@ -29392,9 +29395,10 @@ TEAMARRAY = [{
 :teamid => ["Siri",:BLADESTAR_F,100],
 :defeat => "Boss, I'm sorry!",
 :mons => [{
-	:species => :SAWSBUCK,
+	:species => :LUDICOLO, #Resurgence
 	:level => 61,
-	:ability => :CHLOROPHYLL,
+	:ability => :UNAWARE,
+	:form => 1,
 },
 {
 	:species => :RHYDON,
@@ -29742,9 +29746,10 @@ TEAMARRAY = [{
 	:ability => :INTIMIDATE,
 },
 {
-	:species => :RIBOMBEE,
+	:species => :DUNSPARCE,
 	:level => 25,
 	:ability => :HONEYGATHER,
+	:form => 1,
 },
 {
 	:species => :HYPNO,
