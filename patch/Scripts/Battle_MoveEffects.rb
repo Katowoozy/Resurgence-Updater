@@ -13289,7 +13289,8 @@ class PokeBattle_Move_954 < PokeBattle_Move
   def pbTwoTurnAttack(attacker,checking=false)
     @immediate=false
     if attacker.effects[:TwoTurnAttack]==0
-      @immediate=true if (@battle.pbWeather== :SHADOWSKY && !attacker.hasWorkingItem(:UTILITYUMBRELLA))
+      @immediate = true if (@battle.pbWeather== :SHADOWSKY && !attacker.hasWorkingItem(:UTILITYUMBRELLA))
+      @immediate = true if @battle.FE == :DARKCRYSTALCAVERN
     end
     if !@immediate && attacker.hasWorkingItem(:POWERHERB)
       @immediate=true
@@ -13308,7 +13309,7 @@ class PokeBattle_Move_954 < PokeBattle_Move
       @battle.pbCommonAnimation("Lunar Cannon charging",attacker,nil)
       @battle.pbDisplay(_INTL("{1} absorbed darkness!",attacker.pbThis))
     end
-    if (@battle.FE == :HOLYF && @battle.pbWeather != :SHADOWSKY) || @battle.pbWeather == :SUNNYDAY
+    if (@battle.FE == :HOLY && @battle.pbWeather != :SHADOWSKY) || @battle.pbWeather == :SUNNYDAY
         @battle.pbDisplay(_INTL("But it failed...",attacker.pbThis))
         attacker.effects[:TwoTurnAttack]=0
       return 0
