@@ -522,7 +522,7 @@ class PokeBattle_Battle
         @battle.pbDisplay(_INTL("{1}'s Quark Drive heightened its {2}!", i.pbThis, i.pbGetStatName(boostStat)))
       end
     end
-    if (@field.effect != :ELECTERRAIN && @state.effects[:ELECTERRAIN] < 1) || ![:SHORTCIRCUIT, :FACTORY].include?(@field.effect)
+    if (@field.effect != :ELECTERRAIN && @state.effects[:ELECTERRAIN] < 1) && ![:SHORTCIRCUIT, :FACTORY].include?(@field.effect)
       for i in priority
         next if i.isFainted?
         next if i.effects[:Quarkdrive][0] == 0
