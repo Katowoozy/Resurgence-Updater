@@ -1040,8 +1040,12 @@ def getEvolutionForm(mon,item=nil)
     end
   # Resurgence - Correct Scyther Evolutions
   when :SCYTHER
-    if form == 1 && item == :BLACKAUGURITE
-      return 2
+    if form == 1
+      if item == :BLUEAUGURITE
+        return form
+      else
+        return 2
+      end
     else
       return form
     end
