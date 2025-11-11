@@ -81,16 +81,8 @@ TEAMARRAY = [{
 :items => [:DECRUSCREST],
 :mons => [{
 	:species => :MAGIKARP,
-	:level => 1,
-	:moves => [:SPLASH,nil,nil,nil]},
-{
-	:species => :SABLEYE,
-	:level => 25,
-	:moves => [:SPLASH,nil,nil,nil],
-	:ability => :FLICKER,
-	:nature => :JOLLY,
-	:form => 3,
-},
+	:level => 100,
+	:moves => [:ENCORE,nil,nil,nil]},
 ]},
 {
 :teamid => ["Liam",:POKEBREEDER_M,0],
@@ -16679,7 +16671,7 @@ TEAMARRAY = [{
 	:ability => :SWIFTSWIM,
 	:nature => :ADAMANT,
 	:iv => 31,
-	:ev => [4, 252, 4, 0, 0, 252]
+	:ev => [0, 252, 4, 0, 0, 252]
 }]},
 
 # Aquamarine Cave - Easy
@@ -41755,7 +41747,7 @@ TEAMARRAY = [{
 	:iv => 31,
 	:happiness => 252,
 	:name => "Diligence",
-	:ev => [4, 252, 4, 0, 0, 252],
+	:ev => [0, 252, 4, 0, 0, 252],
 	# flavor data
 	:catchlevel => 60,
 	:catchmap => 30,  # Sheridan Village (Past)
