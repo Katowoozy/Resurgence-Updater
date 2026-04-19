@@ -7,8 +7,9 @@
 - Also credits to the Reborn Team for allowing us to use some of their assets.
 
 ####################Lead Developers####################
-- AsN
-- Sapphiada
+- AsN (Mapping, Coding, Writing)
+- Sapphiada (Coding, Formatting)
+- Chun (Mapping, Spriting, Team Building)
 
 #######################################################
 ###################Spriting Credits####################
@@ -16,7 +17,6 @@
 
 #####################Guest Artists#####################
 - 6'Rat
-- Chun
 - Jeb
 - boro
 - Omar
@@ -215,6 +215,21 @@ Anarlaurendil
 piphybuilder88
 - Alolan Marowak Overworld Sprite
 
+princess-phoenix
+- Chesnaught Overworld Sprite
+
+Pokemon X&Y Overworld Dex Project
+- Delphox Overworld Sprite
+
+#######################################################
+####################Music Credits######################
+#######################################################
+Original Insurgence OST
+- mrsinger186
+
+BGM Remixes
+- Sturfall
+
 #######################################################
 #################Additional Credits####################
 #######################################################
@@ -241,4 +256,4 @@ Help with tracking down the original Delta Artists (because there's so many lol)
 Allowing the Mining Overhaul Mod to be ported into Rejuvenation
 - AiedailEclipsed
 
-And also a huge thank you to YOU for playing this mod! We hope you enjoyed it, and you can always reach out to AsN or Sapph regarding anything with the mod. If I missed crediting you in this list, please reach out to either of us as well and we will be sure to credit you properly!
+And also a huge thank you to YOU for playing this mod! We hope you enjoyed it, and you can always reach out to AsN, Sapph, or Chun regarding anything with the mod. If I missed crediting you in this list, please reach out to either of us as well and we will be sure to credit you properly!
