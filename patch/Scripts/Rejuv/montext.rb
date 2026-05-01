@@ -43377,7 +43377,7 @@ MONHASH = {
 		:Type1 => :STEEL,
 		:Type2 => :POISON,
 		:Abilities => [:AFTERMATH,:INFILTRATOR],
-		:HiddenAbilities => [:LEVITATE],
+		:HiddenAbilities => :LEVITATE,
 		:EggMoves => [],
 		:Moveset => [
 			[1,:SMOG],
@@ -43487,7 +43487,7 @@ MONHASH = {
 		:Type1 => :STEEL,
 		:Type2 => :POISON,
 		:Abilities => [:AFTERMATH,:PERISHBODY],
-		:HiddenAbilities => [:LEVITATE],
+		:HiddenAbilities => :LEVITATE,
 		:EggMoves => [],
 		:preevo => {
 			:species => :YAMASK,
