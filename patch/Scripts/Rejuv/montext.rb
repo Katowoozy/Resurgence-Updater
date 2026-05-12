@@ -44409,6 +44409,13 @@ MONHASH = {
 		:Abilities => [:ETHEREALSHROUD],
 	},
 
+	"Crescent's Mega" => {
+		:BaseStats => [95, 35, 138, 145, 158, 90],
+		:Abilities => [:ETHEREALSHROUD],
+		:ExcludeDex => true,
+		:Weight => 97,
+	},
+
 	:OnCreation => {},
 	:DefaultForm => 0,
 	:MegaForm => {
