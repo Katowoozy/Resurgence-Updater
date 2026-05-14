@@ -230,6 +230,10 @@ class PokeBattle_Battle
     if onBreakdata[:animation]
       pbAnimation(onBreakdata[:animation],battler,nil)
     end
+    if @opponent.trainertype == :INTERCEPTOR
+      @scene.pbShowOpponent(0)
+      showtrainer = true
+    end
     if onBreakdata[:message] && onBreakdata[:message] != ""
       if onBreakdata[:message].start_with?("{1}") 
         pbDisplayPaused(_INTL(onBreakdata[:message],battler.pbThis))
@@ -746,6 +750,7 @@ class PokeBattle_Battle
     else
       pbBossSOS(@battlers,shieldbreak=true,onEntry)
     end
+    @scene.pbHideOpponent if showtrainer
   end
 
   def spaceaManip
