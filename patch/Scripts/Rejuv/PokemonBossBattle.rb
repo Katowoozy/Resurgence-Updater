@@ -230,7 +230,7 @@ class PokeBattle_Battle
     if onBreakdata[:animation]
       pbAnimation(onBreakdata[:animation],battler,nil)
     end
-    if @opponent.trainertype == :INTERCEPTOR
+    if @opponent == trainer && @opponent.trainertype == :INTERCEPTOR
       @scene.pbShowOpponent(0)
       showtrainer = true
     end

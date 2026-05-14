@@ -105,7 +105,7 @@ Toxtricity = []
 Jangmoo = []
 Wimpod = [523]
 Larvesta = []
-Sewaddle = [254]
+Sewaddle = [254,630]
 Mareep = []
 Lapras = [109]
 # Delta
