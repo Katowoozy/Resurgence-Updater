@@ -44231,6 +44231,7 @@ TEAMARRAY = [{
 	:shiny => true,
 	:nature => :TIMID,
 	:iv => 31,
+	:form => 2,
 	:happiness => 252,
 	:name => "Peace",
 	:ev => [0, 0, 4, 252, 0, 252]},
