@@ -1272,7 +1272,7 @@ class PokeBattle_Battle
     sendoutorder[0].piece = :PAWN if sendoutorder[0].piece.nil?
     sendoutorder[1].piece = :PAWN if sendoutorder[1] && @doublebattle && !trainer_array && sendoutorder[1].piece.nil?
     # King
-    king_piece = pkmnparty.sort_by { |mon| [mon.piece.nil? ? 0 : 1, mon.item == :KINGSROCK ? 0 : 1, mon.totalhp] }.first
+    king_piece = pkmnparty.sort_by { |mon| [mon.piece.nil? ? 0 : 1, mon.item == :KINGSROCK ? 0 : 1, mon.item == :SNORLAXITE ? 0 : 1, mon.totalhp] }.first
     king_piece.piece = :KING if king_piece && king_piece.piece.nil?
     # Knight / Bishop / Rook
     pkmnparty.each do |pkmn|
