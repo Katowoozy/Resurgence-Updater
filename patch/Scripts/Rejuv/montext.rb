@@ -44103,7 +44103,7 @@ MONHASH = {
 		:dexentry => "With its disheveled white fur, it looks like an embodiment of death. Heedless of its own safety, Zoroark attacks its nemeses with a bitter energy so intense, it lacerates Zoroark’s own body.",
 	},
 
-	"Mega Form" => { # Insurgence Mega
+	#"Mega Form" => { # Insurgence Mega
 		:BaseStats => [60, 130, 60, 145, 90, 125],
 		:Abilities => [:TRACE],
 		:toobig => true,
@@ -44118,7 +44118,7 @@ MONHASH = {
  		end
  	},
 	:DefaultForm => 0,
-	:MegaForm => {
+	#:MegaForm => {
 		:ZORONITE => 2,
 	},
 },
