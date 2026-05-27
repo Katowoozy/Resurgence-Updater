@@ -54383,7 +54383,7 @@ MONHASH = {
 
 	"Delta Hoopa Confined" => {
 		:Type1 => :FLYING,
-		:Type2 => :FLYING,
+		:Type2 => nil,
 		:BaseStats => [80, 110, 60, 150, 130, 70],
 		:EVs => [0, 0, 0, 3, 0, 0],
 		:Abilities => [:CLOUDNINE],
