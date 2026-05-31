@@ -2320,6 +2320,7 @@ class PokeBattle_Battler
           @battle.pbCommonAnimation("StatUp", self, nil)
           @battle.pbDisplay(_INTL("The gloomy backalley makes {1} ready to bolt!", pbThis))
         end
+      end
       if self.ability == :VAMPIRIC && onactive
         if !pbTooHigh?(PBStats::SPEED)
           pbIncreaseStatBasic(PBStats::SPEED, 1)
