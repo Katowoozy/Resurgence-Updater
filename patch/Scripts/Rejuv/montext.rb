@@ -20732,6 +20732,30 @@ MONHASH = {
 		]
 	},
 
+	"Delta Form" => {
+		:Type1 => :PSYCHIC,
+		:Abilities => [:KEENEYE, :RIVALRY],
+		:EggMoves => [],
+		:Moveset => [
+			[1,:SCRATCH],
+			[1,:GROWL],
+			[5,:CONFUSION],
+			[10,:MIRACLEEYE],
+			[14,:PECK],
+			[19,:PSYWAVE],
+			[23,:QUICKATTACK],
+			[28,:PSYBEAM],
+			[32,:IMPRISON],
+			[37,:POWERGEM],
+			[41,:FUTURESIGHT],
+			[46,:PSYCHIC]],
+		:compatiblemoves => [],
+		:moveexceptions => [],
+		:EggGroups => [:Undiscovered],
+		:kind => "Prince",
+		:dexentry => "A Delta Species discovered by NoNameDummy. From birth it has the ability to give orders to other wild Pokémon and have them obey without question.",
+	},
+
 	:OnCreation => {},
 },
 
@@ -20794,6 +20818,34 @@ MONHASH = {
 		:evolutions => [
 			[:BLAZIKEN,:Level,36]
 		]
+	},
+
+	"Delta Form" => {
+		:Type1 => :PSYCHIC,
+		:Type2 => nil,
+		:Abilities => [:KEENEYE, :RIVALRY],
+		:EggMoves => [],
+		:Moveset => [
+			[0,:DUALWINGBEAT],
+			[1,:SCRATCH],
+			[1,:GROWL],
+			[1,:CONFUSION],
+			[1,:MIRACLEEYE],
+			[5,:CONFUSION],
+			[10,:MIRACLEEYE],
+			[14,:PECK],
+			[19,:PSYWAVE],
+			[23,:QUICKATTACK],
+			[28,:PSYBEAM],
+			[32,:IMPRISON],
+			[37,:POWERGEM],
+			[41,:FUTURESIGHT],
+			[46,:PSYCHIC]],
+		:compatiblemoves => [],
+		:moveexceptions => [],
+		:EggGroups => [:Undiscovered],
+		:kind => "Pharaoh",
+		:dexentry => "It lazes about while giving its underlings commands. Its power is believed by some to have been bestowed upon it by gods of unknown origin.",
 	},
 
 	:OnCreation => {},
@@ -48949,7 +49001,7 @@ MONHASH = {
 		:Type1 => :DARK,
 		:Type2 => :POISON,
 		:BaseStats => [85, 60, 85, 135, 137, 100],
-		:Abilities => [:LEVITATE, :ABSOLUTION],
+		:Abilities => [:PHARAOHSDOMAIN, :ABSOLUTION],
 		:preevo => {
 			:species => :LARVESTA,
 			:form => 2,

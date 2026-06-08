@@ -80,13 +80,9 @@ TEAMARRAY = [{
 :defeat => "Sparkle on Wednesday.",
 :items => [:DECRUSCREST],
 :mons => [{
-	:species => :AUDINO,
-	:level => 90,
-	:moves => [:MUDSLAP,:GROWL,:ACHILLESHEEL,nil]},
-{
-	:species => :AUDINO,
-	:level => 10,
-	:moves => [:MEMENTO,nil,nil,nil]},
+	:species => :BLISSEY,
+	:level => 100,
+	:moves => [:SPLASH,nil,nil,nil]},
 ]},
 {
 :teamid => ["Liam",:POKEBREEDER_M,0],
