@@ -612,7 +612,8 @@ ABILHASH = {
 :NOGUARD => {
 	:ID => 99,
 	:name => "No Guard",
-	:desc => "Ensures attacks by or against the user land."
+	:desc => "Ensures attacks by or against the user land...",
+	:fullDesc => "Attacks by or against the user always hit. This excludes one-hit KO moves."
 },
 
 :STALL => {
@@ -2243,7 +2244,7 @@ ABILHASH = {
 	:ID => 423,
 	:name => "Foundry",
 	:desc => "Rock-type moves and hazards become fire...",
-	:fullDesc => "Rock-type moves, when used, melt and become Fire-type. Stealth Rocks also become Fire-type if used by this Pokémon."
+	:fullDesc => "Rock-type moves, when used, melt and become Fire-type and deal 30% more damage. Stealth Rocks also become Fire-type if used by this Pokémon."
 },
 
 :SLAG => {
@@ -2318,7 +2319,7 @@ ABILHASH = {
 :ETHEREALSHROUD => {
 	:ID => 434,
 	:name => "Ethereal Shroud",
-	:desc => "Gives full immunity to all contact-based moves.",
+	:desc => "Grants the resistances and immunities of Ghost-types.",
 },
 
 :LERNEAN => {
@@ -2379,7 +2380,7 @@ ABILHASH = {
 	:ID => 443,
 	:name => "Superconduct",
 	:desc => "Electric and Ice-moves buff each other...",
-	:fullDesc => "Attacking Electric-type moves buffs the next Ice-type move by 1.5x w/ a 10% chance to Paralyze, and vice versa w/ a 10% chance to inflict frostbite."
+	:fullDesc => "Attacking Electric-type moves buffs the next Ice-type move by 1.5x w/ a 10% chance to Paralyze, and vice versa w/ a 10% chance to cause frostbite."
 },
 
 :FORTITUDE => {
@@ -2413,13 +2414,41 @@ ABILHASH = {
 	:ID => 447,
 	:name => "Flicker",
 	:desc => "Protects itself every 3 turns...",
-	:fullDesc => "On switch in and every 3 turns, the Pokémon will immediately set up a Burning Bulwark to protect itself from attacks."
+	:fullDesc => "On entry in and every 3 turns, the Pokémon will immediately set up a Burning Bulwark to protect itself."
 },
 
-:PHARAOHSDOMAIN => {
-	:ID => 447,
-	:name => "Pharaoh's Domain",
-	:desc => "Moves deal physical or special damage...",
-	:fullDesc => "The user's moves will be categorized as physical or special damage depending on whichever would be more effective against the opponent."
+:CRYSTALLIZE => {
+	:ID => 448,
+	:name => "Crystallize",
+	:desc => "Rock-type moves become Crystal-type moves...",
+	:fullDesc => "Rock-type moves become Crystal-type moves and deal 20% more damage."
+},
+
+:EXECUTIONER => {
+	:ID => 449,
+	:name => "Executioner",
+	:desc => "Powers up moves that are super effective.",
+	:fullDesc => "Super effective moves deal an additional 25% damage."
+},
+
+:FORTIFY => {
+	:ID => 450,
+	:name => "Fortify",
+	:desc => "Extends the duration of barrier moves.",
+	:fullDesc => "Extends the duration of barrier moves like Light Screen and Reflect."
+},
+
+:PHOTOTROPH => {
+	:ID => 451,
+	:name => "Phototroph",
+	:desc => "The Pokémon gradually regains HP...",
+	:fullDesc => "The Pokémon gradually regains HP at the end of each turn. It gains more HP under Sunny weather, but gains none under Rain and Shadow Sky."
+},
+
+:JUGGERNAUT => {
+	:ID => 452,
+	:name => "Juggernaut",
+	:desc => "Its moves never weaken or tire it.",
+	:fullDesc => "Its moves will not lower its own stats, force it to recharge, or restrict its actions."
 },
 }

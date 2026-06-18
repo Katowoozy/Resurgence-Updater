@@ -9358,6 +9358,7 @@ ITEMHASH = {
 	:noUseInBattle => true,
 	:noUse => true,
 	:typeboost => :FAIRY,
+	:gem => true,
 },
 
 :SAMUCREST => {
@@ -11219,7 +11220,7 @@ ITEMHASH = {
 :DEPLUSCREST => {
 	:ID => 1282,
 	:name => "D. Plusle Crest",
-	:desc => "If partnered with Delta Minun, sets up Burning Bulwark immediately. Delta Minun and Plusle deal 30% more damage.",
+	:desc => "If alongside Delta Minun, uses Burning Bulwark immediately once per battle. Both partners deal 30% more damage.",
 	:price => 0,
 	:crest => true,
 	:noUseInBattle => true,
@@ -11229,7 +11230,7 @@ ITEMHASH = {
 :DEMINCREST => {
 	:ID => 1283,
 	:name => "D. Minun Crest",
-	:desc => "If partnered with Delta Plusle, sets up Aurora Veil immediately. Delta Plusle and Minun take 25% less damage.",
+	:desc => "If alongside Delta Plusle, uses Aurora Veil immediately once per battle. Both partners take 25% less damage.",
 	:price => 0,
 	:crest => true,
 	:noUseInBattle => true,
